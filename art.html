@@ -17,15 +17,18 @@
   </head>
 
   <body>
+    <!--Header-->
       <header id="top">
         <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
       </header>
+      <!--Go back button-->
       <div class="go__back">
-        <div class="dropbtn button__arrow button__arrow--right"></div>
+        <div class="button__arrow"></div>
         <a href="index.html">Go back to home page</a>
       </div>
+      <!--Go top button-->
       <a href="#top" class="go__top">
-        <div class="dropbtn button__arrow button__arrow--right"></div>
+        <div class="button__arrow"></div>
       </a>
 
     <!-- Navigation menu-->
@@ -41,7 +44,7 @@
           <!-- Down arrow button -->
           <button class="button">
               <!-- Arrow -->
-              <div class="dropbtn button__arrow button__arrow--right" onclick="myFunc()"></div>
+              <div class="dropbtn button__arrow" onclick="myFunc()"></div>
           </button>
         </div>
         <div id = "myDropdown" class="dropdown-content">
@@ -53,10 +56,8 @@
       </ul>
     </nav>
 
-
-    <body>
-      <!-- Intro -->
-      <section class="intro" id = "home">
+      <!-- Art gallery section -->
+      <section class="intro">
         <h2 class = "section__title section__title--intro">Welcome to my <strong class="name"><b>Art gallery</b></strong> </h2>
         <p class = "section__subtitle section__subtitle--intro">Drawing projects</p>
           <img src = "img/art/art_cover.jpg" alt="art page cover" width = 500 class="intro__img">
@@ -86,11 +87,6 @@
 
       <script src="js/index.js"></script>
       <script src="js/art.js"></script>
-    </body>
-
-
-
-
 
     <!-- Footer-->
     <footer class="footer">
@@ -131,6 +127,8 @@
       </div>
       <small>&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
     </footer>
+
+  </body>
 
     <script>
       var date = new Date();

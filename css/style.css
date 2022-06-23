@@ -7,7 +7,7 @@
 /*Custom parameters*/
 :root{
   --ff-primary: 'Source Sans Pro',sans-serif;
-  --ff-secomdary: 'Source Sans Pro',monospace;
+  --ff-secondary: 'Source Sans Pro',monospace;
 
   --fw-reg:300;
   --fw-bold: 900;
@@ -126,13 +126,13 @@ header{
   align-items: center;
 }
 
-.go__back .button__arrow--right{
+.go__back .button__arrow{
   border-right: 2px solid var(--clr-accent);
   border-top: 2px solid var(--clr-accent);
   transform: rotate(-135deg);
 }
 
-.go__back:hover .button__arrow--right{
+.go__back:hover .button__arrow{
   border-right: 2px solid var(--clr-accent);
   border-top: 2px solid var(--clr-accent);
   transform: translate(-7px) rotate(-135deg);
@@ -149,7 +149,7 @@ header{
   top: 95%;
 }
 
-.go__top .button__arrow--right {
+.go__top .button__arrow {
   border-right: 2px solid var(--clr-accent);
   border-top: 2px solid var(--clr-accent);
   width: 30px;
@@ -157,7 +157,7 @@ header{
   transform: rotate(-45deg);
 }
 
-.go__top .button__arrow--right:hover {
+.go__top .button__arrow:hover {
   border-right: 5px solid var(--clr-accent);
   border-top: 5px solid var(--clr-accent);
   transform: rotate(-45deg);
@@ -229,7 +229,7 @@ header{
   font-size: var(--fs-h3);
 }
 
-.section__subtitle--intro, .section__subtitle--about{
+.section__subtitle--intro, .section__subtitle--block{
   background: var(--clr-accent);
   padding: .25em 1em;
   font-family: var(--ff-secondary);
@@ -261,12 +261,12 @@ header{
 /*Intro*/
 
 /*About me*/
-.about-me{
+.block{
   max-width: 1000px;
   margin: 0 auto;
 }
 
-.about-me__img{
+.block__img{
   box-shadow: var(--bs);
   margin: 20px 0 20px 0;
 }
@@ -294,7 +294,7 @@ header{
 }
 
 @media (min-width: 600px){
-  .about-me{
+  .block{
     display:grid;
     grid-template-columns: 1fr 200px;
     grid-template-areas:
@@ -304,11 +304,11 @@ header{
     grid-column-gap: 2em;
   }
 
-  .section__title--about{
+  .section__title--block{
     grid-area: title;
   }
 
-  .section__subtitle--about{
+  .section__subtitle--block{
     grid-column: 1/-1;
     grid-row: 2;
     position: relative;
@@ -318,13 +318,13 @@ header{
     padding-right: calc(200px + 4em);
   }
 
-  .about-me__img{
+  .block__img{
     grid-area: img;
     position: relative;
     z-index: 2;
   }
 
-  .about-me__img{
+  .block__img{
     grid-row: 1/-1;
     grid-column: 2;
   }
@@ -343,7 +343,7 @@ header{
   padding-left: 50px;
 }
 
-.about-me__content::first-letter{
+.block__content::first-letter{
   font-size: 5rem;
   float: left;
   font-family: 'Faster One';
@@ -777,17 +777,13 @@ header{
     width: 12px;
     cursor: pointer;
     color: white;
-}
-
-.button__arrow--right {
-    /* Edges */
     border-right: 2px solid #ffffff;
     border-top: 2px solid #ffffff;
     transform: translateY(-25%) rotate(135deg) ;
     transition: ease-out 0.2s;
 }
 
-.button__arrow--right:hover {
+.button__arrow:hover {
     /* Edges */
     border-right: 2px solid var(--clr-accent);
     border-top: 2px solid var(--clr-accent);

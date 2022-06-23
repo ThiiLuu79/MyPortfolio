@@ -17,11 +17,13 @@
   </head>
 
   <body>
+    <!--Header-->
       <header id="top">
         <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
       </header>
+      <!--Go top button-->
       <a href="#top" class="go__top">
-        <div class="dropbtn button__arrow button__arrow--right"></div>
+        <div class="button__arrow"></div>
       </a>
 
     <!-- Navigation menu-->
@@ -37,7 +39,7 @@
           <!-- Down arrow button -->
           <button class="button">
               <!-- Arrow -->
-              <div class="dropbtn button__arrow button__arrow--right" onclick="myFunc()"></div>
+              <div class="dropbtn button__arrow" onclick="myFunc()"></div>
           </button>
         </div>
         <div id = "myDropdown" class="dropdown-content">
@@ -53,17 +55,17 @@
     <section class="intro" id = "home">
       <h2 class = "section__title section__title--intro">Hi, my name is <strong class="name"><b>The Minh Luong</b></strong> </h2>
       <p class = "section__subtitle section__subtitle--intro">Software Engineering Student</p>
-        <img src = "img/me3.jpg" alt="home picture" width = 500 class="intro__img">
+        <img src = "img/pfp.jpg" alt="home picture" width = 500 class="intro__img">
     </section>
 
 
     <!-- About me -->
-    <section class="about-me" id ="about">
-      <h2 class = "section__title section__title--about">Who am I ?</h2>
-      <p class = "section__subtitle section__subtitle--about">Student at ETS, Montreal</p>
+    <section class="block" id ="about">
+      <h2 class = "section__title section__title--block">Who am I ?</h2>
+      <p class = "section__subtitle section__subtitle--block">Student at ÉTS, Montreal</p>
 
-      <div class = "about-me__body">
-        <p class="about-me__content">Student at <b>ÉTS</b> (École de Technologie Supérieure), which translates as Superior Technology School,
+      <div class = "block__body">
+        <p class="block__content">Student at <b>ÉTS</b> (École de Technologie Supérieure), which translates as Superior Technology School,
           in Montreal, Canada. Majoring in <b>software engineering</b>, I am slowly discovering the value
           of computer science in today's world. I've always been passionated about video games and websites and I wanted to
           know how those complex programs and softwares were made. Luckily now, not only I can understand the technical skills
@@ -77,7 +79,7 @@
 
         <br>
 
-        <a href="experiences.html" class="read-more__btn">
+        <a href="experiences.html">
           <button class="pushable">
             <span class="front">
               Working experiences
@@ -87,7 +89,7 @@
         <br><br>
 
       </div>
-      <img src = "img/dragon.jpg" alt="about-me image" width="500" class="about-me__img">
+      <img src = "img/about_img.jpg" alt="about image" width="500" class="block__img">
     </section>
 
 
@@ -98,7 +100,7 @@
 
       <div class = "portfolio">
 
-        <!-- item 1 -->
+        <!-- Websites -->
         <a href = "websites.html" class = "portfolio__item">
           <div class="project__container">
             <img src = "img/web.jpg" alt="web-project cover" widht="900" class = "portfolio__img project__img">
@@ -108,7 +110,7 @@
           </div>
         </a>
 
-        <!-- item 2 -->
+        <!-- Games -->
         <a href = "games.html" class = "portfolio__item">
           <div class="project__container">
             <img src = "img/games.jpg" alt="game-project cover" widht="900" class = "portfolio__img project__img">
@@ -118,7 +120,7 @@
           </div>
         </a>
 
-        <!-- item 3 -->
+        <!-- Art Gallery -->
         <a href = "art.html" class = "portfolio__item">
           <div class="project__container">
             <img src = "img/art/art00.jpg" alt="art-project cover" widht="900" class = "portfolio__img project__img">
@@ -129,6 +131,7 @@
         </a>
     </section>
 
+    <!-- Education -->
     <section id = "education">
       <div class="content_wrap">
         <div>
@@ -138,9 +141,10 @@
           <p>Software enginnering program (Bachelor's degree), 2020 - Present</p>
           <br>
           <h3>Maisonneuve College - Montreal, CA</h3>
-          <p>Pure/applied sciences program, 2018 - 2020</p>
+          <p>Pure and applied sciences program, 2018 - 2020</p>
           <br>
           <h3>LinkedIn Learning</h3>
+          <!-- Course list -->
           <ul class="linkedin__learning__list">
             <li class="course_item">
               <a href="https://www.linkedin.com/learning/javascript-for-web-designers-3" class="linkedin_course" target="_blank">JavaScript for Web Designers Training, 2022</a>
@@ -160,7 +164,6 @@
     </section>
 
     <script src="js/index.js"></script>
-  </body>
 
     <!-- Footer-->
     <footer class="footer">
@@ -199,6 +202,8 @@
       </div>
       <small>&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
     </footer>
+
+  </body>
 
     <script>
       var date = new Date();

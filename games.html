@@ -17,15 +17,18 @@
   </head>
 
   <body>
+    <!--Header-->
       <header id="top">
         <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
       </header>
+      <!--Go back button-->
       <div class="go__back">
-        <div class="dropbtn button__arrow button__arrow--right"></div>
+        <div class="button__arrow"></div>
         <a href="index.html">Go back to home page</a>
       </div>
+      <!--Go top button-->
       <a href="#top" class="go__top">
-        <div class="dropbtn button__arrow button__arrow--right"></div>
+        <div class="button__arrow"></div>
       </a>
 
     <!-- Navigation menu-->
@@ -41,7 +44,7 @@
           <!-- Down arrow button -->
           <button class="button">
               <!-- Arrow -->
-              <div class="dropbtn button__arrow button__arrow--right" onclick="myFunc()"></div>
+              <div class="dropbtn button__arrow" onclick="myFunc()"></div>
           </button>
         </div>
         <div id = "myDropdown" class="dropdown-content">
@@ -53,21 +56,19 @@
       </ul>
     </nav>
 
-
-    <body>
-      <!-- Intro -->
-      <section class="intro" id = "home">
+      <!-- Games section -->
+      <section class="intro">
         <h2 class = "section__title section__title--intro">Let's play some <strong class="name"><b>Video games</b></strong> </h2>
         <p class = "section__subtitle section__subtitle--intro">Games projects</p>
           <img src = "img/games.gif" alt="game page gif" width = 500 class="intro__img">
       </section>
 
       <!-- Hungry Shark -->
-      <section class="about-me project__item" id ="about">
-        <h2 class = "section__title section__title--about">Hungry Shark</h2>
-        <p class = "section__subtitle section__subtitle--about">2021</p>
+      <section class="block project__item">
+        <h2 class = "section__title section__title--block">Hungry Shark</h2>
+        <p class = "section__subtitle section__subtitle--block">2021</p>
 
-        <div class = "about-me__body">
+        <div class = "block__body">
           <p>Inspired by the mobile game <b>"Hungry Shark"</b>,
           I've made my own version of it, with Python. This is probably the game that I am the most proud of.</p>
           <br>
@@ -81,16 +82,16 @@
           </a>
           <br><br>
         </div>
-        <img src = "img/hungryShark.jpg" alt="hungry shark cover" width="500" class="about-me__img">
+        <img src = "img/hungryShark.jpg" alt="hungry shark cover" width="500" class="block__img">
         <video src="video/shark.mp4" playsinline poster="img/hungryShark.jpg" controls width="500" class="video"></video>
       </section>
 
       <!-- Car Crash -->
-      <section class="about-me project__item" id ="about">
-        <h2 class = "section__title section__title--about">Car Crash</h2>
-        <p class = "section__subtitle section__subtitle--about">2021</p>
+      <section class="block project__item">
+        <h2 class = "section__title section__title--block">Car Crash</h2>
+        <p class = "section__subtitle section__subtitle--block">2021</p>
 
-        <div class = "about-me__body">
+        <div class = "block__body">
           <p>Simple game that I have created, with Python, where a car has to avoid as many obstacle as it can.
           Hitting a rock leads to the end of the game.</p>
           <br>
@@ -104,16 +105,16 @@
           </a>
           <br><br>
         </div>
-        <img src = "img/carCrash.jpg" alt="car crash cover" width="500" class="about-me__img">
+        <img src = "img/carCrash.jpg" alt="car crash cover" width="500" class="block__img">
         <video src="video/car.mp4" playsinline poster="img/carCrash.jpg" controls width="500" class="video"></video>
       </section>
 
       <!-- Space Invaders -->
-      <section class="about-me project__item last" id ="about">
-        <h2 class = "section__title section__title--about">Space Invaders</h2>
-        <p class = "section__subtitle section__subtitle--about">2021</p>
+      <section class="block project__item last">
+        <h2 class = "section__title section__title--block">Space Invaders</h2>
+        <p class = "section__subtitle section__subtitle--block">2021</p>
 
-        <div class = "about-me__body">
+        <div class = "block__body">
           <p>The first game that I made was a remake of the famous game <b>"Space Invaders"</b>, a game where
           a spaceship has to destroy incomming ennemies. This program is made with Python.</p>
           <br>
@@ -127,17 +128,12 @@
           </a>
           <br><br>
         </div>
-        <img src = "img/spaceInvaders.jpg" alt="space invaders cover" width="500" class="about-me__img">
+        <img src = "img/spaceInvaders.jpg" alt="space invaders cover" width="500" class="block__img">
         <video src="video/space.mp4" playsinline poster="img/spaceInvaders.jpg" controls width="500" class="video"></video>
       </section>
 
 
       <script src="js/index.js"></script>
-    </body>
-
-
-
-
 
     <!-- Footer-->
     <footer class="footer">
@@ -177,6 +173,8 @@
       </div>
       <small>&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
     </footer>
+
+  </body>
 
     <script>
       var date = new Date();

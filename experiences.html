@@ -17,15 +17,18 @@
   </head>
 
   <body>
+    <!--Header-->
       <header id="top">
         <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
       </header>
+      <!--Go back button-->
       <div class="go__back">
-        <div class="dropbtn button__arrow button__arrow--right"></div>
+        <div class="button__arrow"></div>
         <a href="index.html">Go back to home page</a>
       </div>
+      <!--Go top button-->
       <a href="#top" class="go__top">
-        <div class="dropbtn button__arrow button__arrow--right"></div>
+        <div class="button__arrow"></div>
       </a>
 
     <!-- Navigation menu-->
@@ -41,7 +44,7 @@
           <!-- Down arrow button -->
           <button class="button">
               <!-- Arrow -->
-              <div class="dropbtn button__arrow button__arrow--right" onclick="myFunc()"></div>
+              <div class="dropbtn button__arrow" onclick="myFunc()"></div>
           </button>
         </div>
         <div id = "myDropdown" class="dropdown-content">
@@ -53,14 +56,13 @@
       </ul>
     </nav>
 
+    <!--Experiences section-->
+    <!--Inlibro-->
+      <section class="block project__item last">
+        <h2 class = "section__title section__title--block">Working experiences</h2>
+        <img src = "img/experience.jpg" alt="experience page cover" width="500" class="block__img">
 
-    <body>
-
-      <section class="about-me project__item last" id ="about">
-        <h2 class = "section__title section__title--about">Working experiences</h2>
-        <img src = "img/experience.jpg" alt="experience page cover" width="500" class="about-me__img">
-
-        <div class = "about-me__body">
+        <div class = "block__body">
           <div class="job-details">
             <h3>Full stack Developer (Internship)</h3>
             <p><a href="https://inlibro.com/" target="_blank">Solution inLibro</a></p>
@@ -99,11 +101,6 @@
 
 
       <script src="js/index.js"></script>
-    </body>
-
-
-
-
 
     <!-- Footer-->
     <footer class="footer">
@@ -144,6 +141,8 @@
       </div>
       <small>&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
     </footer>
+
+  </body>
 
     <script>
       var date = new Date();
