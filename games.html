@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tm's portfolio</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/portfolio_logo.png">
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet"
+    href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      <header id="top">
+        <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
+      </header>
+      <div class="go__back">
+        <div class="dropbtn button__arrow button__arrow--right"></div>
+        <a href="index.html">Go back to home page</a>
+      </div>
+      <a href="#top" class="go__top">
+        <div class="dropbtn button__arrow button__arrow--right"></div>
+      </a>
+
+    <!-- Navigation menu-->
+    <button class = "nav-toggle" aria-label = "toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class = "nav">
+      <ul class = "nav__list">
+        <li class = "nav__item" ><a href = "index.html" class="nav__link">Home</a></li>
+        <li class = "nav__item" ><a href = "index.html#about" class="nav__link">About me</a></li>
+        <div class="drop_projects">
+          <li class = "nav__item" ><a href = "index.html#projects" class="nav__link">My projects</a></li>
+          <!-- Down arrow button -->
+          <button class="button">
+              <!-- Arrow -->
+              <div class="dropbtn button__arrow button__arrow--right" onclick="myFunc()"></div>
+          </button>
+        </div>
+        <div id = "myDropdown" class="dropdown-content">
+          <a href="websites.html">Websites</a>
+          <a href="games.html">Games</a>
+          <a href="art.html">Art gallery</a>
+        </div>
+        <li class = "nav__item" ><a href = "index.html#education" class="nav__link">Education</a></li>
+      </ul>
+    </nav>
+
+
+    <body>
+      <!-- Intro -->
+      <section class="intro" id = "home">
+        <h2 class = "section__title section__title--intro">Let's play some <strong class="name"><b>Video games</b></strong> </h2>
+        <p class = "section__subtitle section__subtitle--intro">Games projects</p>
+          <img src = "img/games.gif" alt="" width = 500 class="intro__img">
+      </section>
+
+      <!-- Hungry Shark -->
+      <section class="about-me project__item" id ="about">
+        <h2 class = "section__title section__title--about">Hungry Shark</h2>
+        <p class = "section__subtitle section__subtitle--about">2021</p>
+
+        <div class = "about-me__body">
+          <p>Inspired by the mobile game <b>"Hungry Shark"</b>,
+          I've made my own version of it, with Python. This is probably the game that I am the most proud of.</p>
+          <br>
+          <br>
+          <a href="https://github.com/ThiiLuu79/Hungry-Shark" target="_blank">
+            <button class="pushable">
+              <span class="front">
+                Code
+              </span>
+            </button>
+          </a>
+          <br><br>
+          <a href="games/Hungry Shark.zip" download>
+            <button class="pushable">
+              <span class="front">
+                Download (Windows)
+              </span>
+            </button>
+          </a>
+          <br><br>
+        </div>
+        <img src = "img/hungryShark.jpg" alt="" width="500" class="about-me__img">
+        <video src="video/shark.mp4" playsinline poster="img/hungryShark.jpg" controls width="500" class="video"></video>
+      </section>
+
+      <!-- Car Crash -->
+      <section class="about-me project__item" id ="about">
+        <h2 class = "section__title section__title--about">Car Crash</h2>
+        <p class = "section__subtitle section__subtitle--about">2021</p>
+
+        <div class = "about-me__body">
+          <p>Simple game that I have created, with Python, where a car has to avoid as many obstacle as it can.
+          Hitting a rock leads to the end of the game.</p>
+          <br>
+          <br>
+          <a href="https://github.com/ThiiLuu79/Car-Crash" target="_blank">
+            <button class="pushable">
+              <span class="front">
+                Code
+              </span>
+            </button>
+          </a>
+          <br><br>
+          <a href="games/Car Crash.zip" download>
+            <button class="pushable">
+              <span class="front">
+                Download (Windows)
+              </span>
+            </button>
+          </a>
+          <br><br>
+        </div>
+        <img src = "img/carCrash.jpg" alt="" width="500" class="about-me__img">
+        <video src="video/car.mp4" playsinline poster="img/carCrash.jpg" controls width="500" class="video"></video>
+      </section>
+
+      <!-- Space Invaders -->
+      <section class="about-me project__item last" id ="about">
+        <h2 class = "section__title section__title--about">Space Invaders</h2>
+        <p class = "section__subtitle section__subtitle--about">2021</p>
+
+        <div class = "about-me__body">
+          <p>The first game that I made was a remake of the famous game <b>"Space Invaders"</b>, a game where
+          a spaceship has to destroy incomming ennemies. This program is made with Python.</p>
+          <br>
+          <br>
+          <a href="https://github.com/ThiiLuu79/Space-Invaders" target="_blank">
+            <button class="pushable">
+              <span class="front">
+                Code
+              </span>
+            </button>
+          </a>
+          <br><br>
+          <a href="games/Space Invaders.zip" download>
+            <button class="pushable">
+              <span class="front">
+                Download (Windows)
+              </span>
+            </button>
+          </a>
+          <br><br>
+        </div>
+        <img src = "img/spaceInvaders.jpg" alt="" width="500" class="about-me__img">
+        <video src="video/space.mp4" playsinline poster="img/spaceInvaders.jpg" controls width="500" class="video"></video>
+      </section>
+
+
+      <script src="js/index.js"></script>
+    </body>
+
+
+
+
+
+    <!-- Footer-->
+    <footer class="footer">
+      <!-- Waves -->
+      <div>
+          <svg class="waves-light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(86,40,30,0.7)" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(86,40,30,0.5)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(86,40,30,0.3)" />
+                  <use xlink:href="#gentle-wave" x="48" y="7" fill="#56281E" />
+              </g>
+          </svg>
+      </div>
+      <!-- Social links -->
+      <a href ="mailto:the-minh.luong.1@ens.etsmtl.ca" class = "footer-link">the-minh.luong.1@ens.etsmtl.ca</a>
+
+      <div class="wrapper">
+
+
+            <a href="https://www.linkedin.com/in/tmluong19/"  target="_blank">
+              <div class="icon linkedin">
+                <div class="tooltip">LinkedIn</div>
+                <span><i class="fab fa-linkedin"></i></span>
+              </div>
+            </a>
+
+            <a href="https://github.com/ThiiLuu79" target="_blank">
+              <div class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span>
+              </div>
+            </a>
+      </div>
+      <small>&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
+    </footer>
+
+    <script>
+      var date = new Date();
+      var year = date.getFullYear();
+      document.getElementById('currentYear').innerHTML = year;
+    </script>
+
+</html>

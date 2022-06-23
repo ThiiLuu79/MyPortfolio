@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tm's portfolio</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/portfolio_logo.png">
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet"
+    href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      <header id="top">
+        <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
+      </header>
+      <a href="#top" class="go__top">
+        <div class="dropbtn button__arrow button__arrow--right"></div>
+      </a>
+
+    <!-- Navigation menu-->
+    <button class = "nav-toggle" aria-label = "toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class = "nav">
+      <ul class = "nav__list">
+        <li class = "nav__item" ><a href = "#home" class="nav__link">Home</a></li>
+        <li class = "nav__item" ><a href = "#about" class="nav__link">About me</a></li>
+        <div class="drop_projects">
+          <li class = "nav__item" ><a href = "#projects" class="nav__link">My projects</a></li>
+          <!-- Down arrow button -->
+          <button class="button">
+              <!-- Arrow -->
+              <div class="dropbtn button__arrow button__arrow--right" onclick="myFunc()"></div>
+          </button>
+        </div>
+        <div id = "myDropdown" class="dropdown-content">
+          <a href="websites.html">Websites</a>
+          <a href="games.html">Games</a>
+          <a href="art.html">Art gallery</a>
+        </div>
+        <li class = "nav__item" ><a href = "#education" class="nav__link">Education</a></li>
+      </ul>
+    </nav>
+
+    <!-- Intro -->
+    <section class="intro" id = "home">
+      <h2 class = "section__title section__title--intro">Hi, my name is <strong class="name"><b>The Minh Luong</b></strong> </h2>
+      <p class = "section__subtitle section__subtitle--intro">Software Engineering Student</p>
+        <img src = "img/me3.jpg" alt="" width = 500 class="intro__img">
+    </section>
+
+
+    <!-- About me -->
+    <section class="about-me" id ="about">
+      <h2 class = "section__title section__title--about">Who am I ?</h2>
+      <p class = "section__subtitle section__subtitle--about">Student at ETS, Montreal</p>
+
+      <div class = "about-me__body">
+        <p class="about-me__content">Student at <b>ÉTS</b> (École de Technologie Supérieure), which translates as Superior Technology School,
+          in Montreal, Canada. Majoring in <b>software engineering</b>, I am slowly discovering the value
+          of computer science in today's world. I've always been passionated about video games and websites and I wanted to
+          know how those complex programs and softwares were made. Luckily now, not only I can understand the technical skills
+          behind those, but I can also recreate them.</p>
+
+        <br>
+
+        <p>I have started programming with the C languague, in 2020. This is when I developed an interest
+        in programming. Since then, I enjoy making my own projects and learning new things. In my free time, I enjoy
+        arts and drawing tattoo designs.</p>
+
+        <br>
+
+        <a href="experiences.html" class="read-more__btn">
+          <button class="pushable">
+            <span class="front">
+              Working experiences
+            </span>
+          </button>
+        </a>
+        <br><br>
+
+      </div>
+      <img src = "img/dragon.jpg" alt="" width="500" class="about-me__img">
+    </section>
+
+
+    <!-- My Projects -->
+    <section class = "my-projects" id = "projects">
+        <h2 class = "section__title section__title--projects">See my projects</h2>
+      <p class = "section__subtitle section__subtitle--projects">Projects</p>
+
+      <div class = "portfolio">
+
+        <!-- item 1 -->
+        <a href = "websites.html" class = "portfolio__item">
+          <div class="project__container">
+            <img src = "img/web.jpg" alt="" widht="900" class = "portfolio__img project__img">
+            <div class="project__box">
+              <p class="project__text">Websites</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- item 2 -->
+        <a href = "games.html" class = "portfolio__item">
+          <div class="project__container">
+            <img src = "img/games.jpg" alt="" widht="900" class = "portfolio__img project__img">
+            <div class="project__box">
+              <p class="project__text">Games</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- item 3 -->
+        <a href = "art.html" class = "portfolio__item">
+          <div class="project__container">
+            <img src = "img/art/art00.jpg" alt="" widht="900" class = "portfolio__img project__img">
+            <div class="project__box">
+              <p class="project__text">Art gallery</p>
+            </div>
+          </div>
+        </a>
+    </section>
+
+    <section id = "education">
+      <div class="content_wrap">
+        <div>
+          <h2 class = "section__title section__title--education"><b>Education</b></h2>
+          <br>
+          <h3>ÉTS - Montreal, CA</h3>
+          <p>Software enginnering program (Bachelor's degree), 2020 - Present</p>
+          <br>
+          <h3>Maisonneuve College - Montreal, CA</h3>
+          <p>Pure and applied sciences program, 2018 - 2020</p>
+          <br>
+          <h3>LinkedIn Learning</h3>
+          <ul class="linkedin__learning__list">
+            <li class="course_item">
+              <a href="https://www.linkedin.com/learning/javascript-for-web-designers-3" class="linkedin_course" target="_blank">JavaScript for Web Designers Training, 2022</a>
+              <img class="certificate" src="img/javascript_certificate.jpg" alt="img">
+            </li>
+            <li class="course_item">
+              <a href="https://www.linkedin.com/learning/bootstrap-4-essential-training" class="linkedin_course" target="_blank">Bootstrap Training, 2022</a>
+              <img class="certificate" src="img/bootstrap_certificate.jpg" alt="img">
+            </li>
+            <li class="course_item">
+              <a href="https://www.linkedin.com/learning/paths/learn-css" class="linkedin_course" target="_blank">CSS Training, 2022</a>
+              <img class="certificate" src="img/css_certificate.jpg" alt="img">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/index.js"></script>
+  </body>
+
+    <!-- Footer-->
+    <footer class="footer">
+      <!-- Waves -->
+      <div>
+          <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(86,40,30,0.7)" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(86,40,30,0.5)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(86,40,30,0.3)" />
+                  <use xlink:href="#gentle-wave" x="48" y="7" fill="#56281E" />
+              </g>
+          </svg>
+      </div>
+      <!-- Social links -->
+      <a href ="mailto:the-minh.luong.1@ens.etsmtl.ca" class = "footer-link">the-minh.luong.1@ens.etsmtl.ca</a>
+
+      <div class="wrapper">
+
+            <a href="https://www.linkedin.com/in/tmluong19/"  target="_blank">
+              <div class="icon linkedin">
+                <div class="tooltip">LinkedIn</div>
+                <span><i class="fab fa-linkedin"></i></span>
+              </div>
+            </a>
+
+            <a href="https://github.com/ThiiLuu79" target="_blank">
+              <div class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span>
+              </div>
+            </a>
+      </div>
+      <small>&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
+    </footer>
+
+    <script>
+      var date = new Date();
+      var year = date.getFullYear();
+      document.getElementById('currentYear').innerHTML = year;
+    </script>
+
+</html>

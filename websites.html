@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tm's portfolio</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/portfolio_logo.png">
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet"
+    href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      <header id="top">
+        <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
+      </header>
+      <div class="go__back">
+        <div class="dropbtn button__arrow button__arrow--right"></div>
+        <a href="index.html">Go back to home page</a>
+      </div>
+      <a href="#top" class="go__top">
+        <div class="dropbtn button__arrow button__arrow--right"></div>
+      </a>
+
+    <!-- Navigation menu-->
+    <button class = "nav-toggle" aria-label = "toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class = "nav">
+      <ul class = "nav__list">
+        <li class = "nav__item" ><a href = "index.html" class="nav__link">Home</a></li>
+        <li class = "nav__item" ><a href = "index.html#about" class="nav__link">About me</a></li>
+        <div class="drop_projects">
+          <li class = "nav__item" ><a href = "index.html#projects" class="nav__link">My projects</a></li>
+          <!-- Down arrow button -->
+          <button class="button">
+              <!-- Arrow -->
+              <div class="dropbtn button__arrow button__arrow--right" onclick="myFunc()"></div>
+          </button>
+        </div>
+        <div id = "myDropdown" class="dropdown-content">
+          <a href="websites.html">Websites</a>
+          <a href="games.html">Games</a>
+          <a href="art.html">Art gallery</a>
+        </div>
+        <li class = "nav__item" ><a href = "index.html#education" class="nav__link">Education</a></li>
+      </ul>
+    </nav>
+
+
+    <body>
+      <!-- Intro -->
+      <section class="intro" id = "home">
+        <h2 class = "section__title section__title--intro">Browse through my <strong class="name"><b>Websites</b></strong> </h2>
+        <p class = "section__subtitle section__subtitle--intro">Websites projects</p>
+          <img src = "img/html.jpg" alt="" width = 500 class="intro__img">
+      </section>
+
+      <section class="about-me project__item" id ="about">
+        <h2 class = "section__title section__title--about">Art Gallery</h2>
+        <p class = "section__subtitle section__subtitle--about">2022</p>
+
+        <div class = "about-me__body">
+          <p>This simple website is a page where I can display all of my drawing projects. This time, I wanted to
+            use the Bootstrap framework to create this page. By working on this project, I realized how much easier
+            it is to create components for a webpage with Bootstrap. I learned how to create a responsive navigation bar, design a card layout,
+            build a carousel and work efficiently with grids.
+          </p>
+          <br>
+          <a href="https://bucolic-truffle-17c58f.netlify.app/" target="_blank">
+            <button class="pushable">
+              <span class="front">
+                Visit
+              </span>
+            </button>
+          </a>
+          <br><br>
+
+        </div>
+        <img src = "img/tm_art_page.jpg" alt="" width="500" class="about-me__img">
+      </section>
+
+      <section class="about-me project__item" id ="opac">
+        <h2 class = "section__title section__title--about">Koha's OPAC pages</h2>
+        <p class = "section__subtitle section__subtitle--about">2022</p>
+
+        <div class = "about-me__body">
+          <p>During my first intership at <a href="https://inlibro.com/" target="_blank">Solution inLibro</a>, I personalized the OPAC for St-Jean Vianney College and
+          the Cultural French Center of Vancouver.
+          Koha's OPAC is an interface where the clients can do multiple tasks, such as reserve an item, search for a specific item, and more. I had a lot of fun
+          while working on this project, since I've always love to develop websites and improve my creativity.</p>
+          <br>
+          <br>
+          <a href="http://vianney-test.hapax.inlibro.net/" target="_blank">
+            <button class="pushable" title="St-Jean Vianney College">
+              <span class="front">
+                CSJV
+              </span>
+            </button>
+          <br><br>
+          </a>
+          <a href="http://ccfv-test.hapax.inlibro.net/cgi-bin/koha/opac-main.pl" target="_blank">
+            <button class="pushable" title="Cultural French Center of Vancouver">
+              <span class="front">
+                CCFV
+              </span>
+            </button>
+          </a>
+          <br><br>
+        </div>
+        <img src = "img/CSJV.jpg" alt="" width="500" class="about-me__img">
+      </section>
+
+      <section class="about-me project__item" id ="about">
+        <h2 class = "section__title section__title--about">ÉTS Homepage</h2>
+        <p class = "section__subtitle section__subtitle--about">2021</p>
+
+        <div class = "about-me__body">
+          <p>Even though this project has many flaws, I am proud to present it. This is by far the hardest
+          website that I have been working on. In this project, I decided to recreate ÉTS University's
+          homepage <a href="https://www.etsmtl.ca/en/home" target="_blank">(original page)</a>, with HTML and CSS only <b>(no JavaScript)</b>.
+          This project was very challenging, because it was my first time recreating a complex webpage from scratch.
+          If I have more time to work on it, I would make my website look better on mobile devices,
+          since this website is <b>not responsive on smaller screens</b>.</p>
+          <br>
+          <p style="color:red"><b>* This page was completed on June 2021. Original page might have made some changes.</b></p>
+          <br>
+          <a href="https://cocky-feynman-b967e4.netlify.app/" target="_blank">
+            <button class="pushable">
+              <span class="front">
+                Visit
+              </span>
+            </button>
+          </a>
+          <br><br>
+
+        </div>
+        <img src = "img/ets.jpg" alt="" width="500" class="about-me__img">
+      </section>
+
+      <section class="about-me project__item" id ="about">
+        <h2 class = "section__title section__title--about">CSS Zen Garden</h2>
+        <p class = "section__subtitle section__subtitle--about">2021</p>
+
+        <div class = "about-me__body">
+          <p>Wanting to improve my skills in CSS, I participated in the <b>"CSS Zen Garden Challenge"</b>.
+          In this challenge, we all started with the same HTML file, except that we have to make our own CSS to style the homepage <a href="http://www.csszengarden.com/214/page2/" target="blank">(original page)</a>, without modifying the HTML. This was a
+          perfect project for me, because it taught me a lot about various CSS properties. Not only I was very proud of my work,
+          but I could also see what other developers made, which I found really inspiring.</p>
+          <br>
+          <a href="https://happy-hawking-e79e36.netlify.app/" target="_blank">
+            <button class="pushable">
+              <span class="front">
+                Visit
+              </span>
+            </button>
+          </a>
+          <br><br>
+
+        </div>
+        <img src = "img/cssZenGarden.jpg" alt="" width="500" class="about-me__img">
+      </section>
+
+      <section class="about-me project__item last" id ="about">
+        <h2 class = "section__title section__title--about">TiTiTea Website</h2>
+        <p class = "section__subtitle section__subtitle--about">2021</p>
+
+        <div class = "about-me__body">
+          <p>For my first website, I created a page that represents a tea shop, named TiTiTea.
+          Clients can order tea, rate the place and even apply to open positions. By making this website, I've
+          learned a lot of important skills in web developing. First, I learned how to design a page.
+          Then, I discoverd how to make the website interact with the client. For instance, if the client
+          doesn't fill all the required fields in a form, a message will show up. Finally,
+          I'm able to store the data inputted by the client into a database and show them that
+          their request has been submitted and sent to the back-end.</p>
+          <br>
+          <a href="https://clever-bose-2b2eba.netlify.app" target="_blank">
+            <button class="pushable">
+              <span class="front">
+                Visit
+              </span>
+            </button>
+          </a>
+          <br><br>
+
+        </div>
+        <img src = "img/tititea.jpg" alt="" width="500" class="about-me__img">
+      </section>
+
+      <script src="js/index.js"></script>
+    </body>
+
+
+
+
+
+    <!-- Footer-->
+    <footer class="footer">
+      <!-- Waves -->
+      <div>
+          <svg class="waves-light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(86,40,30,0.7)" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(86,40,30,0.5)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(86,40,30,0.3)" />
+                  <use xlink:href="#gentle-wave" x="48" y="7" fill="#56281E" />
+              </g>
+          </svg>
+      </div>
+      <!-- Social links -->
+      <a href ="mailto:the-minh.luong.1@ens.etsmtl.ca" class = "footer-link">the-minh.luong.1@ens.etsmtl.ca</a>
+
+      <div class="wrapper">
+
+
+            <a href="https://www.linkedin.com/in/tmluong19/"  target="_blank">
+              <div class="icon linkedin">
+                <div class="tooltip">LinkedIn</div>
+                <span><i class="fab fa-linkedin"></i></span>
+              </div>
+            </a>
+
+            <a href="https://github.com/ThiiLuu79" target="_blank">
+              <div class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span>
+              </div>
+            </a>
+      </div>
+      <small>&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
+    </footer>
+
+    <script>
+      var date = new Date();
+      var year = date.getFullYear();
+      document.getElementById('currentYear').innerHTML = year;
+    </script>
+
+</html>

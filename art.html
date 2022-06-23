@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tm's portfolio</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/portfolio_logo.png">
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet"
+    href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      <header id="top">
+        <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
+      </header>
+      <div class="go__back">
+        <div class="dropbtn button__arrow button__arrow--right"></div>
+        <a href="index.html">Go back to home page</a>
+      </div>
+      <a href="#top" class="go__top">
+        <div class="dropbtn button__arrow button__arrow--right"></div>
+      </a>
+
+    <!-- Navigation menu-->
+    <button class = "nav-toggle" aria-label = "toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class = "nav">
+      <ul class = "nav__list">
+        <li class = "nav__item" ><a href = "index.html" class="nav__link">Home</a></li>
+        <li class = "nav__item" ><a href = "index.html#about" class="nav__link">About me</a></li>
+        <div class="drop_projects">
+          <li class = "nav__item" ><a href = "index.html#projects" class="nav__link">My projects</a></li>
+          <!-- Down arrow button -->
+          <button class="button">
+              <!-- Arrow -->
+              <div class="dropbtn button__arrow button__arrow--right" onclick="myFunc()"></div>
+          </button>
+        </div>
+        <div id = "myDropdown" class="dropdown-content">
+          <a href="websites.html">Websites</a>
+          <a href="games.html">Games</a>
+          <a href="art.html">Art gallery</a>
+        </div>
+        <li class = "nav__item" ><a href = "index.html#education" class="nav__link">Education</a></li>
+      </ul>
+    </nav>
+
+
+    <body>
+      <!-- Intro -->
+      <section class="intro" id = "home">
+        <h2 class = "section__title section__title--intro">Welcome to my <strong class="name"><b>Art gallery</b></strong> </h2>
+        <p class = "section__subtitle section__subtitle--intro">Drawing projects</p>
+          <img src = "img/art/art_cover.jpg" alt="" width = 500 class="intro__img">
+      </section>
+
+      <div class="art__container">       
+          <div class="art__item"><img src="img/art/art01.jpg" id = "i1" alt="" class="art__img"></div>
+          <div class="art__item"><img src="img/art/art02.jpg" id = "i2" alt="" class="art__img"></div>
+          <div class="art__item"><img src="img/art/art03.jpg" id = "i3" alt="" class="art__img"></div>
+          <div class="art__item"><img src="img/art/art04.jpg" id = "i4" alt="" class="art__img"></div>
+          <div class="art__item"><img src="img/art/art05.jpg" id = "i5" alt="" class="art__img"></div>
+          <div class="art__item"><img src="img/art/art06.jpg" id = "i6" alt="" class="art__img"></div>
+          <div class="art__item"><img src="img/art/art07.jpg" id = "i7" alt="" class="art__img"></div>
+          <div class="art__item"><img src="img/art/art08.jpg" id = "i8" alt="" class="art__img"></div>
+          <div class="art__item"><img src="img/art/art10.jpg" id = "i9" alt="" class="art__img"></div>
+          <div class="art__item"><img src="img/art/art09.jpg" id = "i10" alt="" class="art__img"></div>
+          <div class="art__item"><img src="img/art/art11.jpg" id = "i11" alt="" class="art__img"></div>
+          <div class="art__item"><img src="img/art/art12.jpg" id = "i12" alt="" class="art__img"></div>
+      </div>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+      </div>
+
+
+      <script src="js/index.js"></script>
+      <script src="js/art.js"></script>
+    </body>
+
+
+
+
+
+    <!-- Footer-->
+    <footer class="footer">
+      <!-- Waves -->
+      <div>
+          <svg class="waves-light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(86,40,30,0.7)" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(86,40,30,0.5)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(86,40,30,0.3)" />
+                  <use xlink:href="#gentle-wave" x="48" y="7" fill="#56281E" />
+              </g>
+          </svg>
+      </div>
+      <!-- Social links -->
+      <a href ="mailto:the-minh.luong.1@ens.etsmtl.ca" class = "footer-link">the-minh.luong.1@ens.etsmtl.ca</a>
+
+      <div class="wrapper">
+
+
+            <a href="https://www.linkedin.com/in/tmluong19/"  target="_blank">
+              <div class="icon linkedin">
+                <div class="tooltip">LinkedIn</div>
+                <span><i class="fab fa-linkedin"></i></span>
+              </div>
+            </a>
+
+
+            <a href="https://github.com/ThiiLuu79" target="_blank">
+              <div class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span>
+              </div>
+            </a>
+      </div>
+      <small>&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
+    </footer>
+
+    <script>
+      var date = new Date();
+      var year = date.getFullYear();
+      document.getElementById('currentYear').innerHTML = year;
+    </script>
+
+</html>

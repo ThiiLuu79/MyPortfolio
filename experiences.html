@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tm's portfolio</title>
+
+    <!-- Links -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="img/portfolio_logo.png">
+    <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+    <link rel="stylesheet"
+    href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+    integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+      <header id="top">
+        <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
+      </header>
+      <div class="go__back">
+        <div class="dropbtn button__arrow button__arrow--right"></div>
+        <a href="index.html">Go back to home page</a>
+      </div>
+      <a href="#top" class="go__top">
+        <div class="dropbtn button__arrow button__arrow--right"></div>
+      </a>
+
+    <!-- Navigation menu-->
+    <button class = "nav-toggle" aria-label = "toggle navigation">
+      <span class="hamburger"></span>
+    </button>
+    <nav class = "nav">
+      <ul class = "nav__list">
+        <li class = "nav__item" ><a href = "index.html" class="nav__link">Home</a></li>
+        <li class = "nav__item" ><a href = "index.html#about" class="nav__link">About me</a></li>
+        <div class="drop_projects">
+          <li class = "nav__item" ><a href = "index.html#projects" class="nav__link">My projects</a></li>
+          <!-- Down arrow button -->
+          <button class="button">
+              <!-- Arrow -->
+              <div class="dropbtn button__arrow button__arrow--right" onclick="myFunc()"></div>
+          </button>
+        </div>
+        <div id = "myDropdown" class="dropdown-content">
+          <a href="websites.html">Websites</a>
+          <a href="games.html">Games</a>
+          <a href="art.html">Art gallery</a>
+        </div>
+        <li class = "nav__item" ><a href = "index.html#education" class="nav__link">Education</a></li>
+      </ul>
+    </nav>
+
+
+    <body>
+
+      <section class="about-me project__item last" id ="about">
+        <h2 class = "section__title section__title--about">Working experiences</h2>
+        <img src = "img/experience.jpg" alt="" width="500" class="about-me__img">
+
+        <div class = "about-me__body">
+          <div class="job-details">
+            <h3>Full stack Developer (Internship)</h3>
+            <p><a href="https://inlibro.com/" target="_blank">Solution inLibro</a></p>
+            <p>January 2022 - April 2022</p>
+          </div>
+
+          <div class="job-summary">
+            <p>Worked as a Full stack Developer on Koha, an open source library management system distributed in different schools and libraries.</p>
+            <br>
+            <p class="cont-title">Key contributions:</p>
+            <ul class="cont">
+              <li>Fixed bugs on Koha’s UI and UX</li>
+              <li>Created patches to improve Koha’s system</li>
+              <li>Rebased old patches to make them work on the current Koha system</li>
+              <li>Interacted with Koha community to solve problems</li>
+              <li>Personalized the client’s interface for different schools (See in <a href="websites.html#opac">projects</a>)</li>
+              <li>Worked on inLibro’s plugins, which can be used in Koha</li>
+              <li>QA testing</li>
+              <li>Assisted new interns</li>
+            </ul>
+          </div>
+          <div class="environment">
+            <br>
+            <p class="tools">Tools</p>
+            <ul class="tool-list">
+              <li>Environment: Linux, Koha</li>
+              <li>Database: MariaDB</li>
+              <li>Languages: Perl, CSS, JavaScript, SQL</li>
+              <li>Methodology: Agile</li>
+              <li>Others: Git, Apache, Bugzilla</li>
+            </ul>
+          </div>
+          <br>
+        </div>
+      </section>
+
+
+      <script src="js/index.js"></script>
+    </body>
+
+
+
+
+
+    <!-- Footer-->
+    <footer class="footer">
+      <!-- Waves -->
+      <div>
+          <svg class="waves-light" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+              <defs>
+                  <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+              </defs>
+              <g class="parallax">
+                  <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(86,40,30,0.7)" />
+                  <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(86,40,30,0.5)" />
+                  <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(86,40,30,0.3)" />
+                  <use xlink:href="#gentle-wave" x="48" y="7" fill="#56281E" />
+              </g>
+          </svg>
+      </div>
+      <!-- Social links -->
+      <a href ="mailto:the-minh.luong.1@ens.etsmtl.ca" class = "footer-link">the-minh.luong.1@ens.etsmtl.ca</a>
+
+      <div class="wrapper">
+
+
+            <a href="https://www.linkedin.com/in/tmluong19/"  target="_blank">
+              <div class="icon linkedin">
+                <div class="tooltip">LinkedIn</div>
+                <span><i class="fab fa-linkedin"></i></span>
+              </div>
+            </a>
+
+
+            <a href="https://github.com/ThiiLuu79" target="_blank">
+              <div class="icon github">
+                <div class="tooltip">Github</div>
+                <span><i class="fab fa-github"></i></span>
+              </div>
+            </a>
+      </div>
+      <small>&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
+    </footer>
+
+    <script>
+      var date = new Date();
+      var year = date.getFullYear();
+      document.getElementById('currentYear').innerHTML = year;
+    </script>
+
+</html>
