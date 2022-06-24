@@ -4,29 +4,29 @@
   box-sizing: border-box;
 }
 
-/*Custom parameters*/
+/*CUSTOM PARAMETERS*/
 :root{
-  --ff-primary: 'Source Sans Pro',sans-serif;
-  --ff-secondary: 'Source Sans Pro',monospace;
-
-  --fw-reg:300;
-  --fw-bold: 900;
-
+  /*Color palette*/
   --clr-light:#fff;
   --clr-partial-light:#F3E8E6;
   --clr-dark: #654B45;
   --clr-very-dark:#56281E;
   --clr-very-very-dark: #281C1A;
   --clr-accent:#CF634A;
-
   --link-color: #CB4A1B;
   --link-color-hover: #FF7000;
 
+  /*Font variables*/
+  --ff-primary: 'Source Sans Pro',sans-serif;
+  --ff-secondary: 'Source Sans Pro',monospace;
+  --fw-reg:300;
+  --fw-bold: 900;
   --fs-h1:3rem;
   --fs-h2:2.25rem;
   --fs-h3:1,25rem;
   --fs-body:1rem;
 
+  /*Box shadow*/
   --bs: .25em 0.25em .75em rgba(0,0,0,.25),0.125em 0.125em 0.25em rgba(0,0,0,.15);
 }
 
@@ -38,10 +38,9 @@
     --fs-body: 1.125rem;
   }
 }
-/*Custom parameters*/
+/*CUSTOM PARAMETERS*/
 
-/*General styles*/
-
+/*GENERAL STYLES*/
 html{
   scroll-behavior: smooth;
 }
@@ -96,10 +95,9 @@ a{
 a:hover{
 	color: var(--link-color-hover);
 }
-/*General styles*/
+/*GENERAL STYLES*/
 
-/*Header*/
-
+/*HEADER*/
 header{
   background: var(--clr-dark);
   flex-direction: column;
@@ -173,482 +171,9 @@ header{
     top: 95%;
   }
 }
+/*HEADER*/
 
-/*Header*/
-
-/*Intro*/
-.intro{
-  position: relative;
-  background: var(--clr-partial-light);
-}
-
-.intro__img{
-  box-shadow: var(--bs);
-  overflow: hidden;
-}
-
-
-@media (min-width: 600px){
-  .intro{
-    display: grid;
-    width: min-content;
-    margin: 0 auto;
-    grid-column-gap:1em;
-    grid-template-areas:
-      "img title"
-      "img subtitle";
-    grid-template-columns: min-content max-content;
-  }
-  .intro__img{
-    grid-area: img;
-    min-width: 300px;
-    position: relative;
-    z-index: 2;
-  }
-  .section__subtitle--intro{
-    align-self: start;
-    grid-column: -1/1;
-    grid-row: 2;
-    text-align: right;
-    position: relative;
-    left: -1.5em;
-    width: calc(100% + 1.5em);
-  }
-}
-
-.section__title{
-  margin-bottom: .25em;
-}
-
-.section__title--intro{
-  font-weight: var(--fw-reg);
-}
-
-.section__title--intro strong{
-  display: block;
-}
-
-.section__subtitle{
-  margin: 0em;
-  font-size: var(--fs-h3);
-}
-
-.section__subtitle--intro, .section__subtitle--block{
-  background: var(--clr-accent);
-  padding: .25em 1em;
-  font-family: var(--ff-secondary);
-  margin-bottom: 1em;
-}
-
-/* https://css-tricks.com/snippets/css/typewriter-effect/ */
-.name{
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid var(--clr-accent); /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .05em; /* Adjust as needed */
-  animation:
-  typing 3.5s steps(40, end),
-  blink-caret .75s step-end infinite;
-}
-/* The typing effect */
-@keyframes typing {
-  from { width: 0 }
-  to { width: 100% }
-}
-
-/* The typewriter cursor effect */
-@keyframes blink-caret {
-  from, to { border-color: transparent }
-  50% { border-color: var(--clr-accent); }
-}
-/*Intro*/
-
-/*About me*/
-.block{
-  max-width: 1000px;
-  margin: 0 auto;
-}
-
-.block__img{
-  box-shadow: var(--bs);
-  margin: 20px 0 20px 0;
-}
-
-.pushable {
-  background: var(--clr-dark);
-  border-radius: 12px;
-  border: none;
-  padding: 0;
-  cursor: pointer;
-  outline-offset: 4px;
-}
-.front {
-  display: block;
-  padding: 12px 42px;
-  border-radius: 12px;
-  font-size: 1.25rem;
-  background: var(--clr-accent);
-  color: white;
-  transform: translateY(-6px);
-}
-
-.pushable:active .front {
-  transform: translateY(-2px);
-}
-
-@media (min-width: 600px){
-  .block{
-    display:grid;
-    grid-template-columns: 1fr 200px;
-    grid-template-areas:
-      "title img"
-      "subtitle img"
-      "text img";
-    grid-column-gap: 2em;
-  }
-
-  .section__title--block{
-    grid-area: title;
-  }
-
-  .section__subtitle--block{
-    grid-column: 1/-1;
-    grid-row: 2;
-    position: relative;
-    left: -1em;
-    width: calc(100% + 2em);
-    padding-left: 1em;
-    padding-right: calc(200px + 4em);
-  }
-
-  .block__img{
-    grid-area: img;
-    position: relative;
-    z-index: 2;
-  }
-
-  .block__img{
-    grid-row: 1/-1;
-    grid-column: 2;
-  }
-}
-
-.job-details{
-  line-height:2;
-  margin: 20px 0 20px 0;
-}
-
-.cont-title, .tools{
-  text-decoration: underline;
-}
-
-.cont, .tool-list{
-  padding-left: 50px;
-}
-
-.block__content::first-letter{
-  font-size: 5rem;
-  float: left;
-  font-family: 'Faster One';
-  font-style: italic;
-  margin: -1.5rem 0.5rem 0 0;
-}
-
-/*About me*/
-
-/*Projects*/
-.my-projects{
-  background-color: var(--clr-dark);
-  color: var(--clr-light);
-  text-align: center;
-}
-
-.section__subtitle--projects{
-  color: var(--clr-accent);
-  font-weight: var(--fw-bold);
-  margin-bottom: 1em;
-}
-
-
-.portfolio{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-}
-
-.portfolio__item{
-  background: var(--clr-accent);
-  overflow: hidden;
-}
-
-.portfolio__img{
-  transition:
-    transform 750ms cubic-bezier(.5,0,.5,1),
-    opacity 250ms linear;
-}
-
-.portfolio__img:hover{
-  transition: scale(1,2);
-  opacity: .75;
-}
-
-/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slidebottom */
-.project__img{
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-}
-.project__container {
-  position: relative;
-}
-
-.project__box{
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: var(--clr-very-dark);
-  overflow: hidden;
-  width: 100%;
-  height: 0;
-  transition: .5s ease;
-  text-align: center;
-  display: flex;
-  justify-content: center;
-
-}
-
-
-.project__container:hover .project__box {
-  height: 100%;
-  cursor:pointer;
-}
-
-.project__text {
-  color: white;
-  font-size: var(--fs-h3);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-/* Game page */
-.video{
-  min-width: 100%;
-}
-
-@media (min-width: 300px){
-  .video{
-    width: 300px;
-  }
-}
-/* Game page */
-
-/*Project item*/
-.project__item{
-  border-bottom: 2px dotted black;
-}
-.last{
-  border-bottom: none;
-}
-/*Project item*/
-
-/*Art page*/
-.art__container{
-  display: grid;
-  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
-  gap:10px;
-  grid-auto-rows: minmax(100px, auto);
-  margin: 70px;
-}
-
-@media (max-width: 760px){
-  .art__container{
-    margin:0;
-  }
-  .art__img{
-    height: unset;
-  }
-}
-
-.art__img{
-  box-shadow: none;
-  transition: ease-out 0.2s;
-}
-
-@media (min-width: 760px){
-  .art__img{
-    height: 100%;
-  }
-}
-
-.art__img:hover{
-  box-shadow: 5px 5px 8px gray;
-  transform: rotate(5deg);
-  cursor: pointer;
-}
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 9999; /* Sit on top */
-    padding-top: 100px; /* Location of the box */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
-}
-
-.modal-content {
-    margin: auto;
-    display: block;
-    width: 80%;
-    max-width: 700px;
-}
-
-.modal-content {
-    animation-name: zoom;
-    animation-duration: 0.6s;
-}
-
-@keyframes zoom {
-    from {transform:scale(0)}
-    to {transform:scale(1)}
-}
-
-.close {
-    position: fixed;
-    top: 15px;
-    right: 35px;
-    color: #f1f1f1;
-    font-size: 40px;
-    font-weight: bold;
-    transition: 0.3s;
-}
-
-.close:hover,
-.close:focus {
-    color: #bbb;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-@media only screen and (max-width: 700px){
-    .modal-content {
-        width: 100%;
-    }
-}
-
-/*Art page*/
-
-/*Projects*/
-
-/*Education*/
-.section__title--education b{
-  border-bottom: 2px solid black;
-}
-#education{
-  line-height: 2;
-  margin-left: 145.5px;
-}
-@media (max-width: 760px){
-  #education{
-    margin:0;
-  }
-}
-
-.content_wrap {
-  display: flex;
-}
-
-.grad__hat1, .grad__hat2{
-  width:300px;
-  z-index: -1;
-  transition: ease-out 3s;
-}
-
-.grad__hat1{
-  animation: bounce 5s linear infinite;
-  animation-direction: alternate;
-}
-
-.grad__hat2{
-  animation: bounce 7s linear infinite;
-  transform: translateY(410px) scale(0.3);
-  animation-direction: alternate;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(450px);
-  }
-  100%{
-    transform: translateY(-350px) rotate(1080deg);
-  }
-}
-
-@media (max-width: 1000px){
-  .grad__hat1{
-    display: none;
-  }
-}
-
-@media (max-width: 1300px){
-  .grad__hat2{
-    display: none;
-  }
-}
-
-.linkedin__learning__list{
-  list-style: none;
-}
-
-.linkedin_course{
-  color: var(--clr-accent);
-  cursor: pointer;
-}
-
-.certificate{
-  width: 500px;
-  display: none;
-}
-
-@media (max-width: 900px){
-  .certificate{
-    width:300px;
-  }
-}
-
-.course_item{
-  color: var(--clr-accent);
-}
-
-.course_item:hover {
-  text-decoration: underline;
-}
-
-.course_item:hover .certificate{
-  display: block;
-  position: absolute;
-  z-index: 99;
-}
-
-@media (max-width: 900px){
-  .course_item:hover .certificate{
-    display: none;
-  }
-}
-
-/*Education*/
-
-/*Navigation menu*/
+/*NAVIGATION MENU*/
 .nav{
   position: fixed;
   background: var(--clr-very-very-dark);
@@ -829,9 +354,482 @@ header{
 .drop_projects{
   display: flex;
 }
-/*Navigation menu*/
+/*NAVIGATION MENU*/
 
-/*Footer*/
+/*INTRO*/
+.intro{
+  position: relative;
+  background: var(--clr-partial-light);
+}
+
+.intro__img{
+  box-shadow: var(--bs);
+  overflow: hidden;
+}
+
+
+@media (min-width: 600px){
+  .intro{
+    display: grid;
+    width: min-content;
+    margin: 0 auto;
+    grid-column-gap:1em;
+    grid-template-areas:
+      "img title"
+      "img subtitle";
+    grid-template-columns: min-content max-content;
+  }
+  .intro__img{
+    grid-area: img;
+    min-width: 300px;
+    position: relative;
+    z-index: 2;
+  }
+  .section__subtitle--intro{
+    align-self: start;
+    grid-column: -1/1;
+    grid-row: 2;
+    text-align: right;
+    position: relative;
+    left: -1.5em;
+    width: calc(100% + 1.5em);
+  }
+}
+
+.section__title{
+  margin-bottom: .25em;
+}
+
+.section__title--intro{
+  font-weight: var(--fw-reg);
+}
+
+.section__title--intro strong{
+  display: block;
+}
+
+.section__subtitle{
+  margin: 0em;
+  font-size: var(--fs-h3);
+}
+
+.section__subtitle--intro, .section__subtitle--block{
+  background: var(--clr-accent);
+  padding: .25em 1em;
+  font-family: var(--ff-secondary);
+  margin-bottom: 1em;
+}
+
+/* https://css-tricks.com/snippets/css/typewriter-effect/ */
+.name{
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  border-right: .15em solid var(--clr-accent); /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+  letter-spacing: .05em; /* Adjust as needed */
+  animation:
+  typing 3.5s steps(40, end),
+  blink-caret .75s step-end infinite;
+}
+/* The typing effect */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: var(--clr-accent); }
+}
+/*INTRO*/
+
+/*ABOUT ME*/
+.block{
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.block__img{
+  box-shadow: var(--bs);
+  margin: 20px 0 20px 0;
+}
+
+.pushable {
+  background: var(--clr-dark);
+  border-radius: 12px;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  outline-offset: 4px;
+}
+.front {
+  display: block;
+  padding: 12px 42px;
+  border-radius: 12px;
+  font-size: 1.25rem;
+  background: var(--clr-accent);
+  color: white;
+  transform: translateY(-6px);
+}
+
+.pushable:active .front {
+  transform: translateY(-2px);
+}
+
+@media (min-width: 600px){
+  .block{
+    display:grid;
+    grid-template-columns: 1fr 200px;
+    grid-template-areas:
+      "title img"
+      "subtitle img"
+      "text img";
+    grid-column-gap: 2em;
+  }
+
+  .section__title--block{
+    grid-area: title;
+  }
+
+  .section__subtitle--block{
+    grid-column: 1/-1;
+    grid-row: 2;
+    position: relative;
+    left: -1em;
+    width: calc(100% + 2em);
+    padding-left: 1em;
+    padding-right: calc(200px + 4em);
+  }
+
+  .block__img{
+    grid-area: img;
+    position: relative;
+    z-index: 2;
+  }
+
+  .block__img{
+    grid-row: 1/-1;
+    grid-column: 2;
+  }
+}
+/*ABOUT ME*/
+
+/*EXPERIENCES*/
+.job-details{
+  line-height:2;
+  margin: 20px 0 20px 0;
+}
+
+.cont-title, .tools{
+  text-decoration: underline;
+}
+
+.cont, .tool-list{
+  padding-left: 50px;
+}
+
+.block__content::first-letter{
+  font-size: 5rem;
+  float: left;
+  font-family: 'Faster One';
+  font-style: italic;
+  margin: -1.5rem 0.5rem 0 0;
+}
+/*EXPERIENCES*/
+
+/*PROJECT SECTION*/
+.my-projects{
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+  text-align: center;
+}
+
+.section__subtitle--projects{
+  color: var(--clr-accent);
+  font-weight: var(--fw-bold);
+  margin-bottom: 1em;
+}
+
+
+.portfolio{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+}
+
+.portfolio__item{
+  background: var(--clr-accent);
+  overflow: hidden;
+}
+
+.portfolio__img{
+  transition:
+    transform 750ms cubic-bezier(.5,0,.5,1),
+    opacity 250ms linear;
+}
+
+.portfolio__img:hover{
+  transition: scale(1,2);
+  opacity: .75;
+}
+
+/* https://www.w3schools.com/howto/tryit.asp?filename=tryhow_css_image_overlay_slidebottom */
+.project__img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.project__container {
+  position: relative;
+}
+
+.project__box{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: var(--clr-very-dark);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+
+}
+
+
+.project__container:hover .project__box {
+  height: 100%;
+  cursor:pointer;
+}
+
+.project__text {
+  color: white;
+  font-size: var(--fs-h3);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+/*PROJECT SECTION*/
+
+/*PROJECT ITEM*/
+.project__item{
+  border-bottom: 2px dotted black;
+}
+.last{
+  border-bottom: none;
+}
+/*PROJECT ITEM*/
+
+/*GAME PAGE*/
+.video{
+  min-width: 100%;
+}
+
+@media (min-width: 300px){
+  .video{
+    width: 300px;
+  }
+}
+/*GAME PAGE*/
+
+/*ART PAGE*/
+.art__container{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
+  gap:10px;
+  grid-auto-rows: minmax(100px, auto);
+  margin: 70px;
+}
+
+@media (max-width: 760px){
+  .art__container{
+    margin:0;
+  }
+  .art__img{
+    height: unset;
+  }
+}
+
+.art__img{
+  box-shadow: none;
+  transition: ease-out 0.2s;
+}
+
+@media (min-width: 760px){
+  .art__img{
+    height: 100%;
+  }
+}
+
+.art__img:hover{
+  box-shadow: 5px 5px 8px gray;
+  transform: rotate(5deg);
+  cursor: pointer;
+}
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 9999; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+.modal-content {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+
+.close {
+    position: fixed;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+/*ART PAGE*/
+
+/*EDUCATION*/
+.section__title--education b{
+  border-bottom: 2px solid black;
+}
+#education{
+  line-height: 2;
+  margin-left: 145.5px;
+}
+@media (max-width: 760px){
+  #education{
+    margin:0;
+  }
+}
+
+.content_wrap {
+  display: flex;
+}
+
+/*CSS for bouncing graduation hat (uncomment if needed)*/
+/*
+.grad__hat1, .grad__hat2{
+  width:300px;
+  z-index: -1;
+  transition: ease-out 3s;
+}
+
+.grad__hat1{
+  animation: bounce 5s linear infinite;
+  animation-direction: alternate;
+}
+
+.grad__hat2{
+  animation: bounce 7s linear infinite;
+  transform: translateY(410px) scale(0.3);
+  animation-direction: alternate;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(450px);
+  }
+  100%{
+    transform: translateY(-350px) rotate(1080deg);
+  }
+}
+
+@media (max-width: 1000px){
+  .grad__hat1{
+    display: none;
+  }
+}
+
+@media (max-width: 1300px){
+  .grad__hat2{
+    display: none;
+  }
+}
+*/
+
+.linkedin__learning__list{
+  list-style: none;
+}
+
+.linkedin_course{
+  color: var(--clr-accent);
+  cursor: pointer;
+}
+
+.certificate{
+  width: 500px;
+  display: none;
+}
+
+@media (max-width: 900px){
+  .certificate{
+    width:300px;
+  }
+}
+
+.course_item{
+  color: var(--clr-accent);
+}
+
+.course_item:hover {
+  text-decoration: underline;
+}
+
+.course_item:hover .certificate{
+  display: block;
+  position: absolute;
+  z-index: 99;
+}
+
+@media (max-width: 900px){
+  .course_item:hover .certificate{
+    display: none;
+  }
+}
+/*EDUCATION*/
+
+/*FOOTER*/
 .footer{
   background: var(--clr-very-dark);
   color: var(--clr-accent);
@@ -973,5 +971,4 @@ header{
   background-color: #333333;
   color: #ffffff;
 }
-
-/*Footer*/
+/*FOOTER*/
