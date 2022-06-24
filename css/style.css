@@ -16,7 +16,11 @@
   --clr-partial-light:#F3E8E6;
   --clr-dark: #654B45;
   --clr-very-dark:#56281E;
+  --clr-very-very-dark: #281C1A;
   --clr-accent:#CF634A;
+
+  --link-color: #CB4A1B;
+  --link-color-hover: #FF7000;
 
   --fs-h1:3rem;
   --fs-h2:2.25rem;
@@ -82,7 +86,7 @@ h3{
 }
 
 a{
-	color: #CB4A1B;
+	color: var(--link-color);
   text-decoration: none;
 	transition:
 		transform .5ms cubic-bezier(.5,0,.5,1),
@@ -90,14 +94,14 @@ a{
 }
 
 a:hover{
-	color: #FF7000;
+	color: var(--link-color-hover);
 }
 /*General styles*/
 
 /*Header*/
 
 header{
-  background: #87655E;
+  background: var(--clr-dark);
   flex-direction: column;
   padding-bottom: .5em;
 }
@@ -647,7 +651,7 @@ header{
 /*Navigation menu*/
 .nav{
   position: fixed;
-  background: #281C1A;
+  background: var(--clr-very-very-dark);
   color:var(--clr-light);
   top:0;
   bottom: 0;
@@ -835,6 +839,7 @@ header{
   font-size: var(--fs-h3);
   display: flex;
   flex-direction: column;
+  padding:25px;
 }
 
 .footer a {
@@ -845,6 +850,7 @@ header{
 .footer-link{
   font-weight: var(--fw-bold);
   position: relative;
+  padding: 25px;
 }
 
 .footer__link:hover:hover{
@@ -854,6 +860,10 @@ header{
 .footer-link:hover{
   opacity: .7;
   text-decoration: underline;
+}
+
+.copyright {
+  padding: 25px;
 }
 /*
     Auther: Abdelrhman Said
@@ -965,53 +975,3 @@ header{
 }
 
 /*Footer*/
-
-/*Waves*/
-.waves {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -7px;
-  /*Fix for safari gap*/
-  min-height: 100px;
-  max-height: 400px;
-  background: var(--clr-partial-light);
-}
-.waves-light {
-  position: relative;
-  width: 100%;
-  height: 15vh;
-  margin-bottom: -7px;
-  /*Fix for safari gap*/
-  min-height: 100px;
-  max-height: 400px;
-  background: #F3E8E6;
-}
-/* Animation */
-.parallax>use {
-  animation: move-forever 25s cubic-bezier(.55, .5, .45, .5) infinite;
-}
-.parallax>use:nth-child(1) {
-  animation-delay: -2s;
-  animation-duration: 7s;
-}
-.parallax>use:nth-child(2) {
-  animation-delay: -3s;
-  animation-duration: 10s;
-}
-.parallax>use:nth-child(3) {
-  animation-delay: -4s;
-  animation-duration: 13s;
-}
-.parallax>use:nth-child(4) {
-  animation-delay: -5s;
-  animation-duration: 20s;
-}
-@keyframes move-forever {
-  0% {
-    transform: translate3d(-90px, 0, 0);
-  }
-  100% {
-    transform: translate3d(85px, 0, 0);
-  }
-}
