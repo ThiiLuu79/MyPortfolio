@@ -844,6 +844,10 @@ header{
   text-decoration: none;
 }
 
+.keep_in_touch {
+  padding: 15px;
+}
+
 .footer-link{
   font-weight: var(--fw-bold);
   position: relative;
