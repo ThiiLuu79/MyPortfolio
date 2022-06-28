@@ -37,8 +37,18 @@
     </button>
     <nav class = "nav">
       <ul class = "nav__list">
-        <li class = "nav__item" ><a href = "index.html" class="nav__link">Home</a></li>
-        <li class = "nav__item" ><a href = "index.html#about" class="nav__link">About me</a></li>
+        <li class = "nav__item" ><a href = "index.html#projects" class="nav__link">Home</a></li>
+        <div class="drop_about">
+          <li class = "nav__item" ><a href = "index.html#about" class="nav__link">About me</a></li>
+          <!-- Down arrow button -->
+          <button class="button">
+            <!-- Arrow -->
+            <div class="dropbtn button__arrow" onclick="myFuncExp()"></div>
+          </button>
+        </div>
+        <div id = "myDropdownExp" class="dropdown-content drop_exp">
+          <a href="experiences.html">Working experiences</a>
+        </div>
         <div class="drop_projects">
           <li class = "nav__item" ><a href = "index.html#projects" class="nav__link">My projects</a></li>
           <!-- Down arrow button -->
