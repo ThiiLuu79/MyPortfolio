@@ -324,18 +324,17 @@ header{
   display: none;
   background: var(--clr-accent);
   border: 2px solid black;
+  text-align: center;
   justify-content: center;
   min-width: 160px;
   z-index: 1;
-  line-height: 2;
-  justify-content: space-between;
 }
 
 .dropdown-content a{
   color:white;
   text-decoration: none;
-  margin: 0 7px 0 7px;
-  padding: 0 5px 0 5px;
+  margin: 7px 0 7px 0;
+  padding: 7px 0 7px 0;
   border: 0 solid var(--clr-accent);
   height:100%;
 }
@@ -348,7 +347,7 @@ header{
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
 .show {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   position:absolute;
   top: 55%;
 }
