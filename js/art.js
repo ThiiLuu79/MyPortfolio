@@ -1,3 +1,8 @@
+/*
+This file enhance the art gallery page.
+When clicking an image, a modal of the image is showing.
+*/
+
 // Get the modal
 var modal = document.getElementById('myModal');
 

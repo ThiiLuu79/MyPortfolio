@@ -1,3 +1,9 @@
+/*
+General JavaScript for pages.
+Mainly focus on the navbar.
+*/
+
+//HAMBURGER MENU
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.querySelectorAll('.nav__link');
 
@@ -11,8 +17,9 @@ navLinks.forEach((link) => {
     document.body.classList.remove('nav-open');
   })
 });
+//HAMBURGER MENU
 
-//Dropdown items for about
+//DROPDOWN items for about
 function myFuncExp() {
   document.getElementById("myDropdownExp").classList.toggle("show");
 }
@@ -30,8 +37,9 @@ window.onclick = function(event) {
     }
   }
 }
+//DROPDOWN items for about
 
-//Dropdown items for projects
+//DROPDOWN items for projects
 function myFunc() {
   document.getElementById("myDropdown").classList.toggle("show");
 }
@@ -49,3 +57,4 @@ window.onclick = function(event) {
     }
   }
 }
+//DROPDOWN items for projects
