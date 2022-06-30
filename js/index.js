@@ -58,3 +58,9 @@ window.onclick = function(event) {
   }
 }
 //DROPDOWN items for projects
+
+//Getting the current year
+var date = new Date();
+var year = date.getFullYear();
+document.getElementById('currentYear').innerHTML = year;
+//Getting the current year

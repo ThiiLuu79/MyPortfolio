@@ -19,5 +19,4 @@ CSS
 JavaScript
 - index.js: General JavaScript (mainly navbar)
 - components.js: Contains custom elements for HTML
-- time.js: Getting the current year
 - art.js: Enable modal for art images
