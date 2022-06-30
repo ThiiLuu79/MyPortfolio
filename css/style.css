@@ -450,6 +450,18 @@ header{
   font-style: italic;
   margin: -1.5rem 0.5rem 0 0;
 }
+
+.exp_section {
+  padding-bottom: 0;
+}
+
+.exp_section img{
+  margin: 0 auto;
+}
+
+.exp_section h2 {
+  text-align: center;
+}
 /*EXPERIENCES*/
 
 /*PROJECT SECTION*/
