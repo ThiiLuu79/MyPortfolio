@@ -108,6 +108,18 @@ class MyFooter extends HTMLElement {
                     <span><i class="fab fa-github"></i></span>
                   </div>
                 </a>
+                <a href="https://www.instagram.com/thiiluu/" target="_blank">
+                  <div class="icon instagram">
+                    <div class="tooltip">Instagram</div>
+                    <span><i class="fab fa-instagram"></i></span>
+                  </div>
+                </a>
+                <a href="https://www.facebook.com/theminh.luong" target="_blank">
+                  <div class="icon facebook">
+                    <div class="tooltip">Facebook</div>
+                    <span><i class="fab fa-facebook"></i></span>
+                  </div>
+                </a>
           </div>
           <small class="copyright">&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
         </footer>
