@@ -58,12 +58,12 @@ class MyHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <header id="top">
-        <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
-      </header>
-      <!--Go top button-->
-      <a href="#top" class="go__top">
-        <div class="button__arrow"></div>
-      </a>
+          <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
+        </header>
+        <!--Go top button-->
+        <a href="#top" class="go__top">
+          <div class="button__arrow"></div>
+        </a>
         `
     }
 }
@@ -75,9 +75,9 @@ class GoBack extends HTMLElement{
     connectedCallback(){
         this.innerHTML = `
         <div class="go__back">
-        <div class="button__arrow"></div>
-        <a href="index.html">Go back to home page</a>
-      </div>
+          <div class="button__arrow"></div>
+          <a href="index.html">Go back to home page</a>
+        </div>
         `
     }
 }
@@ -89,28 +89,28 @@ class MyFooter extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <footer class="footer" id="contact">
-        <h2 class="keep_in_touch">Let's keep in touch!</h2>
-        <!-- Social links -->
-        <a href ="mailto:the-minh.luong.1@ens.etsmtl.ca" class = "footer-link">the-minh.luong.1@ens.etsmtl.ca</a>
-  
-        <div class="wrapper">
-  
-              <a href="https://www.linkedin.com/in/tmluong19/"  target="_blank">
-                <div class="icon linkedin">
-                  <div class="tooltip">LinkedIn</div>
-                  <span><i class="fab fa-linkedin"></i></span>
-                </div>
-              </a>
-  
-              <a href="https://github.com/ThiiLuu79" target="_blank">
-                <div class="icon github">
-                  <div class="tooltip">Github</div>
-                  <span><i class="fab fa-github"></i></span>
-                </div>
-              </a>
-        </div>
-        <small class="copyright">&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
-      </footer>
+          <h2 class="keep_in_touch">Let's keep in touch!</h2>
+          <!-- Social links -->
+          <a href ="mailto:the-minh.luong.1@ens.etsmtl.ca" class = "footer-link">the-minh.luong.1@ens.etsmtl.ca</a>
+    
+          <div class="wrapper">
+    
+                <a href="https://www.linkedin.com/in/tmluong19/"  target="_blank">
+                  <div class="icon linkedin">
+                    <div class="tooltip">LinkedIn</div>
+                    <span><i class="fab fa-linkedin"></i></span>
+                  </div>
+                </a>
+    
+                <a href="https://github.com/ThiiLuu79" target="_blank">
+                  <div class="icon github">
+                    <div class="tooltip">Github</div>
+                    <span><i class="fab fa-github"></i></span>
+                  </div>
+                </a>
+          </div>
+          <small class="copyright">&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
+        </footer>
         `
     }
 }
