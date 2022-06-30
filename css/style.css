@@ -155,11 +155,15 @@ header{
 }
 
 .hamburger, .hamburger::before, .hamburger::after{
-  background-color: var(--clr-accent);
+  background-color: var(--clr-partial-dark);
   width: 2em;
   height:3px;
   border-radius: 1em;
   transition: transform 250ms ease-in-out;
+}
+
+.nav-toggle:hover .hamburger, .nav-toggle:hover .hamburger::before, .nav-toggle:hover .hamburger::after {
+  background-color: var(--clr-accent);
 }
 
 .hamburger::before{

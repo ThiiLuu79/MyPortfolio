@@ -6,13 +6,14 @@ Style sheet to define the custom parameters.
 :root{
     /*Color palette*/
     --clr-light:#fff;
-    --clr-partial-light:#D7E7F8; /*F3E8E6*/
-    --clr-dark: #2E5B85; /*654B45*/
-    --clr-very-dark:#1E4366; /*56281E*/
-    --clr-very-very-dark: #0F2336; /*281C1A*/
-    --clr-accent:#418AD0; /*CF634A*/
-    --link-color: #0D8AFF; /*CB4A1B*/
-    --link-color-hover: #025DB4; /*FF7000*/
+    --clr-partial-light:#D7E7F8;
+    --clr-dark: #2E5B85;
+    --clr-partial-dark: #1C6AB4;
+    --clr-very-dark:#1E4366;
+    --clr-very-very-dark: #0F2336;
+    --clr-accent:#418AD0;
+    --link-color: #0D8AFF;
+    --link-color-hover: #025DB4;
   
     /*Font variables*/
     --ff-primary: 'Source Sans Pro',sans-serif;
