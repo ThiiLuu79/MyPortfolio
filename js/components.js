@@ -2,36 +2,11 @@
 File to import all the reusable components in multiple pages.
 Custom elements are created to do so.
 This file includes :
- - Head (my-head)
  - Navigation menu (my-navbar)
  - Header (my-header)
  - Go back button (go-back)
  - Footer (my-footer)
 */
-
-//HEAD
-class MyHead extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
-    <head>
-      <meta charset="UTF-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>tm's portfolio</title>
-
-      <!-- Links -->
-      <link rel="stylesheet" href="css/style.css">
-      <link rel="icon" href="img/home/portfolio_logo.png">
-      <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
-      <link rel="stylesheet"
-      href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
-      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
-      <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
-    </head>
-    `
-  }
-}
-customElements.define('my-head', MyHead);
-//HEAD
 
 //NAVBAR
 class MyNavbar extends HTMLElement {
