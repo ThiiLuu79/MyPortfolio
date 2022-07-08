@@ -2,6 +2,7 @@
 File to import all the reusable components in multiple pages.
 Custom elements are created to do so.
 This file includes :
+ - Head (my-head)
  - Navigation menu (my-navbar)
  - Header (my-header)
  - Go back button (go-back)
