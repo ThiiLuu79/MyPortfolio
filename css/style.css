@@ -447,16 +447,6 @@ header{
   padding-left: 50px;
 }
 
-/*
-.block__content::first-letter{
-  font-size: 5rem;
-  float: left;
-  font-family: 'Faster One';
-  font-style: italic;
-  margin: -1.5rem 0.5rem 0 0;
-}
-*/
-
 .exp_section {
   padding-bottom: 0;
 }
