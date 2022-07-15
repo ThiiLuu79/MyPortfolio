@@ -2,8 +2,11 @@
 File to import all the reusable components in multiple pages.
 Custom elements are created to do so.
 This file includes :
- - Navigation menu (my-navbar)
  - Header (my-header)
+ - Intro (my-intro)
+ - Projects (my-projects)
+ - Navigation menu (my-navbar)
+ - Go top button (go-top)
  - Go back button (go-back)
  - Footer (my-footer)
 */
@@ -12,6 +15,7 @@ This file includes :
 //Personnal informations
 const full_name = "The Minh Luong";
 const initials = "tm";
+const title = "Software Engineering Student";
 const email = "the-minh.luong.1@ens.etsmtl.ca";
 const linkedin_link = "https://www.linkedin.com/in/tmluong19/";
 const github_link = "https://github.com/ThiiLuu79";
@@ -24,6 +28,81 @@ const project3 = "Art Gallery";
 //Copyright
 const start_year = "2021";
 //CONSTANTS
+
+
+//HEADER
+class MyHeader extends HTMLElement {
+  connectedCallback() {
+      this.innerHTML = `
+      <header id="top">
+        <h3 class = "header__title tm">${initials}'s<strong class="portfolio"><b>portfolio</b></strong> </h3>
+      </header>
+      `
+  }
+}
+customElements.define('my-header',MyHeader);
+//HEADER
+
+//INTRO
+class MyIntro extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <section class="intro" id = "home">
+      <h2 class = "section__title section__title--intro">Hi, my name is <strong class="name"><b>${full_name}</b></strong> </h2>
+      <p class = "section__subtitle section__subtitle--intro">${title}</p>
+      <img src = "img/home/pfp.jpg" alt="home picture" width = 500 class="intro__img">
+    </section>
+    `
+  }
+}
+customElements.define('my-intro', MyIntro);
+//INTRO
+
+//PROJECTS
+class MyProjects extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <section class = "my-projects" id = "projects">
+      <h2 class = "section__title section__title--projects">See my projects</h2>
+      <p class = "section__subtitle section__subtitle--projects">Hover over the images to see the project type</p>
+
+      <div class = "portfolio">
+
+        <!-- Websites -->
+        <a href = "websites.html" class = "portfolio__item">
+          <div class="project__container">
+            <img src = "img/home/web.jpg" alt="web-project cover" width="900" class = "portfolio__img project__img">
+            <div class="project__box">
+              <p class="project__text">${project1}</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Games -->
+        <a href = "games.html" class = "portfolio__item">
+          <div class="project__container">
+            <img src = "img/home/games.jpg" alt="game-project cover" width="900" class = "portfolio__img project__img">
+            <div class="project__box">
+              <p class="project__text">${project2}</p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Art Gallery -->
+        <a href = "art.html" class = "portfolio__item">
+          <div class="project__container">
+            <img src = "img/home/art_gallery.jpg" alt="art-project cover" width="900" class = "portfolio__img project__img">
+            <div class="project__box">
+              <p class="project__text">${project3}</p>
+            </div>
+          </div>
+        </a>
+      </section>
+    `
+  }
+}
+customElements.define('my-projects', MyProjects);
+//PROJECTS
 
 //NAVBAR
 class MyNavbar extends HTMLElement {
@@ -70,24 +149,10 @@ class MyNavbar extends HTMLElement {
 customElements.define('my-navbar', MyNavbar);
 //NAVBAR
 
-//HEADER
-class MyHeader extends HTMLElement {
-    connectedCallback() {
-        this.innerHTML = `
-        <header id="top">
-          <h3 class = "header__title tm">${initials}'s<strong class="portfolio"><b>portfolio</b></strong> </h3>
-        </header>
-        `
-    }
-}
-customElements.define('my-header',MyHeader);
-//HEADER
-
 //GO TOP BUTTON
 class GoTop extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
-    <!--Go top button-->
     <a href="#top" class="go__top">
       <div class="button__arrow"></div>
     </a>
