@@ -8,6 +8,23 @@ This file includes :
  - Footer (my-footer)
 */
 
+//CONSTANTS
+//Personnal informations
+const full_name = "The Minh Luong";
+const initials = "tm";
+const email = "the-minh.luong.1@ens.etsmtl.ca";
+const linkedin_link = "https://www.linkedin.com/in/tmluong19/";
+const github_link = "https://github.com/ThiiLuu79";
+const instagram_link = "https://www.instagram.com/thiiluu/";
+const facebook_link = "https://www.facebook.com/theminh.luong";
+//Projects
+const project1 = "Websites";
+const project2 = "Games";
+const project3 = "Art Gallery";
+//Copyright
+const start_year = "2021";
+//CONSTANTS
+
 //NAVBAR
 class MyNavbar extends HTMLElement {
     connectedCallback() {
@@ -39,9 +56,9 @@ class MyNavbar extends HTMLElement {
               </button>
             </div>
             <div id = "myDropdown" class="dropdown-content">
-              <a href="websites.html">Websites</a>
-              <a href="games.html">Games</a>
-              <a href="art.html">Art gallery</a>
+              <a href="websites.html">${project1}</a>
+              <a href="games.html">${project2}</a>
+              <a href="art.html">${project3}</a>
             </div>
             <li class = "nav__item" ><a href = "index.html#education" class="nav__link">Education</a></li>
             <li class = "nav__item" ><a href = "#contact" class="nav__link">Contact</a></li>
@@ -58,7 +75,7 @@ class MyHeader extends HTMLElement {
     connectedCallback() {
         this.innerHTML = `
         <header id="top">
-          <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
+          <h3 class = "header__title tm">${initials}'s<strong class="portfolio"><b>portfolio</b></strong> </h3>
         </header>
         `
     }
@@ -101,37 +118,37 @@ class MyFooter extends HTMLElement {
         <footer class="footer" id="contact">
           <h2 class="keep_in_touch">Let's keep in touch!</h2>
           <!-- Social links -->
-          <a href ="mailto:the-minh.luong.1@ens.etsmtl.ca" class = "footer-link">the-minh.luong.1@ens.etsmtl.ca</a>
+          <a href ="mailto:${email}" class = "footer-link">${email}</a>
     
           <div class="wrapper">
     
-                <a href="https://www.linkedin.com/in/tmluong19/"  target="_blank">
+                <a href="${linkedin_link}"  target="_blank">
                   <div class="icon linkedin">
                     <div class="tooltip">LinkedIn</div>
                     <span><i class="fab fa-linkedin"></i></span>
                   </div>
                 </a>
     
-                <a href="https://github.com/ThiiLuu79" target="_blank">
+                <a href="${github_link}" target="_blank">
                   <div class="icon github">
                     <div class="tooltip">Github</div>
                     <span><i class="fab fa-github"></i></span>
                   </div>
                 </a>
-                <a href="https://www.instagram.com/thiiluu/" target="_blank">
+                <a href="${instagram_link}" target="_blank">
                   <div class="icon instagram">
                     <div class="tooltip">Instagram</div>
                     <span><i class="fab fa-instagram"></i></span>
                   </div>
                 </a>
-                <a href="https://www.facebook.com/theminh.luong" target="_blank">
+                <a href="${facebook_link}" target="_blank">
                   <div class="icon facebook">
                     <div class="tooltip">Facebook</div>
                     <span><i class="fab fa-facebook"></i></span>
                   </div>
                 </a>
           </div>
-          <small class="copyright">&copy; Copyright 2021 - <span id="currentYear"></span> The Minh Luong - ALL RIGHT RESERVED</small>
+          <small class="copyright">&copy; Copyright ${start_year} - <span id="currentYear"></span> ${full_name} - ALL RIGHT RESERVED</small>
         </footer>
         `
     }
