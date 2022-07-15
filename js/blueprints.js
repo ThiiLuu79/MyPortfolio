@@ -60,15 +60,25 @@ class MyHeader extends HTMLElement {
         <header id="top">
           <h3 class = "header__title tm">tm's<strong class="portfolio"><b>portfolio</b></strong> </h3>
         </header>
-        <!--Go top button-->
-        <a href="#top" class="go__top">
-          <div class="button__arrow"></div>
-        </a>
         `
     }
 }
 customElements.define('my-header',MyHeader);
 //HEADER
+
+//GO TOP BUTTON
+class GoTop extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <!--Go top button-->
+    <a href="#top" class="go__top">
+      <div class="button__arrow"></div>
+    </a>
+    `
+  }
+}
+customElements.define('go-top',GoTop);
+//GO TOP BUTTON
 
 //GO BACK BUTTON
 class GoBack extends HTMLElement{
