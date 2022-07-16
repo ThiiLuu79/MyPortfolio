@@ -1,10 +1,16 @@
 /*
 File to import all the reusable components in multiple pages.
+Also contains customizable components for the home page.
 Custom elements are created to do so.
+
 This file includes :
- - Header (my-header)
+** Home page elements
  - Intro (my-intro)
+ - About (my-about)
  - Projects (my-projects)
+
+** Custom elements
+ - Header (my-header)
  - Navigation menu (my-navbar)
  - Go top button (go-top)
  - Go back button (go-back)
@@ -13,43 +19,37 @@ This file includes :
 
 //CONSTANTS
 //Personnal informations
-const full_name = "The Minh Luong";
-const initials = "tm";
-const title = "Software Engineering Student";
-const email = "the-minh.luong.1@ens.etsmtl.ca";
-const linkedin_link = "https://www.linkedin.com/in/tmluong19/";
-const github_link = "https://github.com/ThiiLuu79";
-const instagram_link = "https://www.instagram.com/thiiluu/";
-const facebook_link = "https://www.facebook.com/theminh.luong";
+const user = {
+  full_name:"The Minh Luong",
+  initials:"tm",
+  title:"Software Engineering Student",
+  country:"Montreal, Canada",
+  email:"the-minh.luong.1@ens.etsmtl.ca"
+}
+//Links
+const links = {
+  linkedin:"https://www.linkedin.com/in/tmluong19/",
+  github:"https://github.com/ThiiLuu79",
+  instagram:"https://www.instagram.com/thiiluu/",
+  facebook:"https://www.facebook.com/theminh.luong"
+}
 //Projects
-const project1 = "Websites";
-const project2 = "Games";
-const project3 = "Art Gallery";
+const projects = {
+  project1:"Websites",
+  project2:"Games",
+  project3:"Art Gallery"
+}
 //Copyright
 const start_year = "2021";
 //CONSTANTS
-
-
-//HEADER
-class MyHeader extends HTMLElement {
-  connectedCallback() {
-      this.innerHTML = `
-      <header id="top">
-        <h3 class = "header__title tm">${initials}'s<strong class="portfolio"><b>portfolio</b></strong> </h3>
-      </header>
-      `
-  }
-}
-customElements.define('my-header',MyHeader);
-//HEADER
 
 //INTRO
 class MyIntro extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <section class="intro" id = "home">
-      <h2 class = "section__title section__title--intro">Hi, my name is <strong class="name"><b>${full_name}</b></strong> </h2>
-      <p class = "section__subtitle section__subtitle--intro">${title}</p>
+      <h2 class = "section__title section__title--intro">Hi, my name is <strong class="name"><b>${user.full_name}</b></strong> </h2>
+      <p class = "section__subtitle section__subtitle--intro">${user.title}</p>
       <img src = "img/home/pfp.jpg" alt="home picture" width = 500 class="intro__img">
     </section>
     `
@@ -57,6 +57,45 @@ class MyIntro extends HTMLElement {
 }
 customElements.define('my-intro', MyIntro);
 //INTRO
+
+//ABOUT
+class MyAbout extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
+    <section class="block" id ="about">
+      <h2 class = "section__title section__title--block">About me</h2>
+      <p class = "section__subtitle section__subtitle--block">${user.country}</p>
+
+      <div class = "block__body">
+        <p class="block__content">Student at <b>ÉTS</b> (École de Technologie Supérieure), which translates as Superior Technology School,
+          in Montreal, Canada. Majoring in <b>Software Engineering</b>, I am slowly discovering the value
+          of computer science in today's world. I've always been passionated about video games and websites and I wanted to
+          know how those complex programs and softwares were made. Luckily now, not only I can understand the technical skills
+          behind those, but I can also recreate them.</p>
+        <br>
+        <p>I have started programming with the C languague, in 2020. This is when I developed an interest
+        in programming. Since then, I enjoy making my own projects and learning new things. In my free time, I enjoy
+        arts and drawing tattoo designs.</p>
+
+        <br>
+
+        <a href="experiences.html">
+          <button class="pushable">
+            <span class="front">
+              Working experiences
+            </span>
+          </button>
+        </a>
+        <br><br>
+
+      </div>
+      <img src = "img/home/about_img.jpg" alt="about image" width="500" class="block__img">
+    </section>
+    `
+  }
+}
+customElements.define('my-about',MyAbout);
+//ABOUT
 
 //PROJECTS
 class MyProjects extends HTMLElement {
@@ -73,7 +112,7 @@ class MyProjects extends HTMLElement {
           <div class="project__container">
             <img src = "img/home/web.jpg" alt="web-project cover" width="900" class = "portfolio__img project__img">
             <div class="project__box">
-              <p class="project__text">${project1}</p>
+              <p class="project__text">${projects.project1}</p>
             </div>
           </div>
         </a>
@@ -83,7 +122,7 @@ class MyProjects extends HTMLElement {
           <div class="project__container">
             <img src = "img/home/games.jpg" alt="game-project cover" width="900" class = "portfolio__img project__img">
             <div class="project__box">
-              <p class="project__text">${project2}</p>
+              <p class="project__text">${projects.project2}</p>
             </div>
           </div>
         </a>
@@ -93,7 +132,7 @@ class MyProjects extends HTMLElement {
           <div class="project__container">
             <img src = "img/home/art_gallery.jpg" alt="art-project cover" width="900" class = "portfolio__img project__img">
             <div class="project__box">
-              <p class="project__text">${project3}</p>
+              <p class="project__text">${projects.project3}</p>
             </div>
           </div>
         </a>
@@ -103,6 +142,19 @@ class MyProjects extends HTMLElement {
 }
 customElements.define('my-projects', MyProjects);
 //PROJECTS
+
+//HEADER
+class MyHeader extends HTMLElement {
+  connectedCallback() {
+      this.innerHTML = `
+      <header id="top">
+        <h3 class = "header__title tm">${user.initials}'s<strong class="portfolio"><b>portfolio</b></strong> </h3>
+      </header>
+      `
+  }
+}
+customElements.define('my-header',MyHeader);
+//HEADER
 
 //NAVBAR
 class MyNavbar extends HTMLElement {
@@ -135,9 +187,9 @@ class MyNavbar extends HTMLElement {
               </button>
             </div>
             <div id = "myDropdown" class="dropdown-content">
-              <a href="websites.html">${project1}</a>
-              <a href="games.html">${project2}</a>
-              <a href="art.html">${project3}</a>
+              <a href="websites.html">${projects.project1}</a>
+              <a href="games.html">${projects.project2}</a>
+              <a href="art.html">${projects.project3}</a>
             </div>
             <li class = "nav__item" ><a href = "index.html#education" class="nav__link">Education</a></li>
             <li class = "nav__item" ><a href = "#contact" class="nav__link">Contact</a></li>
@@ -183,37 +235,37 @@ class MyFooter extends HTMLElement {
         <footer class="footer" id="contact">
           <h2 class="keep_in_touch">Let's keep in touch!</h2>
           <!-- Social links -->
-          <a href ="mailto:${email}" class = "footer-link">${email}</a>
+          <a href ="mailto:${user.email}" class = "footer-link">${user.email}</a>
     
           <div class="wrapper">
     
-                <a href="${linkedin_link}"  target="_blank">
+                <a href="${links.linkedin}"  target="_blank">
                   <div class="icon linkedin">
                     <div class="tooltip">LinkedIn</div>
                     <span><i class="fab fa-linkedin"></i></span>
                   </div>
                 </a>
     
-                <a href="${github_link}" target="_blank">
+                <a href="${links.github}" target="_blank">
                   <div class="icon github">
                     <div class="tooltip">Github</div>
                     <span><i class="fab fa-github"></i></span>
                   </div>
                 </a>
-                <a href="${instagram_link}" target="_blank">
+                <a href="${links.instagram}" target="_blank">
                   <div class="icon instagram">
                     <div class="tooltip">Instagram</div>
                     <span><i class="fab fa-instagram"></i></span>
                   </div>
                 </a>
-                <a href="${facebook_link}" target="_blank">
+                <a href="${links.facebook}" target="_blank">
                   <div class="icon facebook">
                     <div class="tooltip">Facebook</div>
                     <span><i class="fab fa-facebook"></i></span>
                   </div>
                 </a>
           </div>
-          <small class="copyright">&copy; Copyright ${start_year} - <span id="currentYear"></span> ${full_name} - ALL RIGHT RESERVED</small>
+          <small class="copyright">&copy; Copyright ${start_year} - <span id="currentYear"></span> ${user.full_name} - ALL RIGHT RESERVED</small>
         </footer>
         `
     }
