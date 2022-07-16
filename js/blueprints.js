@@ -122,10 +122,10 @@ class MyEducation extends HTMLElement {
         <div>
           <h2 class = "section__title section__title--education"><b>Education</b></h2>
           <br>
-          <h3>${education.school1} - ${user.country}</h3>
+          <h3>${education.school1} - ${education.schoolLocation1}</h3>
           <p>${education.program1}, ${education.programDuration1}</p>
           <br>
-          <h3>${education.school2} - ${user.country}</h3>
+          <h3>${education.school2} - ${education.schoolLocation2}</h3>
           <p>${education.program2}, ${education.programDuration2}</p>
           <br>
           <h3>LinkedIn Learning</h3>

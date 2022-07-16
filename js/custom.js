@@ -38,9 +38,11 @@ const projects = {
 //Education
 const education = {
     school1:"ÉTS",
+    schoolLocation1: user.country,
     program1:"Software enginnering program (Bachelor's degree)",
     programDuration1:"2020 - Present",
     school2:"Maisonneuve College",
+    schoolLocation2: user.country,
     program2:"Pure and applied sciences program",
     programDuration2:"2018 - 2020"
 }
