@@ -8,6 +8,7 @@ This file includes :
  - Intro (my-intro)
  - About (my-about)
  - Projects (my-projects)
+ - Education (my-education)
 
 ** Custom elements
  - Header (my-header)
@@ -43,16 +44,9 @@ class MyAbout extends HTMLElement {
       <p class = "section__subtitle section__subtitle--block">${user.country}</p>
 
       <div class = "block__body">
-        <p class="block__content">Student at <b>ÉTS</b> (École de Technologie Supérieure), which translates as Superior Technology School,
-          in Montreal, Canada. Majoring in <b>Software Engineering</b>, I am slowly discovering the value
-          of computer science in today's world. I've always been passionated about video games and websites and I wanted to
-          know how those complex programs and softwares were made. Luckily now, not only I can understand the technical skills
-          behind those, but I can also recreate them.</p>
+        <p class="block__content">${about.p1}</p>
         <br>
-        <p>I have started programming with the C languague, in 2020. This is when I developed an interest
-        in programming. Since then, I enjoy making my own projects and learning new things. In my free time, I enjoy
-        arts and drawing tattoo designs.</p>
-
+        <p>${about.p2}</p>
         <br>
 
         <a href="experiences.html">
@@ -118,6 +112,50 @@ class MyProjects extends HTMLElement {
 }
 customElements.define('my-projects', MyProjects);
 //PROJECTS
+
+//EDUCATION
+class MyEducation extends HTMLElement {
+  connectedCallback(){
+    this.innerHTML = `
+    <section id = "education">
+      <div class="content_wrap">
+        <div>
+          <h2 class = "section__title section__title--education"><b>Education</b></h2>
+          <br>
+          <h3>${education.school1} - ${user.country}</h3>
+          <p>${education.program1}, ${education.programDuration1}</p>
+          <br>
+          <h3>${education.school2} - ${user.country}</h3>
+          <p>${education.program2}, ${education.programDuration2}</p>
+          <br>
+          <h3>LinkedIn Learning</h3>
+          <!-- Course list -->
+          <ul class="linkedin__learning__list">
+            <li class="course_item">
+              <a href="https://www.linkedin.com/learning/wordpress-5-essential-training/" class="linkedin_course" target="_blank">WordPress Training, 2022</a>
+              <img class="certificate" src="img/home/certificates/wp_certificate.jpg" alt="wordpress certificate">
+            </li>
+            <li class="course_item">
+              <a href="https://www.linkedin.com/learning/sass-essential-training-15630917" class="linkedin_course" target="_blank">SASS Training, 2022</a>
+              <img class="certificate" src="img/home/certificates/sass_certificate.jpg" alt="sass certificate">
+            </li>
+            <li class="course_item">
+              <a href="https://www.linkedin.com/learning/bootstrap-4-essential-training" class="linkedin_course" target="_blank">Bootstrap Training, 2022</a>
+              <img class="certificate" src="img/home/certificates/bootstrap_certificate.jpg" alt="bootstrap certificate">
+            </li>
+            <li class="course_item">
+              <a href="https://www.linkedin.com/learning/paths/learn-css" class="linkedin_course" target="_blank">CSS Learning Path, 2022</a>
+              <img class="certificate" src="img/home/certificates/css_certificate.jpg" alt="css certificate">
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    `
+  }
+}
+customElements.define('my-education',MyEducation);
+//EDUCATION
 
 //HEADER
 class MyHeader extends HTMLElement {
