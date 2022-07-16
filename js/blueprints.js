@@ -15,33 +15,9 @@ This file includes :
  - Go top button (go-top)
  - Go back button (go-back)
  - Footer (my-footer)
-*/
 
-//CONSTANTS
-//Personnal informations
-const user = {
-  full_name:"The Minh Luong",
-  initials:"tm",
-  title:"Software Engineering Student",
-  country:"Montreal, Canada",
-  email:"the-minh.luong.1@ens.etsmtl.ca"
-}
-//Links
-const links = {
-  linkedin:"https://www.linkedin.com/in/tmluong19/",
-  github:"https://github.com/ThiiLuu79",
-  instagram:"https://www.instagram.com/thiiluu/",
-  facebook:"https://www.facebook.com/theminh.luong"
-}
-//Projects
-const projects = {
-  project1:"Websites",
-  project2:"Games",
-  project3:"Art Gallery"
-}
-//Copyright
-const start_year = "2021";
-//CONSTANTS
+ *** See custom.js for more informations about the variable used.
+*/
 
 //INTRO
 class MyIntro extends HTMLElement {

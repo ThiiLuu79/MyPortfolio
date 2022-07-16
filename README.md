@@ -19,6 +19,7 @@ The portfolio is made by the following files:
 /js
 - index.js: General JavaScript (mainly navbar)
 - blueprints.js: Contains custom elements for HTML
+- custom.js: Contains custom constants for home page
 - art.js: Enable modal for art images
 
 /img
