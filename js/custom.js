@@ -1,6 +1,7 @@
 /*
 File that contains the custom constants for home page.
 Modify the values here to customize your page.
+These values are used in blueprints.js
 */
 
 //Personnal informations
@@ -11,12 +12,12 @@ const user = {
     country:"Montreal, Canada",
     email:"the-minh.luong.1@ens.etsmtl.ca"
 }
-//Links
-const links = {
-    linkedin:"https://www.linkedin.com/in/tmluong19/",
-    github:"https://github.com/ThiiLuu79",
-    instagram:"https://www.instagram.com/thiiluu/",
-    facebook:"https://www.facebook.com/theminh.luong"
+//Head informations
+const headInfo = {
+    author: user.full_name,
+    description: "The Minh Luong's portfolio and projects",
+    keywords: "Portfolio, Projects, Websites, Games, Arts, Art Gallery, Experiences, Education, The Minh Luong",
+    title: user.initials + "'s portfolio"
 }
 //About
 const about = {
@@ -46,13 +47,12 @@ const education = {
     program2:"Pure and applied sciences program",
     programDuration2:"2018 - 2020"
 }
+//Links
+const links = {
+    linkedin:"https://www.linkedin.com/in/tmluong19/",
+    github:"https://github.com/ThiiLuu79",
+    instagram:"https://www.instagram.com/thiiluu/",
+    facebook:"https://www.facebook.com/theminh.luong"
+}
 //Copyright
 const start_year = "2021";
-
-//Head informations
-const headInfo = {
-    author: user.full_name,
-    description: "The Minh Luong's portfolio and projects",
-    keywords: "Portfolio, Projects, Websites, Games, Arts, Art Gallery, Experiences, Education, The Minh Luong",
-    title: user.initials + "'s portfolio"
-}
