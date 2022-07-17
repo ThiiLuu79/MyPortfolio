@@ -11,6 +11,7 @@ This file includes :
  - Education (my-education)
 
 ** Custom elements
+ - Head 
  - Header (my-header)
  - Navigation menu (my-navbar)
  - Go top button (go-top)
@@ -156,6 +157,15 @@ class MyEducation extends HTMLElement {
 }
 customElements.define('my-education',MyEducation);
 //EDUCATION
+
+//HEAD
+document.querySelector('meta[name="description"]').setAttribute("content", headInfo.description);
+document.querySelector('meta[name="keywords"]').setAttribute("content", headInfo.keywords);
+document.querySelector('meta[name="author"]').setAttribute("content", headInfo.author);
+//Title
+var t = document.querySelector('title');
+t.innerHTML = headInfo.title;
+//HEAD
 
 //HEADER
 class MyHeader extends HTMLElement {

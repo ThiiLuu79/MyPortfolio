@@ -54,12 +54,5 @@ const headInfo = {
     author: user.full_name,
     description: "The Minh Luong's portfolio and projects",
     keywords: "Portfolio, Projects, Websites, Games, Arts, Art Gallery, Experiences, Education, The Minh Luong",
+    title: user.initials + "'s portfolio"
 }
-
-//Head customization
-document.querySelector('meta[name="description"]').setAttribute("content", headInfo.description);
-document.querySelector('meta[name="keywords"]').setAttribute("content", headInfo.keywords);
-document.querySelector('meta[name="author"]').setAttribute("content", headInfo.author);
-//Title
-var t = document.querySelector('title');
-t.innerHTML = user.initials + "'s portfolio";
