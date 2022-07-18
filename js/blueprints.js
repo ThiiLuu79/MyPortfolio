@@ -21,6 +21,7 @@ This file includes :
  *** See custom.js for more informations about the variable used.
 */
 
+//** Home page elements
 //INTRO
 class MyIntro extends HTMLElement {
   connectedCallback() {
@@ -34,7 +35,6 @@ class MyIntro extends HTMLElement {
   }
 }
 customElements.define('my-intro', MyIntro);
-//INTRO
 
 //ABOUT
 class MyAbout extends HTMLElement {
@@ -66,7 +66,6 @@ class MyAbout extends HTMLElement {
   }
 }
 customElements.define('my-about',MyAbout);
-//ABOUT
 
 //PROJECTS
 class MyProjects extends HTMLElement {
@@ -83,7 +82,7 @@ class MyProjects extends HTMLElement {
           <div class="project__container">
             <img src = "img/home/web.jpg" alt="web-project cover" width="900" class = "portfolio__img project__img">
             <div class="project__box">
-              <p class="project__text">${projects.project1}</p>
+              <p class="project__text">${project1.name}</p>
             </div>
           </div>
         </a>
@@ -93,7 +92,7 @@ class MyProjects extends HTMLElement {
           <div class="project__container">
             <img src = "img/home/games.jpg" alt="game-project cover" width="900" class = "portfolio__img project__img">
             <div class="project__box">
-              <p class="project__text">${projects.project2}</p>
+              <p class="project__text">${project2.name}</p>
             </div>
           </div>
         </a>
@@ -103,7 +102,7 @@ class MyProjects extends HTMLElement {
           <div class="project__container">
             <img src = "img/home/art_gallery.jpg" alt="art-project cover" width="900" class = "portfolio__img project__img">
             <div class="project__box">
-              <p class="project__text">${projects.project3}</p>
+              <p class="project__text">${project3.name}</p>
             </div>
           </div>
         </a>
@@ -112,7 +111,6 @@ class MyProjects extends HTMLElement {
   }
 }
 customElements.define('my-projects', MyProjects);
-//PROJECTS
 
 //EDUCATION
 class MyEducation extends HTMLElement {
@@ -123,11 +121,11 @@ class MyEducation extends HTMLElement {
         <div>
           <h2 class = "section__title section__title--education"><b>Education</b></h2>
           <br>
-          <h3>${education.school1} - ${education.schoolLocation1}</h3>
-          <p>${education.program1}, ${education.programDuration1}</p>
+          <h3>${school1.name} - ${school1.location}</h3>
+          <p>${school1.program}, ${school1.duration}</p>
           <br>
-          <h3>${education.school2} - ${education.schoolLocation2}</h3>
-          <p>${education.program2}, ${education.programDuration2}</p>
+          <h3>${school2.name} - ${school2.location}</h3>
+          <p>${school2.program}, ${school2.duration}</p>
           <br>
           <h3>LinkedIn Learning</h3>
           <!-- Course list -->
@@ -156,8 +154,8 @@ class MyEducation extends HTMLElement {
   }
 }
 customElements.define('my-education',MyEducation);
-//EDUCATION
 
+//** Custom elements
 //HEAD
 document.querySelector('meta[name="description"]').setAttribute("content", headInfo.description);
 document.querySelector('meta[name="keywords"]').setAttribute("content", headInfo.keywords);
@@ -165,7 +163,6 @@ document.querySelector('meta[name="author"]').setAttribute("content", headInfo.a
 //Title
 var t = document.querySelector('title');
 t.innerHTML = headInfo.title;
-//HEAD
 
 //HEADER
 class MyHeader extends HTMLElement {
@@ -178,7 +175,6 @@ class MyHeader extends HTMLElement {
   }
 }
 customElements.define('my-header',MyHeader);
-//HEADER
 
 //NAVBAR
 class MyNavbar extends HTMLElement {
@@ -211,9 +207,9 @@ class MyNavbar extends HTMLElement {
               </button>
             </div>
             <div id = "myDropdown" class="dropdown-content">
-              <a href="websites.html">${projects.project1}</a>
-              <a href="games.html">${projects.project2}</a>
-              <a href="art.html">${projects.project3}</a>
+              <a href="websites.html">${project1.name}</a>
+              <a href="games.html">${project2.name}</a>
+              <a href="art.html">${project3.name}</a>
             </div>
             <li class = "nav__item" ><a href = "index.html#education" class="nav__link">Education</a></li>
             <li class = "nav__item" ><a href = "#contact" class="nav__link">Contact</a></li>
@@ -223,7 +219,6 @@ class MyNavbar extends HTMLElement {
     }
 }
 customElements.define('my-navbar', MyNavbar);
-//NAVBAR
 
 //GO TOP BUTTON
 class GoTop extends HTMLElement {
@@ -236,7 +231,6 @@ class GoTop extends HTMLElement {
   }
 }
 customElements.define('go-top',GoTop);
-//GO TOP BUTTON
 
 //GO BACK BUTTON
 class GoBack extends HTMLElement{
@@ -250,7 +244,6 @@ class GoBack extends HTMLElement{
     }
 }
 customElements.define('go-back',GoBack);
-//GO BACK BUTTON
 
 //FOOTER
 class MyFooter extends HTMLElement {
@@ -263,26 +256,26 @@ class MyFooter extends HTMLElement {
     
           <div class="wrapper">
     
-                <a href="${links.linkedin}"  target="_blank">
+                <a href="${link1.url}"  target="_blank">
                   <div class="icon linkedin">
                     <div class="tooltip">LinkedIn</div>
                     <span><i class="fab fa-linkedin"></i></span>
                   </div>
                 </a>
     
-                <a href="${links.github}" target="_blank">
+                <a href="${link2.url}" target="_blank">
                   <div class="icon github">
                     <div class="tooltip">Github</div>
                     <span><i class="fab fa-github"></i></span>
                   </div>
                 </a>
-                <a href="${links.instagram}" target="_blank">
+                <a href="${link3.url}" target="_blank">
                   <div class="icon instagram">
                     <div class="tooltip">Instagram</div>
                     <span><i class="fab fa-instagram"></i></span>
                   </div>
                 </a>
-                <a href="${links.facebook}" target="_blank">
+                <a href="${link4.url}" target="_blank">
                   <div class="icon facebook">
                     <div class="tooltip">Facebook</div>
                     <span><i class="fab fa-facebook"></i></span>
@@ -295,4 +288,3 @@ class MyFooter extends HTMLElement {
     }
 }
 customElements.define('my-footer',MyFooter);
-//FOOTER
