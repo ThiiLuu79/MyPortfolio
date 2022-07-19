@@ -131,6 +131,10 @@ class MyEducation extends HTMLElement {
           <!-- Course list -->
           <ul class="linkedin__learning__list">
             <li class="course_item">
+              <a href="https://www.linkedin.com/learning/javascript-essential-training/" class="linkedin_course" target="_blank">JavaScript Training, 2022</a>
+              <img class="certificate" src="img/home/certificates/javascript_certificate.jpg" alt="js certificate">
+            </li>
+            <li class="course_item">
               <a href="https://www.linkedin.com/learning/wordpress-5-essential-training/" class="linkedin_course" target="_blank">WordPress Training, 2022</a>
               <img class="certificate" src="img/home/certificates/wp_certificate.jpg" alt="wordpress certificate">
             </li>
