@@ -60,7 +60,10 @@ window.onclick = function(event) {
 //DROPDOWN items for projects
 
 //Getting the current year
-var date = new Date();
-var year = date.getFullYear();
-document.getElementById('currentYear').innerHTML = year;
+const getCurrentYear = () => {
+  let date = new Date();
+  let year = date.getFullYear();
+  document.getElementById('currentYear').innerHTML = year;
+}
+getCurrentYear();
 //Getting the current year
