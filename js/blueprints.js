@@ -18,7 +18,7 @@ This file includes :
  - Go back button (go-back)
  - Footer (my-footer)
 
- *** See custom.js for more informations about the variable used.
+ *** See custom.json for more informations about the variable used.
 */
 
 //Getting the data from custom.json
