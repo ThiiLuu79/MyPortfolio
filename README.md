@@ -1,6 +1,8 @@
 # MyPortfolio
 
 This project is my portfolio, containing all of my personnal works.
+** The page needs use http protocol to work.
+Recommandation: Use live server on VSCode
 
 The portfolio is made by the following files: 
 
@@ -20,8 +22,10 @@ The portfolio is made by the following files:
 /js
 - index.js: General JavaScript (mainly navbar)
 - blueprints.js: Contains custom elements for HTML
-- custom.js: Contains custom constants for home page
 - art.js: Enable modal for art images
+
+/JSON
+- custom.json: Contains custom variables for home page
 
 /img
 - /home : contains images for the home page
