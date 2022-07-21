@@ -1,7 +1,7 @@
 # MyPortfolio
 
 This project is my portfolio, containing all of my personnal works.
-** The page needs use http protocol to work.
+** The page needs to use http or https protocol to work.
 Recommandation: Use live server on VSCode
 
 The portfolio is made by the following files: 
