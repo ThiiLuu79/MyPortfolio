@@ -22,9 +22,14 @@ This file includes :
 */
 
 //Getting the data from custom.json
-var xhReq = new XMLHttpRequest();
-xhReq.open("GET", "./JSON/custom.json", false);
-xhReq.send(null);
+var xhReq;
+if(window.XMLHttpRequest) {
+  xhReq = new XMLHttpRequest();
+}else {
+  xhReq = new ActiveXObject("Microsoft.XMLHTTP");
+}
+xhReq.open("GET", "./JSON/custom.json",false);
+xhReq.send();
 var json = JSON.parse(xhReq.responseText);
 
 //** Home page elements
