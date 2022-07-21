@@ -22,15 +22,19 @@ This file includes :
 */
 
 //Getting the data from custom.json
-var xhReq;
-if(window.XMLHttpRequest) {
-  xhReq = new XMLHttpRequest();
-}else {
-  xhReq = new ActiveXObject("Microsoft.XMLHTTP");
-}
-xhReq.open("GET", "./JSON/custom.json",false);
-xhReq.send();
-var json = JSON.parse(xhReq.responseText);
+var json = (function () {
+    var json = null;
+    $.ajax({
+        'async': false,
+        'global': false,
+        'url': "./JSON/custom.json",
+        'dataType': "json",
+        'success': function (data) {
+            json = data;
+        }
+    });
+    return json;
+})();
 
 //** Home page elements
 //INTRO
