@@ -10,6 +10,7 @@ The portfolio is made by the following files:
 - websites.html: Showing my personnal websites
 - games.html: Showing my personnal games
 - art.html: Displaying my art projects
+- certificates.html: Showing my certificates
 - _template.html: Template for a new page
 
 /css
