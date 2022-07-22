@@ -564,7 +564,7 @@ header{
 /*GAME PAGE*/
 
 /*ART PAGE*/
-.art__container{
+.art__container,.certificates_container{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   gap:10px;
@@ -573,15 +573,15 @@ header{
 }
 
 @media (max-width: 760px){
-  .art__container{
+  .art__container,.certificates_container{
     margin:0;
   }
-  .collection__img{
+  .collection__img,.certificate{
     height: unset;
   }
 }
 
-.collection__img{
+.collection__img,.collection__img{
   box-shadow: none;
   transition: ease-out 0.2s;
 }
@@ -721,17 +721,6 @@ header{
   cursor: pointer;
 }
 
-.certificate{
-  width: 500px;
-  display: none;
-}
-
-@media (max-width: 900px){
-  .certificate{
-    width:300px;
-  }
-}
-
 .course_item{
   color: var(--clr-accent);
 }
@@ -740,17 +729,6 @@ header{
   text-decoration: underline;
 }
 
-.course_item:hover .certificate{
-  display: block;
-  position: absolute;
-  z-index: 99;
-}
-
-@media (max-width: 900px){
-  .course_item:hover .certificate{
-    display: none;
-  }
-}
 /*EDUCATION*/
 
 /*FOOTER*/

@@ -129,28 +129,34 @@ class MyEducation extends HTMLElement {
           <br>
           <h3>LinkedIn Learning</h3>
           <!-- Course list -->
-          <ul class="linkedin__learning__list">
-            <li class="course_item">
-              <a href="https://www.linkedin.com/learning/javascript-essential-training/" class="linkedin_course" target="_blank">JavaScript Training, 2022</a>
-              <img class="certificate" src="img/home/certificates/javascript_certificate.jpg" alt="js certificate">
-            </li>
-            <li class="course_item">
-              <a href="https://www.linkedin.com/learning/wordpress-5-essential-training/" class="linkedin_course" target="_blank">WordPress Training, 2022</a>
-              <img class="certificate" src="img/home/certificates/wp_certificate.jpg" alt="wordpress certificate">
-            </li>
-            <li class="course_item">
-              <a href="https://www.linkedin.com/learning/sass-essential-training-15630917" class="linkedin_course" target="_blank">SASS Training, 2022</a>
-              <img class="certificate" src="img/home/certificates/sass_certificate.jpg" alt="sass certificate">
-            </li>
-            <li class="course_item">
-              <a href="https://www.linkedin.com/learning/bootstrap-4-essential-training" class="linkedin_course" target="_blank">Bootstrap Training, 2022</a>
-              <img class="certificate" src="img/home/certificates/bootstrap_certificate.jpg" alt="bootstrap certificate">
-            </li>
-            <li class="course_item">
-              <a href="https://www.linkedin.com/learning/paths/learn-css" class="linkedin_course" target="_blank">CSS Learning Path, 2022</a>
-              <img class="certificate" src="img/home/certificates/css_certificate.jpg" alt="css certificate">
-            </li>
-          </ul>
+          <div class="linkedin_learning_container">
+            <ul class="linkedin__learning__list">
+              <li class="course_item">
+                <a href="https://www.linkedin.com/learning/javascript-essential-training/" class="linkedin_course" target="_blank">JavaScript Training, 2022</a>
+              </li>
+              <li class="course_item">
+                <a href="https://www.linkedin.com/learning/wordpress-5-essential-training/" class="linkedin_course" target="_blank">WordPress Training, 2022</a>
+              </li>
+              <li class="course_item">
+                <a href="https://www.linkedin.com/learning/sass-essential-training-15630917" class="linkedin_course" target="_blank">SASS Training, 2022</a>
+              </li>
+              <li class="course_item">
+                <a href="https://www.linkedin.com/learning/bootstrap-4-essential-training" class="linkedin_course" target="_blank">Bootstrap Training, 2022</a>
+              </li>
+              <li class="course_item">
+                <a href="https://www.linkedin.com/learning/paths/learn-css" class="linkedin_course" target="_blank">CSS Learning Path, 2022</a>
+              </li>
+            </ul>
+            <br>
+            <a href="certificates.html">
+              <button class="pushable">
+                <span class="front">
+                  Certificates
+                </span>
+              </button>
+            </a>
+          <br><br>
+          </div>
         </div>
       </div>
     </section>

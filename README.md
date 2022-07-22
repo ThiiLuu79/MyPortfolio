@@ -26,11 +26,12 @@ The portfolio is made by the following files:
 
 /img
 - /home : contains images for the home page
-  - /certificates : contains the certificates
 - /experiences : contains images for the experiences page
 - /websites : contains images for the websites page
 - /games : contains images for the games page
 - /art : contains images for the art page
+- /education: contains images for education section
+  - /certificates : contains the certificates
 
 /games
 - Contains the compressed game files to download
