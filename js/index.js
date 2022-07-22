@@ -42,7 +42,7 @@ function showDropdown(dropdownId, showClass) {
 const getCurrentYear = () => {
   let date = new Date();
   let year = date.getFullYear();
-  document.getElementById('currentYear').innerHTML = year;
+  $('#currentYear').append(year);
 }
 getCurrentYear();
 //Getting the current year
