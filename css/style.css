@@ -208,7 +208,7 @@ header{
     border: none;
     /* Spacing */
     padding: 8px;
-    margin:10px;
+    margin-left:10px;
 }
 
 .button__arrow {
@@ -711,6 +711,14 @@ header{
   }
 }
 */
+.linkedin_learning_header {
+  display: flex;
+}
+
+.linkedin_learning_header .button__arrow {
+  border-right: 2px solid var(--clr-accent);
+  border-top: 2px solid var(--clr-accent);
+}
 
 .linkedin__learning__list{
   list-style: none;
@@ -727,6 +735,12 @@ header{
 
 .course_item:hover {
   text-decoration: underline;
+}
+
+.show_courses {
+  display: flex;
+  flex-direction: column;
+  position:absolute;
 }
 
 /*EDUCATION*/

@@ -127,26 +127,20 @@ class MyEducation extends HTMLElement {
           <h3>${school2.name} - ${school2.location}</h3>
           <p>${school2.program}, ${school2.duration}</p>
           <br>
-          <h3>LinkedIn Learning</h3>
+          <div class="linkedin_learning_header">
+            <h3>LinkedIn Learning</h3>
+            <button class="button">
+              <!-- Arrow -->
+              <div class="dropbtn button__arrow" onclick="showCourses()"></div>
+            </button>
+          </div>
           <!-- Course list -->
-          <div class="linkedin_learning_container">
-            <ul class="linkedin__learning__list">
-              <li class="course_item">
+          <div id="courses_dropdown" class="linkedin_learning_container dropdown-content">
                 <a href="https://www.linkedin.com/learning/javascript-essential-training/" class="linkedin_course" target="_blank">JavaScript Training, 2022</a>
-              </li>
-              <li class="course_item">
                 <a href="https://www.linkedin.com/learning/wordpress-5-essential-training/" class="linkedin_course" target="_blank">WordPress Training, 2022</a>
-              </li>
-              <li class="course_item">
                 <a href="https://www.linkedin.com/learning/sass-essential-training-15630917" class="linkedin_course" target="_blank">SASS Training, 2022</a>
-              </li>
-              <li class="course_item">
                 <a href="https://www.linkedin.com/learning/bootstrap-4-essential-training" class="linkedin_course" target="_blank">Bootstrap Training, 2022</a>
-              </li>
-              <li class="course_item">
                 <a href="https://www.linkedin.com/learning/paths/learn-css" class="linkedin_course" target="_blank">CSS Learning Path, 2022</a>
-              </li>
-            </ul>
           </div>
           <br>
           <a href="certificates.html">

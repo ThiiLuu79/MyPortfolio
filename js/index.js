@@ -59,6 +59,26 @@ window.onclick = function(event) {
 }
 //DROPDOWN items for projects
 
+//DROPDOWN items for linkedin courses
+function showCourses() {
+  document.getElementById("courses_dropdown").classList.toggle("show_courses");
+}
+
+// Close the dropdown menu if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show_courses')) {
+        openDropdown.classList.remove('show_courses');
+      }
+    }
+  }
+}
+//DROPDOWN items for linkedin courses
+
 //Getting the current year
 const getCurrentYear = () => {
   let date = new Date();
