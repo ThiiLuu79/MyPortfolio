@@ -131,7 +131,7 @@ class MyEducation extends HTMLElement {
             <h3>LinkedIn Learning</h3>
             <button class="button">
               <!-- Arrow -->
-              <div class="dropbtn button__arrow" onclick="showCourses()"></div>
+              <div class="dropbtn button__arrow" onclick="showDropdown('courses_dropdown','show_courses')"></div>
             </button>
           </div>
           <!-- Course list -->
@@ -196,7 +196,7 @@ class MyNavbar extends HTMLElement {
               <!-- Down arrow button -->
               <button class="button">
                 <!-- Arrow -->
-                <div class="dropbtn button__arrow" onclick="myFuncExp()"></div>
+                <div class="dropbtn button__arrow" onclick="showDropdown('myDropdownExp','show')"></div>
               </button>
             </div>
             <div id = "myDropdownExp" class="dropdown-content drop_exp">
@@ -207,7 +207,7 @@ class MyNavbar extends HTMLElement {
               <!-- Down arrow button -->
               <button class="button">
                   <!-- Arrow -->
-                  <div class="dropbtn button__arrow" onclick="myFunc()"></div>
+                  <div class="dropbtn button__arrow" onclick="showDropdown('myDropdown','show')"></div>
               </button>
             </div>
             <div id = "myDropdown" class="dropdown-content">

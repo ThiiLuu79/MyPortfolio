@@ -1,6 +1,6 @@
 /*
 General JavaScript for pages.
-Mainly focus on the navbar.
+Mainly focus on the navbar and dropdowns.
 */
 
 //HAMBURGER MENU
@@ -19,65 +19,24 @@ navLinks.forEach((link) => {
 });
 //HAMBURGER MENU
 
-//DROPDOWN items for about
-function myFuncExp() {
-  document.getElementById("myDropdownExp").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
+//Function to show the dropdown
+function showDropdown(dropdownId, showClass) {
+  document.getElementById(dropdownId).classList.toggle(showClass);
+  // Close the dropdown menu if the user clicks outside of it
+  window.onclick = function(event) {
+    if (!event.target.matches('.dropbtn')) {
+      var dropdowns = document.getElementsByClassName("dropdown-content");
+      var i;
+      for (i = 0; i < dropdowns.length; i++) {
+        var openDropdown = dropdowns[i];
+        if (openDropdown.classList.contains(showClass)) {
+          openDropdown.classList.remove(showClass);
+        }
       }
     }
   }
 }
-//DROPDOWN items for about
-
-//DROPDOWN items for projects
-function myFunc() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-//DROPDOWN items for projects
-
-//DROPDOWN items for linkedin courses
-function showCourses() {
-  document.getElementById("courses_dropdown").classList.toggle("show_courses");
-}
-
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show_courses')) {
-        openDropdown.classList.remove('show_courses');
-      }
-    }
-  }
-}
-//DROPDOWN items for linkedin courses
+//Function to show the dropdown
 
 //Getting the current year
 const getCurrentYear = () => {
