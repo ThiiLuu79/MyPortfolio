@@ -2,10 +2,6 @@
 
 This project is my portfolio, containing all of my personnal works.
 
-** The page needs to use http or https protocol to work.
-
-Recommandation: Use live server on VSCode or use the command python -m http.server on your terminal
-
 The portfolio is made by the following files: 
 
 ../
@@ -25,10 +21,8 @@ The portfolio is made by the following files:
 - index.js: General JavaScript (mainly navbar)
 - blueprints.js: Contains custom elements for HTML
 - art.js: Enable modal for art images
+- custom.js: Contains custom constants for home page
 - jquery.js: jQuery library
-
-/JSON
-- custom.json: Contains custom variables for home page
 
 /img
 - /home : contains images for the home page

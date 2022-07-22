@@ -18,23 +18,8 @@ This file includes :
  - Go back button (go-back)
  - Footer (my-footer)
 
- *** See custom.json for more informations about the variable used.
+ *** See custom.js for more informations about the variable used.
 */
-
-//Getting the data from custom.json
-var json = (function () {
-    var json = null;
-    $.ajax({
-        'async': false,
-        'global': false,
-        'url': "./JSON/custom.json",
-        'dataType': "json",
-        'success': function (data) {
-            json = data;
-        }
-    });
-    return json;
-})();
 
 //** Home page elements
 //INTRO
@@ -42,8 +27,8 @@ class MyIntro extends HTMLElement {
   connectedCallback() {
     this.innerHTML = `
     <section class="intro" id = "home">
-      <h2 class = "section__title section__title--intro">Hi, my name is <strong class="name"><b>${json.user.full_name}</b></strong> </h2>
-      <p class = "section__subtitle section__subtitle--intro">${json.user.title}</p>
+      <h2 class = "section__title section__title--intro">Hi, my name is <strong class="name"><b>${user.full_name}</b></strong> </h2>
+      <p class = "section__subtitle section__subtitle--intro">${user.title}</p>
       <img src = "img/home/pfp.jpg" alt="home picture" width = 500 class="intro__img">
     </section>
     `
@@ -57,12 +42,12 @@ class MyAbout extends HTMLElement {
     this.innerHTML = `
     <section class="block" id ="about">
       <h2 class = "section__title section__title--block">About me</h2>
-      <p class = "section__subtitle section__subtitle--block">${json.user.country}</p>
+      <p class = "section__subtitle section__subtitle--block">${user.country}</p>
 
       <div class = "block__body">
-        <p class="block__content">${json.about.p1}</p>
+        <p class="block__content">${about.p1}</p>
         <br>
-        <p>${json.about.p2}</p>
+        <p>${about.p2}</p>
         <br>
 
         <a href="experiences.html">
@@ -97,7 +82,7 @@ class MyProjects extends HTMLElement {
           <div class="project__container">
             <img src = "img/home/web.jpg" alt="web-project cover" width="900" class = "portfolio__img project__img">
             <div class="project__box">
-              <p class="project__text">${json.project[0].name}</p>
+              <p class="project__text">${project1.name}</p>
             </div>
           </div>
         </a>
@@ -107,7 +92,7 @@ class MyProjects extends HTMLElement {
           <div class="project__container">
             <img src = "img/home/games.jpg" alt="game-project cover" width="900" class = "portfolio__img project__img">
             <div class="project__box">
-              <p class="project__text">${json.project[1].name}</p>
+              <p class="project__text">${project2.name}</p>
             </div>
           </div>
         </a>
@@ -117,7 +102,7 @@ class MyProjects extends HTMLElement {
           <div class="project__container">
             <img src = "img/home/art_gallery.jpg" alt="art-project cover" width="900" class = "portfolio__img project__img">
             <div class="project__box">
-              <p class="project__text">${json.project[2].name}</p>
+              <p class="project__text">${project3.name}</p>
             </div>
           </div>
         </a>
@@ -136,11 +121,11 @@ class MyEducation extends HTMLElement {
         <div>
           <h2 class = "section__title section__title--education"><b>Education</b></h2>
           <br>
-          <h3>${json.school[0].name} - ${json.school[0].location}</h3>
-          <p>${json.school[0].program}, ${json.school[0].duration}</p>
+          <h3>${school1.name} - ${school1.location}</h3>
+          <p>${school1.program}, ${school1.duration}</p>
           <br>
-          <h3>${json.school[1].name} - ${json.school[1].location}</h3>
-          <p>${json.school[1].program}, ${json.school[1].duration}</p>
+          <h3>${school2.name} - ${school2.location}</h3>
+          <p>${school2.program}, ${school2.duration}</p>
           <br>
           <h3>LinkedIn Learning</h3>
           <!-- Course list -->
@@ -176,19 +161,19 @@ customElements.define('my-education',MyEducation);
 
 //** Custom elements
 //HEAD
-document.querySelector('meta[name="description"]').setAttribute("content", json.headInfo.description);
-document.querySelector('meta[name="keywords"]').setAttribute("content", json.headInfo.keywords);
-document.querySelector('meta[name="author"]').setAttribute("content", json.headInfo.author);
+document.querySelector('meta[name="description"]').setAttribute("content", headInfo.description);
+document.querySelector('meta[name="keywords"]').setAttribute("content", headInfo.keywords);
+document.querySelector('meta[name="author"]').setAttribute("content", headInfo.author);
 //Title
 var t = document.querySelector('title');
-t.innerHTML = json.headInfo.title;
+t.innerHTML = headInfo.title;
 
 //HEADER
 class MyHeader extends HTMLElement {
   connectedCallback() {
       this.innerHTML = `
       <header id="top">
-        <h3 class = "header__title tm">${json.user.initials}'s<strong class="portfolio"><b>portfolio</b></strong> </h3>
+        <h3 class = "header__title tm">${user.initials}'s<strong class="portfolio"><b>portfolio</b></strong> </h3>
       </header>
       `
   }
@@ -226,9 +211,9 @@ class MyNavbar extends HTMLElement {
               </button>
             </div>
             <div id = "myDropdown" class="dropdown-content">
-              <a href="websites.html">${json.project[0].name}</a>
-              <a href="games.html">${json.project[1].name}</a>
-              <a href="art.html">${json.project[2].name}</a>
+              <a href="websites.html">${project1.name}</a>
+              <a href="games.html">${project2.name}</a>
+              <a href="art.html">${project3.name}</a>
             </div>
             <li class = "nav__item" ><a href = "index.html#education" class="nav__link">Education</a></li>
             <li class = "nav__item" ><a href = "#contact" class="nav__link">Contact</a></li>
@@ -271,37 +256,37 @@ class MyFooter extends HTMLElement {
         <footer class="footer" id="contact">
           <h2 class="keep_in_touch">Let's keep in touch!</h2>
           <!-- Social links -->
-          <a href ="mailto:${json.user.email}" class = "footer-link">${json.user.email}</a>
+          <a href ="mailto:${user.email}" class = "footer-link">${user.email}</a>
     
           <div class="wrapper">
     
-                <a href="${json.link[0].url}"  target="_blank">
+                <a href="${link1.url}"  target="_blank">
                   <div class="icon linkedin">
                     <div class="tooltip">LinkedIn</div>
                     <span><i class="fab fa-linkedin"></i></span>
                   </div>
                 </a>
     
-                <a href="${json.link[1].url}" target="_blank">
+                <a href="${link2.url}" target="_blank">
                   <div class="icon github">
                     <div class="tooltip">Github</div>
                     <span><i class="fab fa-github"></i></span>
                   </div>
                 </a>
-                <a href="${json.link[2].url}" target="_blank">
+                <a href="${link3.url}" target="_blank">
                   <div class="icon instagram">
                     <div class="tooltip">Instagram</div>
                     <span><i class="fab fa-instagram"></i></span>
                   </div>
                 </a>
-                <a href="${json.link[3].url}" target="_blank">
+                <a href="${link4.url}" target="_blank">
                   <div class="icon facebook">
                     <div class="tooltip">Facebook</div>
                     <span><i class="fab fa-facebook"></i></span>
                   </div>
                 </a>
           </div>
-          <small class="copyright">&copy; Copyright ${json.start_year} - <span id="currentYear"></span> ${json.user.full_name} - ALL RIGHT RESERVED</small>
+          <small class="copyright">&copy; Copyright ${start_year} - <span id="currentYear"></span> ${user.full_name} - ALL RIGHT RESERVED</small>
         </footer>
         `
     }
