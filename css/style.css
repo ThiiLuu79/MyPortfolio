@@ -576,23 +576,23 @@ header{
   .art__container{
     margin:0;
   }
-  .art__img{
+  .collection__img{
     height: unset;
   }
 }
 
-.art__img{
+.collection__img{
   box-shadow: none;
   transition: ease-out 0.2s;
 }
 
 @media (min-width: 760px){
-  .art__img{
+  .collection__img{
     height: 100%;
   }
 }
 
-.art__img:hover{
+.collection__img:hover{
   box-shadow: 5px 5px 8px gray;
   transform: rotate(5deg);
   cursor: pointer;

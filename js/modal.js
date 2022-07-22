@@ -7,8 +7,8 @@ When clicking an image, a modal of the image is showing.
 var modal = document.getElementById('myModal');
 
 // Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName('art__img');
-var modalImg = document.getElementById("img01");
+var img = document.getElementsByClassName('collection__img');
+var modalImg = document.getElementById("modal_img");
 
 var showModal = function(){
     modal.style.display = "block";
