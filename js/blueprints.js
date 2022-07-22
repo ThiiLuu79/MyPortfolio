@@ -147,16 +147,16 @@ class MyEducation extends HTMLElement {
                 <a href="https://www.linkedin.com/learning/paths/learn-css" class="linkedin_course" target="_blank">CSS Learning Path, 2022</a>
               </li>
             </ul>
-            <br>
-            <a href="certificates.html">
-              <button class="pushable">
-                <span class="front">
-                  Certificates
-                </span>
-              </button>
-            </a>
-          <br><br>
           </div>
+          <br>
+          <a href="certificates.html">
+            <button class="pushable">
+              <span class="front">
+                Certificates
+              </span>
+            </button>
+          </a>
+          <br><br>
         </div>
       </div>
     </section>
