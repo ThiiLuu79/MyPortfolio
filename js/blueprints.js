@@ -136,11 +136,11 @@ class MyEducation extends HTMLElement {
           </div>
           <!-- Course list -->
           <div id="courses_dropdown" class="linkedin_learning_container dropdown-content">
-                <a href="https://www.linkedin.com/learning/javascript-essential-training/" class="linkedin_course" target="_blank">JavaScript Training, 2022</a>
-                <a href="https://www.linkedin.com/learning/wordpress-5-essential-training/" class="linkedin_course" target="_blank">WordPress Training, 2022</a>
-                <a href="https://www.linkedin.com/learning/sass-essential-training-15630917" class="linkedin_course" target="_blank">SASS Training, 2022</a>
-                <a href="https://www.linkedin.com/learning/bootstrap-4-essential-training" class="linkedin_course" target="_blank">Bootstrap Training, 2022</a>
-                <a href="https://www.linkedin.com/learning/paths/learn-css" class="linkedin_course" target="_blank">CSS Learning Path, 2022</a>
+                <a href="https://www.linkedin.com/learning/javascript-essential-training/" class="linkedin_course dropdown_stay" target="_blank">JavaScript Training, 2022</a>
+                <a href="https://www.linkedin.com/learning/wordpress-5-essential-training/" class="linkedin_course dropdown_stay" target="_blank">WordPress Training, 2022</a>
+                <a href="https://www.linkedin.com/learning/sass-essential-training-15630917" class="linkedin_course dropdown_stay" target="_blank">SASS Training, 2022</a>
+                <a href="https://www.linkedin.com/learning/bootstrap-4-essential-training" class="linkedin_course dropdown_stay" target="_blank">Bootstrap Training, 2022</a>
+                <a href="https://www.linkedin.com/learning/paths/learn-css" class="linkedin_course dropdown_stay" target="_blank">CSS Learning Path, 2022</a>
           </div>
           <br>
           <a href="certificates.html">
