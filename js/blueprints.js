@@ -161,11 +161,13 @@ customElements.define('my-education',MyEducation);
 
 //** Custom elements
 //HEAD
-$('meta[name="description"]').attr("content", headInfo.description);
-$('meta[name="keywords"]').attr("content", headInfo.keywords);
-$('meta[name="author"]').attr("content", headInfo.author);
-//Title
-$('title').append(headInfo.title);
+$( document ).ready(function() {
+  $('meta[name="description"]').attr("content", headInfo.description);
+  $('meta[name="keywords"]').attr("content", headInfo.keywords);
+  $('meta[name="author"]').attr("content", headInfo.author);
+  //Title
+  $('title').append(headInfo.title);
+});
 
 //HEADER
 class MyHeader extends HTMLElement {
