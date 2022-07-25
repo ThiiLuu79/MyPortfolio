@@ -136,6 +136,7 @@ class MyEducation extends HTMLElement {
           </div>
           <!-- Course list -->
           <div id="courses_dropdown" class="linkedin_learning_container dropdown-content">
+                <a href="https://www.linkedin.com/learning/jquery-essential-training-2/" class="linkedin_course dropdown_stay" target="_blank">jQuery Training, 2022</a>
                 <a href="https://www.linkedin.com/learning/javascript-essential-training/" class="linkedin_course dropdown_stay" target="_blank">JavaScript Training, 2022</a>
                 <a href="https://www.linkedin.com/learning/wordpress-5-essential-training/" class="linkedin_course dropdown_stay" target="_blank">WordPress Training, 2022</a>
                 <a href="https://www.linkedin.com/learning/sass-essential-training-15630917" class="linkedin_course dropdown_stay" target="_blank">SASS Training, 2022</a>
