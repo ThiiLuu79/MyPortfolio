@@ -1,28 +1,18 @@
 /*
-This file enhance the art gallery page.
+This file enable modal for images.
 When clicking an image, a modal of the image is showing.
 */
 
-// Get the modal
-var modal = document.getElementById('myModal');
+$( document ).ready(function(){
+    //Clicking on an image
+    $('.collection__img').on('click', function(){
+        $('#myModal').css("display","block");
+        //Getting the src of the image clicked
+        $('#modal_img').attr("src",this.src);
+    });
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementsByClassName('collection__img');
-var modalImg = document.getElementById("modal_img");
-
-var showModal = function(){
-    modal.style.display = "block";
-    modalImg.src = this.src;
-}
-
-for (var i = 0; i < img.length; i++) {
-    img[i].addEventListener('click', showModal);
-}
-
-// Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-    modal.style.display = "none";
-}
+    //Clicking on the close button
+    $('.close').on('click', function(){
+        $('#myModal').css("display","none");
+    })
+});
