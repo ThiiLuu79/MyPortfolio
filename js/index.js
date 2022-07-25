@@ -5,19 +5,17 @@ Mainly focus on the navbar and dropdowns.
 
 //HAMBURGER MENU
 $( document ).ready(function() {
-  const navToggle = document.querySelector('.nav-toggle');
-  const navLinks = document.querySelectorAll('.nav__link');
-
-  navToggle.addEventListener('click',() => {
-    document.body.classList.toggle('nav-open');
-  });
-
-  navLinks.forEach((link) => {
-    link.addEventListener('click',()=>{
-      document.body.classList.remove('nav-open');
-    })
-  });
+  $('.nav-toggle').on('click',openNav);
+  $('.nav__link').on('click',closeNav);
 });
+
+function openNav(){
+  document.body.classList.toggle('nav-open');
+}
+
+function closeNav() {
+  document.body.classList.remove('nav-open');
+}
 //HAMBURGER MENU
 
 //Function to show the dropdown
