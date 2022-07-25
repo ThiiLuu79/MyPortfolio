@@ -166,7 +166,7 @@ $( document ).ready(function() {
   $('meta[name="keywords"]').attr("content", headInfo.keywords);
   $('meta[name="author"]').attr("content", headInfo.author);
   //Title
-  $('title').append(headInfo.title);
+  $('title').prepend(headInfo.title);
 });
 
 //HEADER
