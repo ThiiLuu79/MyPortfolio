@@ -3,6 +3,38 @@ General JavaScript for pages.
 Mainly focus on the navbar and dropdowns.
 */
 
+//Inserting custom content in the home page
+$( document ).ready(function() {
+  //Head informations
+  $('meta[name="description"]').attr("content", headInfo.description);
+  $('meta[name="keywords"]').attr("content", headInfo.keywords);
+  $('meta[name="author"]').attr("content", headInfo.author);
+  //Title
+  $('title').prepend(headInfo.title);
+
+  //Home page informations
+  //Intro
+  $('.user_full_name').append(user.full_name);
+  $('.user_title').append(user.title);
+  //About
+  $('.user_country').append(user.country);
+  $('.user_about_p1').append(about.p1);
+  $('.user_about_p2').append(about.p2);
+  //Projects
+  $('.project_1').append(project1.name);
+  $('.project_2').append(project2.name);
+  $('.project_3').append(project3.name);
+  //Education
+  $('.school1').prepend(school1.name);
+  $('.school1').append(school1.location);
+  $('.school1_info').prepend(school1.program);
+  $('.school1_info').append(school1.duration);
+  $('.school2').prepend(school2.name);
+  $('.school2').append(school2.location);
+  $('.school2_info').prepend(school2.program);
+  $('.school2_info').append(school2.duration);
+});
+
 //HAMBURGER MENU
 $( document ).ready(function() {
   $('.nav-toggle').on('click', () => {document.body.classList.toggle('nav-open');});

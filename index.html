@@ -30,16 +30,114 @@
     <my-navbar></my-navbar>
 
     <!-- Intro -->
-    <my-intro></my-intro>
+    <section class="intro" id = "home">
+      <h2 class = "section__title section__title--intro">Hi, my name is <strong class="name"><b class = "user_full_name"></b></strong> </h2>
+      <p class = "section__subtitle section__subtitle--intro user_title"></p>
+      <img src = "img/home/pfp.jpg" alt="home picture" width = 500 class="intro__img">
+    </section>
 
     <!-- About me -->
-    <my-about></my-about>
+    <section class="block" id ="about">
+      <h2 class = "section__title section__title--block">About me</h2>
+      <p class = "section__subtitle section__subtitle--block user_country"></p>
+
+      <div class = "block__body">
+        <p class="block__content user_about_p1"></p>
+        <br>
+        <p class = "user_about_p2"></p>
+        <br>
+
+        <a href="experiences.html">
+          <button class="pushable">
+            <span class="front">
+              Working experiences
+            </span>
+          </button>
+        </a>
+        <br><br>
+
+      </div>
+      <img src = "img/home/about_img.jpg" alt="about image" width="500" class="block__img">
+    </section>
 
     <!-- My Projects -->
-    <my-projects></my-projects>
+    <section class = "my-projects" id = "projects">
+      <h2 class = "section__title section__title--projects">See my projects</h2>
+      <p class = "section__subtitle section__subtitle--projects">Hover over the images to see the project type</p>
+
+      <div class = "portfolio">
+
+        <!-- Websites -->
+        <a href = "websites.html" class = "portfolio__item">
+          <div class="project__container">
+            <img src = "img/home/web.jpg" alt="web-project cover" width="900" class = "portfolio__img project__img">
+            <div class="project__box">
+              <p class="project__text project_1"></p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Games -->
+        <a href = "games.html" class = "portfolio__item">
+          <div class="project__container">
+            <img src = "img/home/games.jpg" alt="game-project cover" width="900" class = "portfolio__img project__img">
+            <div class="project__box">
+              <p class="project__text project_2"></p>
+            </div>
+          </div>
+        </a>
+
+        <!-- Art Gallery -->
+        <a href = "art.html" class = "portfolio__item">
+          <div class="project__container">
+            <img src = "img/home/art_gallery.jpg" alt="art-project cover" width="900" class = "portfolio__img project__img">
+            <div class="project__box">
+              <p class="project__text project_3"></p>
+            </div>
+          </div>
+        </a>
+      </section>
 
     <!-- Education -->
-    <my-education></my-education>
+    <section id = "education">
+      <div class="content_wrap">
+        <div>
+          <h2 class = "section__title section__title--education"><b>Education</b></h2>
+          <br>
+          <h3 class="school1"> - </h3>
+          <p class="school1_info">, </p>
+          <br>
+          <h3 class="school2"> - </h3>
+          <p class="school2_info">, </p>
+          <br>
+          <div class="linkedin_learning_header">
+            <h3>LinkedIn Learning</h3>
+            <button class="button">
+              <!-- Arrow -->
+              <div class="dropbtn button__arrow" onclick="showDropdown('courses_dropdown','show_courses')"></div>
+            </button>
+          </div>
+          <!-- Course list -->
+          <div id="courses_dropdown" class="linkedin_learning_container dropdown-content">
+                <a href="https://www.linkedin.com/learning/jquery-essential-training-2/" class="linkedin_course dropdown_stay" target="_blank">jQuery Training, 2022</a>
+                <a href="https://www.linkedin.com/learning/javascript-essential-training/" class="linkedin_course dropdown_stay" target="_blank">JavaScript Training, 2022</a>
+                <a href="https://www.linkedin.com/learning/wordpress-5-essential-training/" class="linkedin_course dropdown_stay" target="_blank">WordPress Training, 2022</a>
+                <a href="https://www.linkedin.com/learning/sass-essential-training-15630917" class="linkedin_course dropdown_stay" target="_blank">SASS Training, 2022</a>
+                <a href="https://www.linkedin.com/learning/bootstrap-4-essential-training" class="linkedin_course dropdown_stay" target="_blank">Bootstrap Training, 2022</a>
+                <a href="https://www.linkedin.com/learning/paths/learn-css" class="linkedin_course dropdown_stay" target="_blank">CSS Learning Path, 2022</a>
+          </div>
+          <br>
+          <a href="certificates.html">
+            <button class="pushable">
+              <span class="front">
+                Certificates
+              </span>
+            </button>
+          </a>
+          <br><br>
+        </div>
+      </div>
+    </section>
 
     <!-- Footer-->
     <my-footer></my-footer>
