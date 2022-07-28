@@ -24,14 +24,18 @@ $( document ).ready(function() {
   $('.project_1').append(project1.name);
   $('.project_1_name').append(project1.name);
   $('.project_1_type').append(project1.type);
+  $('a.pro1').attr("href",project1.url);
+  $('.expPro').attr("href",project1.url+"#opac");
 
   $('.project_2').append(project2.name);
   $('.project_2_name').append(project2.name);
   $('.project_2_type').append(project2.type);
+  $('a.pro2').attr("href",project2.url);
 
   $('.project_3').append(project3.name);
   $('.project_3_name').append(project3.name);
   $('.project_3_type').append(project3.type);
+  $('a.pro3').attr("href",project3.url);
   //Education
   $('.school1').prepend(school1.name);
   $('.school1').append(school1.location);

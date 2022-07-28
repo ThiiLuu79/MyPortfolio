@@ -55,9 +55,9 @@ class MyNavbar extends HTMLElement {
               </button>
             </div>
             <div id = "myDropdown" class="dropdown-content">
-              <a href="websites.html">${project1.name}</a>
-              <a href="games.html">${project2.name}</a>
-              <a href="art.html">${project3.name}</a>
+              <a href="${project1.url}">${project1.name}</a>
+              <a href="${project2.url}">${project2.name}</a>
+              <a href="${project3.url}">${project3.name}</a>
             </div>
             <li class = "nav__item" ><a href = "index.html#education" class="nav__link">Education</a></li>
             <li class = "nav__item" ><a href = "#contact" class="nav__link">Contact</a></li>
