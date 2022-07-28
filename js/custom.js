@@ -41,17 +41,15 @@ const about = {
 class Project {
     constructor(
         type,
-        name,
-        url
+        name
     ){
         this.type = type;
         this.name = name;
-        this.url = url;
     }
 }
-const project1 = new Project("Websites projects","Websites","websites.html");
-const project2 = new Project("Games projects","Games","games.html");
-const project3 = new Project("Drawing projects","Art Gallery","art.html");
+const project1 = new Project("Websites projects","Websites");
+const project2 = new Project("Games projects","Games");
+const project3 = new Project("Drawing projects","Art Gallery");
 
 //Education
 /*Define schools for education*/
