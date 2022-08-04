@@ -85,7 +85,7 @@ header{
 /*NAVIGATION MENU*/
 .nav{
   position: fixed;
-  background: var(--clr-very-very-dark);
+  background: linear-gradient(var(--clr-very-very-dark), var(--clr-dark));
   color:var(--clr-light);
   top:0;
   bottom: 0;
