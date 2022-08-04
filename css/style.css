@@ -658,8 +658,8 @@ header{
   border-bottom: 2px solid black;
 }
 #education{
-  line-height: 2;
-  margin-left: 145.5px;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 @media (max-width: 760px){
   #education{
