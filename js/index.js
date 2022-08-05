@@ -45,6 +45,18 @@ $( document ).ready(function() {
   $('.school2').append(school2.location);
   $('.school2_info').prepend(school2.program);
   $('.school2_info').append(school2.duration);
+
+  //Puppies team
+  var available = document.querySelector('.site_available');
+  var unavailable = document.querySelector('.site_unavailable');
+
+  if(available){
+    $('.puppies_team').css("color", "green");
+    $('.puppies_team').append("Available");
+  }else if(unavailable){
+    $('.puppies_team').css("color", "red");
+    $('.puppies_team').append("Unavailable");
+  }
 });
 
 //HAMBURGER MENU
