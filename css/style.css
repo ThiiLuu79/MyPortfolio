@@ -564,7 +564,7 @@ header{
 /*GAME PAGE*/
 
 /*ART PAGE*/
-.art__container,.certificates_container{
+.art__container,.certificates_container, .photo_container{
   display: grid;
   grid-template-columns: repeat(auto-fit,minmax(300px,1fr));
   gap:10px;
@@ -573,7 +573,7 @@ header{
 }
 
 @media (max-width: 760px){
-  .art__container,.certificates_container{
+  .art__container,.certificates_container, .photo_container{
     margin:0;
   }
   .collection__img,.certificate{

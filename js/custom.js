@@ -19,7 +19,7 @@ const user = {
 const headInfo = {
     author: user.full_name,
     description: "The Minh Luong's portfolio and projects",
-    keywords: "Portfolio, Projects, Websites, Games, Arts, Art Gallery, Experiences, Education, The Minh Luong",
+    keywords: "Portfolio, Projects, Websites, Games, Arts, Art Gallery, Photography, Experiences, Education, The Minh Luong",
     title: user.initials + "'s portfolio"
 }
 
@@ -33,7 +33,7 @@ const about = {
     behind those, but I can also recreate them.`,
     p2:`I have started programming with the C languague, in 2020. This is when I developed an interest
     in programming. Since then, I enjoy making my own projects and learning new things. In my free time, I enjoy
-    arts and drawing tattoo designs.`
+    arts, drawing tattoo designs and taking pictures.`
 }
 
 //Projects
@@ -52,6 +52,7 @@ class Project {
 const project1 = new Project("Websites projects","Websites","websites.html");
 const project2 = new Project("Games projects","Games","games.html");
 const project3 = new Project("Drawing projects","Art Gallery","art.html");
+const project4 = new Project("Photography projects","Photo Gallery","photo.html");
 
 //Education
 /*Define schools for education*/
