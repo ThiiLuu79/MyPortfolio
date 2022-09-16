@@ -8,7 +8,7 @@ These values are used in blueprints.js
 /*Informations about the portfolio's owner*/
 const user = {
     full_name:"The Minh Luong",
-    initials:"tm",
+    initials:"tml",
     title:"Software Engineering Student",
     country:"Montreal, Canada",
     email:"the-minh.luong.1@ens.etsmtl.ca"
