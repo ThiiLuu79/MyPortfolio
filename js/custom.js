@@ -53,6 +53,7 @@ const project1 = new Project("Websites projects","Websites","websites.html");
 const project2 = new Project("Games projects","Games","games.html");
 const project3 = new Project("Drawing projects","Art Gallery","art.html");
 const project4 = new Project("Photography projects","Photo Gallery","photo.html");
+const project5 = new Project("School Projects","School Projects","school.html");
 
 //Education
 /*Define schools for education*/

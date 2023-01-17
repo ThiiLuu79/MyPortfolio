@@ -41,6 +41,11 @@ $( document ).ready(function() {
   $('.project_4_name').append(project4.name);
   $('.project_4_type').append(project4.type);
   $('a.pro4').attr("href",project4.url);
+
+  $('.project_5').append(project5.name);
+  $('.project_5_name').append(project5.name);
+  $('.project_5_type').append(project5.type);
+  $('a.pro5').attr("href",project5.url);
   //Education
   $('.school1').prepend(school1.name);
   $('.school1').append(school1.location);

@@ -1,0 +1,78 @@
+<!--Copy this template to create a new page-->
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="">
+        <meta name="keywords" content="">
+        <meta name="author" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title></title>
+
+        <!-- Links -->
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" href="img/home/portfolio_logo.png">
+        <link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet"
+        href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+        integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <!--Header-->
+        <my-header></my-header>
+
+        <!--Go top button-->
+        <go-top></go-top>
+
+        <!--Go back button-->
+        <go-back></go-back>
+
+        <!--Navigation menu-->
+        <my-navbar></my-navbar>
+
+        <div class="block_wrap">
+            <section class="intro">
+                <h2 class = "section__title section__title--intro">Here are my <strong class="name"><b>School Projects</b></strong> </h2>
+                <p class = "section__subtitle section__subtitle--intro">School Projects</p>
+                <img src = "img/school/spCover.jpg" alt="School Projects cover" width = 500 class="intro__img">
+            </section>
+            <!--Production chain-->
+            <section class="block project__item">
+                <h2 class = "section__title section__title--block">Production Chain Simulation</h2>
+                <p class = "section__subtitle section__subtitle--block">Fall 2022 (ÉTS)</p>
+
+                <div class = "block__body">
+                    <p>As part of the object-oriented programming course, we were asked to
+                    program a production chain that produce airplanes. In this simulation, 
+                    different factories are needed to produce airplanes. For instance, metal factories are needed 
+                    to create metal. The metal will be sent to wing and engine factories to create those components. Lastly, 
+                    wings and engines are sent to the assembly factory, that produce the airplane. Produced airplanes are
+                    sent to a warehouse, where they will sell the airplanes <u>(with fixed interval or at random)</u>. 
+                    The warehouse also have a maximum capacity and have to stop the production when it is full.
+                </p>
+                <h4>Final grade: 91%</h4>
+                <br>
+                <h4>Skills used:</h4>
+                <ul style="list-style-type: none;">
+                    <li>Languages: Java, XML, UML</li>
+                    <li>Framework: JavaSwing</li>
+                    <li>Pattern Designs: Observator, Stategy, Singleton</li>
+                    <li>Tools: Git/GitHub, IntelliJ</li>
+                </ul>
+
+                </div>
+                <img src = "img/school/chain.jpg" alt="ProdChain cover" width="500" class="block__img">
+            </section>
+        </div>
+        <!-- Footer-->
+        <my-footer></my-footer>
+
+    </body>
+    <script src="js/jquery.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/blueprints.js"></script>
+    <script src="js/index.js"></script>
+
+</html>
