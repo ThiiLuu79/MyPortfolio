@@ -71,7 +71,7 @@ class School {
     }
 }
 const school1 = new School ("ÉTS",user.country,"Bachelor of Engineering - BE, Software Engineering","2020 - Present");
-const school2 = new School ("Maisonneuve College",user.country,"Pure and applied sciences program","2018 - 2020");
+const school2 = new School ("Maisonneuve College",user.country,"Pure and applied sciences","2018 - 2020");
 
 //Links
 /*Define links*/
