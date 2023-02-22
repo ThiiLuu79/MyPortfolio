@@ -12,6 +12,7 @@ The portfolio is made by the following files:
 - art.html: Displaying my art projects
 - photo.html: Displaying my photography projects
 - certificates.html: Showing my certificates
+- school.html: Showing my school projects
 - _template.html: Template for a new page
 
 /css
@@ -32,6 +33,7 @@ The portfolio is made by the following files:
 - /websites : contains images for the websites page
 - /games : contains images for the games page
 - /art : contains images for the art page
+- /school : contains images for the school page
 - /education: contains images for education section
   - /certificates : contains the certificates
 
