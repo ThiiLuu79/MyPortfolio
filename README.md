@@ -6,6 +6,8 @@ The portfolio is made by the following files:
 
 ../
 - index.html: Home page
+
+/views
 - experiences.html: Describing working experiences
 - websites.html: Showing my personnal websites
 - games.html: Showing my personnal games

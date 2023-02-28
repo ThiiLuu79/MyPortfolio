@@ -44,7 +44,7 @@ class MyNavbar extends HTMLElement {
               </button>
             </div>
             <div id = "myDropdownExp" class="dropdown-content drop_exp">
-              <a href="experiences.html">Working experiences</a>
+              <a href="views/experiences.html">Working experiences</a>
             </div>
             <div class="drop_projects">
               <li class = "nav__item" ><a href = "index.html#projects" class="nav__link">My projects</a></li>
@@ -88,7 +88,7 @@ class GoBack extends HTMLElement{
         this.innerHTML = `
         <div class="go__back">
           <div class="button__arrow"></div>
-          <a href="index.html">Go back to home page</a>
+          <a href="../index.html">Go back to home page</a>
         </div>
         `
     }

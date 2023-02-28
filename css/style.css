@@ -31,8 +31,10 @@ header{
 }
 
 .go__back{
+  position:sticky;
   display: flex;
   z-index:99;
+  top: 0;
   padding-left: 15px;
   align-items: center;
 }
