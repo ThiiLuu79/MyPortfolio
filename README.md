@@ -13,7 +13,6 @@ The portfolio is made by the following files:
 - photo.html: Displaying my photography projects
 - certificates.html: Showing my certificates
 - school.html: Showing my school projects
-- _template.html: Template for a new page
 
 /css
 - general.css: Contains the general styles for the stylesheet
