@@ -87,9 +87,10 @@ class Link {
     }
 }
 //Socials
-const link1 = new Link("linkedin","https://www.linkedin.com/in/tmluong19/");
-const link2 = new Link("github","https://github.com/ThiiLuu79");
-const link3 = new Link("instagram","https://www.instagram.com/thiiluu/");
+const linkedin = new Link("linkedin","https://www.linkedin.com/in/tmluong19/");
+const github = new Link("github","https://github.com/ThiiLuu79");
+const instagram = new Link("instagram","https://www.instagram.com/thiiluu/");
+const facebook = new Link("facebook","https://www.facebook.com/theminh.luong");
 //Web pages
 const wimw = new Link("WeatherApp","https://whatismyweather.netlify.app");
 const csjv = new Link("csjvOpac","https://csjv-biblio.inlibro.net/");

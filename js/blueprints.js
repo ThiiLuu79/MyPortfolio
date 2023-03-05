@@ -106,26 +106,26 @@ class MyFooter extends HTMLElement {
     
           <div class="wrapper">
     
-                <a href="${link1.url}"  target="_blank">
+                <a href="${linkedin.url}"  target="_blank">
                   <div class="icon linkedin">
                     <div class="tooltip">LinkedIn</div>
                     <span><i class="fab fa-linkedin"></i></span>
                   </div>
                 </a>
     
-                <a href="${link2.url}" target="_blank">
+                <a href="${github.url}" target="_blank">
                   <div class="icon github">
                     <div class="tooltip">Github</div>
                     <span><i class="fab fa-github"></i></span>
                   </div>
                 </a>
-                <a href="${link3.url}" target="_blank">
+                <a href="${instagram.url}" target="_blank">
                   <div class="icon instagram">
                     <div class="tooltip">Instagram</div>
                     <span><i class="fab fa-instagram"></i></span>
                   </div>
                 </a>
-                <a href="${link4.url}" target="_blank">
+                <a href="${facebook.url}" target="_blank">
                   <div class="icon facebook">
                     <div class="tooltip">Facebook</div>
                     <span><i class="fab fa-facebook"></i></span>
