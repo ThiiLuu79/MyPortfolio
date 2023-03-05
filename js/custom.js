@@ -55,6 +55,7 @@ const project2 = new Project("Games projects","Games", relativeViewsFolder + "ga
 const project3 = new Project("Drawing projects","Art Gallery", relativeViewsFolder + "art.html");
 const project4 = new Project("Photography projects","Photo Gallery", relativeViewsFolder + "photo.html");
 const project5 = new Project("School Projects","School Projects", relativeViewsFolder + "school.html");
+const project6 = new Project("Work experiences","Work experiences", relativeViewsFolder + "experiences.html");
 
 //Education
 /*Define schools for education*/
