@@ -58,6 +58,13 @@ $( document ).ready(function() {
   $('.school2').append(school2.location);
   $('.school2_info').prepend(school2.program);
   $('.school2_info').append(school2.duration);
+
+  //Append links
+  $('a.wimw_link').attr("href",wimw.url);
+  $('a.csjv_link').attr("href",csjv.url);
+  $('a.ccfv_link').attr("href",ccfv.url);
+  $('a.csszg_link').attr("href",csszg.url);
+  $('a.ttt_link').attr("href",ttt.url);
 });
 
 //HAMBURGER MENU
