@@ -21,43 +21,42 @@ $( document ).ready(function() {
   $('.user_about_p1').append(about.p1);
   $('.user_about_p2').append(about.p2);
   //Projects
-  $('.project_1').append(project1.name);
-  $('.project_1_name').append(project1.name);
-  $('.project_1_type').append(project1.type);
-  $('a.pro1').attr("href",project1.url);
-  $('.expPro').attr("href",project1.url+"#opac");
+  $('.webPro_').append(webPro.name);
+  $('.webPro_name').append(webPro.name);
+  $('.webPro_type').append(webPro.type);
+  $('a.webPro_link').attr("href",webPro.url);
 
-  $('.project_2').append(project2.name);
-  $('.project_2_name').append(project2.name);
-  $('.project_2_type').append(project2.type);
-  $('a.pro2').attr("href",project2.url);
+  $('.gamePro_').append(gamePro.name);
+  $('.gamePro_name').append(gamePro.name);
+  $('.gamePro_type').append(gamePro.type);
+  $('a.gamePro_link').attr("href",gamePro.url);
 
-  $('.project_3').append(project3.name);
-  $('.project_3_name').append(project3.name);
-  $('.project_3_type').append(project3.type);
-  $('a.pro3').attr("href",project3.url);
+  $('.drawPro_').append(drawPro.name);
+  $('.drawPro_name').append(drawPro.name);
+  $('.drawPro_type').append(drawPro.type);
+  $('a.drawPro_link').attr("href",drawPro.url);
 
-  $('.project_4').append(project4.name);
-  $('.project_4_name').append(project4.name);
-  $('.project_4_type').append(project4.type);
-  $('a.pro4').attr("href",project4.url);
+  $('.photoPro_').append(photoPro.name);
+  $('.photoPro_name').append(photoPro.name);
+  $('.photoPro_type').append(photoPro.type);
+  $('a.photoPro_link').attr("href",photoPro.url);
 
-  $('.project_5').append(project5.name);
-  $('.project_5_name').append(project5.name);
-  $('.project_5_type').append(project5.type);
-  $('a.pro5').attr("href",project5.url);
+  $('.schoolPro_').append(schoolPro.name);
+  $('.schoolPro_name').append(schoolPro.name);
+  $('.schoolPro_type').append(schoolPro.type);
+  $('a.schoolPro_link').attr("href",schoolPro.url);
 
-  $('a.pro6').attr("href",project6.url);
+  $('a.workExp_link').attr("href",workExp.url);
 
   //Education
-  $('.school1').prepend(school1.name);
-  $('.school1').append(school1.location);
-  $('.school1_info').prepend(school1.program);
-  $('.school1_info').append(school1.duration);
-  $('.school2').prepend(school2.name);
-  $('.school2').append(school2.location);
-  $('.school2_info').prepend(school2.program);
-  $('.school2_info').append(school2.duration);
+  $('.ets_').prepend(ets.name);
+  $('.ets_').append(ets.location);
+  $('.ets_info').prepend(ets.program);
+  $('.ets_info').append(ets.duration);
+  $('.maisonneuve_').prepend(maisonneuve.name);
+  $('.maisonneuve_').append(maisonneuve.location);
+  $('.maisonneuve_info').prepend(maisonneuve.program);
+  $('.maisonneuve_info').append(maisonneuve.duration);
 
   //Append links
   $('a.wimw_link').attr("href",wimw.url);

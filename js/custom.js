@@ -36,9 +36,9 @@ const about = {
     arts, drawing tattoo designs and taking pictures.`
 }
 
-//Projects
-/*Projects names*/
-class Project {
+//Pages
+/*other pages*/
+class Page {
     constructor(
         type,
         name,
@@ -50,12 +50,13 @@ class Project {
     }
 }
 const relativeViewsFolder = "views/"
-const project1 = new Project("Websites projects","Websites", relativeViewsFolder + "websites.html");
-const project2 = new Project("Games projects","Games", relativeViewsFolder + "games.html");
-const project3 = new Project("Drawing projects","Art Gallery", relativeViewsFolder + "art.html");
-const project4 = new Project("Photography projects","Photo Gallery", relativeViewsFolder + "photo.html");
-const project5 = new Project("School Projects","School Projects", relativeViewsFolder + "school.html");
-const project6 = new Project("Work experiences","Work experiences", relativeViewsFolder + "experiences.html");
+const workExp = new Page("Work experiences","Work experiences", relativeViewsFolder + "experiences.html");
+const webPro = new Page("Websites projects","Websites", relativeViewsFolder + "websites.html");
+const gamePro = new Page("Games projects","Games", relativeViewsFolder + "games.html");
+const drawPro = new Page("Drawing projects","Art Gallery", relativeViewsFolder + "art.html");
+const photoPro = new Page("Photography projects","Photo Gallery", relativeViewsFolder + "photo.html");
+const schoolPro = new Page("School Projects","School Projects", relativeViewsFolder + "school.html");
+
 
 //Education
 /*Define schools for education*/
@@ -72,8 +73,8 @@ class School {
         this.duration = duration;
     }
 }
-const school1 = new School ("ÉTS",user.country,"Bachelor of Engineering - BE, Software Engineering","2020 - Present");
-const school2 = new School ("Maisonneuve College",user.country,"Pure and applied sciences","2018 - 2020");
+const ets = new School ("ÉTS",user.country,"Bachelor of Engineering - BE, Software Engineering","2020 - Present");
+const maisonneuve = new School ("Maisonneuve College",user.country,"Pure and applied sciences","2018 - 2020");
 
 //Links
 /*Define links*/
