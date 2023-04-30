@@ -115,26 +115,45 @@
     const ciussDateStart = new Date(2019, 7);
     const ciussDateEnd = new Date(2019, 8);
     let timeCiuss = document.getElementById("ciuss_time");
-    timeCiuss.innerHTML += getDiffString(ciussDateEnd, ciussDateStart);
+    timeCiuss.innerHTML += getExpTimeString(ciussDateEnd, ciussDateStart);
 
     const inlibroDateStart = new Date(2022, 0);
     const inlibroDateEnd = new Date(2022, 3);
     let timeInlibro = document.getElementById("inlibro_time");
-    timeInlibro.innerHTML += getDiffString(inlibroDateEnd, inlibroDateStart);
+    timeInlibro.innerHTML += getExpTimeString(inlibroDateEnd, inlibroDateStart);
 
     
 
 
-    function getDiffString(date1, date2){
-
+    function getExpTimeString(date1, date2){
       const monthDiff = differenceInMonths(date1, date2);
 
+      var startMonth = getMonthString(date2.getMonth());
+      var startYear = date2.getFullYear();
+      var endMonth = getMonthString(date1.getMonth());
+      var endYear = date1.getFullYear();
+
+      if(isToday(date1)){
+        endMonth = "Present";
+        endYear = "";
+      }
+
       if(monthDiff < 12){
-        return getMonthString(date2.getMonth()) + " " +   date2.getFullYear() + " - " + getMonthString(date1.getMonth()) + " " + date1.getFullYear() + " (" + monthDiff + " months" + ")";
+        return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + " (" + monthDiff + " month(s)" + ")";
       }else if (monthDiff >= 12){
         const yearDiff = differenceInYears(date1, date2);
-        return getMonthString(date2.getMonth()) + " " +   date2.getFullYear() + " - " + getMonthString(date1.getMonth()) + " " + date1.getFullYear() + " (" + yearDiff + " years" + ")";
+        return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + " (" + yearDiff + " year(s)" + ")";
       }
+    }
+
+    /*from: https://flaviocopes.com/how-to-determine-date-is-today-javascript/*/
+    function isToday(date){
+
+      const today = new Date()
+
+      return date.getDate() == today.getDate() &&
+      date.getMonth() == today.getMonth() &&
+      date.getFullYear() == today.getFullYear()
     }
     
     /*from : https://codingbeautydev.com/blog/javascript-get-number-of-months-between-two-dates/*/
@@ -152,31 +171,21 @@
     }
 
     function getMonthString(month){
-      if(month == 0){
-        return "January";
-      }else if(month == 1){
-        return "February";
-      }else if(month == 2){
-        return "March";
-      }else if(month == 3){
-        return "April";
-      }else if(month == 4){
-        return "May";
-      }else if(month == 5){
-        return "June";
-      }else if(month == 6){
-        return "July";
-      }else if(month == 7){
-        return "August";
-      }else if(month == 8){
-        return "September";
-      }else if(month == 9){
-        return "October";
-      }else if(month == 10){
-        return "November";
-      }else if(month == 11){
-        return "December";
+      switch(month){
+        case 0: return "January";
+        case 1: return "February";
+        case 2: return "March";
+        case 3: return "April";
+        case 4: return "May";
+        case 5: return "June";
+        case 6: return "July";
+        case 7: return "August";
+        case 8: return "September";
+        case 9: return "October";
+        case 10: return "November";
+        case 11: return "December";
       }
+
     }
   </script>
 
