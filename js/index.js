@@ -64,6 +64,11 @@ $( document ).ready(function() {
   $('a.ccfv_link').attr("href",ccfv.url);
   $('a.csszg_link').attr("href",csszg.url);
   $('a.ttt_link').attr("href",ttt.url);
+
+  //Working experience time
+  $('#ciuss_time').append(getExpTimeString(ciussDateEnd, ciussDateStart));
+  $('#inlibro_time').append(getExpTimeString(inlibroDateEnd, inlibroDateStart));
+
 });
 
 //HAMBURGER MENU

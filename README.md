@@ -26,6 +26,7 @@ The portfolio is made by the following files:
 - blueprints.js: Contains custom elements for HTML
 - modal.js: Enable modal on click for images
 - custom.js: Contains custom constants for home page
+- time.js: Module to manipulate dates
 - jquery.js: jQuery library
 
 /img
