@@ -7,7 +7,7 @@
     */
 
     function getExpTimeString(date1, date2){
-        const monthDiff = differenceInMonths(date1, date2);
+        const monthDiff = differenceInMonths(date1, date2) + 1;
   
         var startMonth = getMonthString(date2.getMonth());
         var startYear = date2.getFullYear();
@@ -20,11 +20,15 @@
         }
   
         if(monthDiff < 12){
-          return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + " (" + monthDiff + " month(s)" + ")";
-        }else if (monthDiff >= 12){
-          const yearDiff = differenceInYears(date1, date2);
-          return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + " (" + yearDiff + " year(s)" + ")";
-        }
+            return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + " (" + monthDiff + " month(s)" + ")";
+        }else if (monthDiff % 12 == 1){
+            const yearDiff = differenceInYears(date1, date2);
+            return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + " (" + yearDiff + " year(s)" + ")";
+        }else if (monthDiff % 12 >= 1){
+            const yearDiff = differenceInYears(date1, date2);
+            let months = monthDiff % 12;
+            return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + " (" + yearDiff + " year(s) " + months + " month(s)" + ")";
+        } 
       }
 
     
@@ -43,7 +47,7 @@
         const monthDiff = date1.getMonth() - date2.getMonth();
         const yearDiff = date1.getYear() - date2.getYear();
   
-        return (monthDiff + yearDiff * 12) + 1;
+        return (monthDiff + yearDiff * 12);
       }
   
       function differenceInYears(date1, date2) {
