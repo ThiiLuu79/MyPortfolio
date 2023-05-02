@@ -132,7 +132,7 @@ class MyFooter extends HTMLElement {
                   </div>
                 </a>
           </div>
-          <small class="copyright">&copy; Copyright ${start_year} - <span id="currentYear"></span> ${user.full_name} - ALL RIGHTS RESERVED</small>
+          <small class="copyright">&copy; Copyright <span id="portfolioTimePeriod"></span> ${user.full_name} - ALL RIGHTS RESERVED</small>
         </footer>
         `
     }

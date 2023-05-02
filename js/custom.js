@@ -110,7 +110,8 @@ const ttt = new Link("Tititea","https://tititea.netlify.app");
 
 //Copyright
 /*Portfolio's year of creation*/
-const start_year = "2021";
+const portfolioStartYear = new Date(2021, 0);
+const portfolioEndYear = new Date();
 
 //Working experiences dates
 const ciussDateStart = new Date(2019, 7);

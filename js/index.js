@@ -52,11 +52,11 @@ $( document ).ready(function() {
   $('.ets_').prepend(ets.name);
   $('.ets_').append(ets.location);
   $('.ets_info').prepend(ets.program);
-  $('.ets_info').append(getExpTimeString(ets.endDuration, ets.startDuration, false, false));
+  $('.ets_info').append(getExpTimeString(ets.endDuration, ets.startDuration, false, false, true));
   $('.maisonneuve_').prepend(maisonneuve.name);
   $('.maisonneuve_').append(maisonneuve.location);
   $('.maisonneuve_info').prepend(maisonneuve.program);
-  $('.maisonneuve_info').append(getExpTimeString(maisonneuve.endDuration, maisonneuve.startDuration, false, false));
+  $('.maisonneuve_info').append(getExpTimeString(maisonneuve.endDuration, maisonneuve.startDuration, false, false, true));
 
   //Append links
   $('a.wimw_link').attr("href",wimw.url);
@@ -66,8 +66,11 @@ $( document ).ready(function() {
   $('a.ttt_link').attr("href",ttt.url);
 
   //Working experience time
-  $('#ciuss_time').append(getExpTimeString(ciussDateEnd, ciussDateStart, true, true));
-  $('#inlibro_time').append(getExpTimeString(inlibroDateEnd, inlibroDateStart, true, true));
+  $('#ciuss_time').append(getExpTimeString(ciussDateEnd, ciussDateStart, true, true, true));
+  $('#inlibro_time').append(getExpTimeString(inlibroDateEnd, inlibroDateStart, true, true, true));
+
+  //Footer portfolio time period
+  $('#portfolioTimePeriod').append(getExpTimeString(portfolioEndYear, portfolioStartYear, false, false));
 
 });
 
@@ -89,12 +92,3 @@ function showDropdown(dropdownId, showClass) {
   }
 }
 //Function to show the dropdown
-
-//Getting the current year
-const getCurrentYear = () => {
-  let date = new Date();
-  let year = date.getFullYear();
-  $('#currentYear').append(year);
-}
-getCurrentYear();
-//Getting the current year
