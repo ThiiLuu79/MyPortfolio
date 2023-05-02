@@ -6,7 +6,7 @@
      * getMonthString : return the month in string
     */
 
-    function getExpTimeString(date1, date2){
+    function getExpTimeString(date1, date2, displayMonth, displayTime){
         const monthDiff = differenceInMonths(date1, date2) + 1;
   
         var startMonth = getMonthString(date2.getMonth());
@@ -14,20 +14,33 @@
         var endMonth = getMonthString(date1.getMonth());
         var endYear = date1.getFullYear();
   
+        var timePeriod = " (" + monthDiff + " month(s)" + ")";
+
+        if(!displayMonth){
+          startMonth = "";
+          endMonth = "";
+        }
+
+        if(!displayTime){
+          timePeriod = "";
+        }
+
         if(isToday(date1)){
           endMonth = "Present";
           endYear = "";
         }
   
         if(monthDiff < 12){
-            return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + " (" + monthDiff + " month(s)" + ")";
+            return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + timePeriod;
         }else if (monthDiff % 12 == 1){
             const yearDiff = differenceInYears(date1, date2);
-            return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + " (" + yearDiff + " year(s)" + ")";
+            timePeriod = " (" + yearDiff + " year(s)" + ")";
+            return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + timePeriod;
         }else if (monthDiff % 12 >= 1){
-            const yearDiff = differenceInYears(date1, date2);
             let months = monthDiff % 12;
-            return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + " (" + yearDiff + " year(s) " + months + " month(s)" + ")";
+            const yearDiff = differenceInYears(date1, date2);
+            timePeriod = " (" + yearDiff + " year(s) " + months + " month(s)" + ")";
+            return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + timePeriod;
         } 
       }
 

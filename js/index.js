@@ -66,8 +66,8 @@ $( document ).ready(function() {
   $('a.ttt_link').attr("href",ttt.url);
 
   //Working experience time
-  $('#ciuss_time').append(getExpTimeString(ciussDateEnd, ciussDateStart));
-  $('#inlibro_time').append(getExpTimeString(inlibroDateEnd, inlibroDateStart));
+  $('#ciuss_time').append(getExpTimeString(ciussDateEnd, ciussDateStart, true, true));
+  $('#inlibro_time').append(getExpTimeString(inlibroDateEnd, inlibroDateStart, true, true));
 
 });
 
