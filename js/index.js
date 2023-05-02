@@ -52,11 +52,11 @@ $( document ).ready(function() {
   $('.ets_').prepend(ets.name);
   $('.ets_').append(ets.location);
   $('.ets_info').prepend(ets.program);
-  $('.ets_info').append(ets.duration);
+  $('.ets_info').append(getExpTimeString(ets.endDuration, ets.startDuration, false, false));
   $('.maisonneuve_').prepend(maisonneuve.name);
   $('.maisonneuve_').append(maisonneuve.location);
   $('.maisonneuve_info').prepend(maisonneuve.program);
-  $('.maisonneuve_info').append(maisonneuve.duration);
+  $('.maisonneuve_info').append(getExpTimeString(maisonneuve.endDuration, maisonneuve.startDuration, false, false));
 
   //Append links
   $('a.wimw_link').attr("href",wimw.url);

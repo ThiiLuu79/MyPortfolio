@@ -65,16 +65,24 @@ class School {
         name,
         location,
         program,
-        duration
+        startDuration,
+        endDuration
     ) {
         this.name = name;
         this.location = location;
         this.program = program;
-        this.duration = duration;
+        this.startDuration = startDuration;
+        this.endDuration = endDuration;
     }
 }
-const ets = new School ("ÉTS",user.country,"Bachelor of Engineering - BE, Software Engineering","2020 - Present");
-const maisonneuve = new School ("Maisonneuve College",user.country,"Pure and applied sciences","2018 - 2020");
+
+const startMaisonneuve = new Date(2018, 0);
+const endMaisonneuve = new Date(2020, 0);
+const startETS = new Date(2020, 0);
+const endETS = new Date();
+
+const ets = new School ("ÉTS",user.country,"Bachelor of Engineering - BE, Software Engineering", startETS, endETS);
+const maisonneuve = new School ("Maisonneuve College",user.country,"Pure and applied sciences", startMaisonneuve, endMaisonneuve);
 
 //Links
 /*Define links*/
