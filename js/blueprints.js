@@ -47,7 +47,7 @@ class MyNavbar extends HTMLElement {
               <a href="views/experiences.html">Working experiences</a>
             </div>
             <div class="drop_projects">
-              <li class = "nav__item" ><a href = "index.html#projects" class="nav__link">My projects</a></li>
+              <li class = "nav__item" ><a href = "index.html#projects" class="nav__link">Projects</a></li>
               <!-- Down arrow button -->
               <button class="button">
                   <!-- Arrow -->
