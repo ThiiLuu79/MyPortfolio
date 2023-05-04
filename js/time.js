@@ -23,12 +23,12 @@
         if(!displayTime){
           timePeriod = "";
         }else if(monthDiff < 12){
-          timePeriod = " (" + monthDiff + " month(s)" + ")";
+          timePeriod = " • " + monthDiff + " month(s)";
         }else if(monthDiff % 12 == 1){
-          timePeriod = " (" + yearDiff + " year(s)" + ")";
+          timePeriod = " • " + yearDiff + " year(s)";
         }else if(monthDiff % 12 >= 1){
           let months = monthDiff % 12;
-          timePeriod = " (" + yearDiff + " year(s) " + months + " month(s)" + ")";
+          timePeriod = " • " + yearDiff + " year(s) " + months + " month(s)";
         }
 
         if(isToday(date1) && displayPresent){
