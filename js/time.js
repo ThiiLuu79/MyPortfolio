@@ -6,7 +6,7 @@
      * getMonthString : return the month in string
     */
 
-    function getExpTimeString(date1, date2, displayMonth, displayTime, displayPresent){
+    function getExpTimeString(date1, date2, displayMonth=true, displayTime=true, displayPresent=true){
         const monthDiff = differenceInMonths(date1, date2) + 1;
         const yearDiff = differenceInYears(date1, date2);
   
