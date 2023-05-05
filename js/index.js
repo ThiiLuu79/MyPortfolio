@@ -1,6 +1,5 @@
 /*
 General JavaScript for pages.
-Mainly focus on the navbar and dropdowns.
 */
 
 //Inserting custom content in the home page
