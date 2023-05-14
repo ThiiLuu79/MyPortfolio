@@ -67,6 +67,7 @@ $( document ).ready(function() {
   //Working experience time
   $('#ciuss_time').append(getExpTimeString(ciussDateEnd, ciussDateStart));
   $('#inlibro_time').append(getExpTimeString(inlibroDateEnd, inlibroDateStart));
+  $('#nbc_time').append(getExpTimeString(nbcDateEnd, nbcDateStart));
 
   //Footer portfolio time period
   $('#portfolioTimePeriod').append(getExpTimeString(portfolioEndYear, portfolioStartYear, false, false, false));
