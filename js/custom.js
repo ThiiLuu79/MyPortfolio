@@ -26,14 +26,8 @@ const headInfo = {
 //About
 /*Content for about section*/
 const about = {
-    p1:`Student at <b>ÉTS</b> (École de Technologie Supérieure), which translates as Superior Technology School,
-    in Montreal, Canada. Majoring in <b>Software Engineering</b>, I am slowly discovering the value
-    of computer science in today's world. I've always been passionated about video games and websites and I wanted to
-    know how those complex programs and softwares were made. Luckily now, not only I can understand the technical skills
-    behind those, but I can also recreate them.`,
-    p2:`I have started programming with the C languague, in 2020. This is when I developed an interest
-    in programming. Since then, I enjoy making my own projects and learning new things. In my free time, I enjoy
-    arts, drawing tattoo designs and taking pictures.`
+    p1:`I'm currently studying Software Engineering at ÉTS (École de Technologie Supérieure) in Montreal, Canada. I've always been fascinated by video games and websites, and I've been curious about how those cool programs and software are made. So, I decided to dive into the world of programming in 2020, starting with the C language.`,
+    p2:`Since then, I've been enjoying programming and creating my own projects. It's been a great learning experience, and I'm constantly discovering new things. When I'm not coding, I like to explore my artistic side by drawing tattoo designs and taking photos. It's a fun way for me to unwind and express myself.`
 }
 
 //Pages
