@@ -26,8 +26,9 @@ const headInfo = {
 //About
 /*Content for about section*/
 const about = {
-    p1:`I'm currently studying Software Engineering at ÉTS (École de Technologie Supérieure) in Montreal, Canada. I've always been fascinated by video games and websites, and I've been curious about how those cool programs and software are made. So, I decided to dive into the world of programming in 2020, starting with the C language.`,
-    p2:`Since then, I've been enjoying programming and creating my own projects. It's been a great learning experience, and I'm constantly discovering new things. When I'm not coding, I like to explore my artistic side by drawing tattoo designs and taking photos. It's a fun way for me to unwind and express myself.`
+    p1:`I'm currently a Software Engineering student at ETS, with a passion for coding and problem-solving. Currently, I'm gaining practical experience as a Full Stack Developer intern at National Bank of Canada, where I have the opportunity to work on diverse projects. My expertise lies in Java and JavaScript, enabling me to tackle both front-end and back-end development challenges.`,
+    p2:`As I look towards the future, my goal is to become a senior developer, contributing my skills and knowledge to complex software solutions. During my previous internship, I had the chance to work as a Full Stack Developer, where I customized websites for various clients. This experience honed my ability to deliver tailored solutions that meet unique requirements.`,
+    p3:`One of the defining qualities I bring to my work is resilience. I approach challenges with determination, always seeking innovative solutions to overcome obstacles. Outside of my professional life, I find joy in expressing my creativity through drawing and photography.`
 }
 
 //Pages
