@@ -19,6 +19,7 @@ $( document ).ready(function() {
   $('.user_country').append(user.country);
   $('.user_about_p1').append(about.p1);
   $('.user_about_p2').append(about.p2);
+  $('.user_about_p3').append(about.p3);
   //Projects
   $('.webPro_').append(webPro.name);
   $('.webPro_name').append(webPro.name);
