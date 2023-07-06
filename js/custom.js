@@ -26,14 +26,9 @@ const headInfo = {
 //About
 /*Content for about section*/
 const about = {
-    p1:`Student at <b>ÉTS</b> (École de Technologie Supérieure), which translates as Superior Technology School,
-    in Montreal, Canada. Majoring in <b>Software Engineering</b>, I am slowly discovering the value
-    of computer science in today's world. I've always been passionated about video games and websites and I wanted to
-    know how those complex programs and softwares were made. Luckily now, not only I can understand the technical skills
-    behind those, but I can also recreate them.`,
-    p2:`I have started programming with the C languague, in 2020. This is when I developed an interest
-    in programming. Since then, I enjoy making my own projects and learning new things. In my free time, I enjoy
-    arts, drawing tattoo designs and taking pictures.`
+    p1:`I'm currently a Software Engineering student at ETS, with a passion for coding and problem-solving. Currently, I'm gaining practical experience as a Full Stack Developer intern at National Bank of Canada, where I have the opportunity to work on diverse projects. My expertise lies in Java and JavaScript, enabling me to tackle both front-end and back-end development challenges.`,
+    p2:`As I look towards the future, my goal is to become a senior developer, contributing my skills and knowledge to complex software solutions. During my previous internship, I had the chance to work as a Full Stack Developer, where I customized websites for various clients. This experience honed my ability to deliver tailored solutions that meet unique requirements.`,
+    p3:`One of the defining qualities I bring to my work is resilience. I approach challenges with determination, always seeking innovative solutions to overcome obstacles. Outside of my professional life, I find joy in expressing my creativity through drawing and photography.`
 }
 
 //Pages
