@@ -58,6 +58,7 @@ class MyNavbar extends HTMLElement {
               <a href="${schoolPro.url}">${schoolPro.name}</a>
               <a href="${webPro.url}">${webPro.name}</a>
               <a href="${gamePro.url}">${gamePro.name}</a>
+              <hr>
               <a href="${drawPro.url}">${drawPro.name}</a>
               <a href="${photoPro.url}">${photoPro.name}</a>
             </div>
