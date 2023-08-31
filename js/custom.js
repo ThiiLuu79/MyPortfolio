@@ -27,9 +27,9 @@ const headInfo = {
 /*Content for about section*/
 const about = {
     p1:`I'm currently a Software Engineering student at ETS, with a passion for coding and problem-solving. 
-    My last experience as a Full Stack Developer intern at National Bank of Canada gave me the opportunity to work on diverse projects and enhance many of my skills. 
+    My last experience as a Full Stack Developer intern at National Bank of Canada gave me the opportunity to work on diverse projects and enhance my skills. 
     My expertise lies in Java, JavaScript and SQL, 
-    enabling me to tackle front-end, back-end and data base development challenges.`,
+    enabling me to tackle front-end, back-end and database development challenges.`,
 
     p2:`As I look towards the future, my goal is to become a senior developer, 
     contributing my skills and knowledge to complex software solutions. 
