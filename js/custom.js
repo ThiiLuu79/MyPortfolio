@@ -26,9 +26,19 @@ const headInfo = {
 //About
 /*Content for about section*/
 const about = {
-    p1:`I'm currently a Software Engineering student at ETS, with a passion for coding and problem-solving. Currently, I'm gaining practical experience as a Full Stack Developer intern at National Bank of Canada, where I have the opportunity to work on diverse projects. My expertise lies in Java and JavaScript, enabling me to tackle both front-end and back-end development challenges.`,
-    p2:`As I look towards the future, my goal is to become a senior developer, contributing my skills and knowledge to complex software solutions. During my previous internship, I had the chance to work as a Full Stack Developer, where I customized websites for various clients. This experience honed my ability to deliver tailored solutions that meet unique requirements.`,
-    p3:`One of the defining qualities I bring to my work is resilience. I approach challenges with determination, always seeking innovative solutions to overcome obstacles. Outside of my professional life, I find joy in expressing my creativity through drawing and photography.`
+    p1:`I'm currently a Software Engineering student at ETS, with a passion for coding and problem-solving. 
+    My last experience as a Full Stack Developer intern at National Bank of Canada gave me the opportunity to work on diverse projects and enhance many of my skills. 
+    My expertise lies in Java, JavaScript and SQL, 
+    enabling me to tackle front-end, back-end and data base development challenges.`,
+
+    p2:`As I look towards the future, my goal is to become a senior developer, 
+    contributing my skills and knowledge to complex software solutions. 
+    During my previous internships, I had the chance to work as a Full Stack Developer, where I customized websites for various clients. 
+    This experience honed my ability to deliver tailored solutions that meet unique requirements.`,
+
+    p3:`One of the defining qualities I bring to my work is resilience. I approach challenges with determination, 
+    always seeking innovative solutions to overcome obstacles. Outside of my professional life, 
+    I find joy in expressing my creativity through drawing and photography.`
 }
 
 //Pages
