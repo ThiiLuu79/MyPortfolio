@@ -114,4 +114,4 @@ const ciussDateEnd = new Date(2019, 8);
 const inlibroDateStart = new Date(2022, 0);
 const inlibroDateEnd = new Date(2022, 3);
 const nbcDateStart = new Date(2023, 4, 14);
-const nbcDateEnd = new Date();
+const nbcDateEnd = new Date(2023, 8, 31);
