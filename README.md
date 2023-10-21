@@ -44,3 +44,6 @@ The portfolio is made by the following files:
 
 /video
 - Contains demo of the games
+
+
+This site was built using this [portfolio course](https://youtu.be/_xkSvufmjEs?si=sTo628TZXGkxunje) as a template.
