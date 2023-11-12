@@ -9,12 +9,12 @@ The portfolio is made by the following files:
 
 /views
 - experiences.html: Describing working experiences
-- websites.html: Showing my personnal websites
+- personal.html: Showing my personnal CS projects
 - games.html: Showing my personnal games
 - art.html: Displaying my art projects
 - photo.html: Displaying my photography projects
 - certificates.html: Showing my certificates
-- school.html: Showing my school projects
+- academic.html: Showing my academic (school) projects
 
 /css
 - general.css: Contains the general styles for the stylesheet
@@ -32,14 +32,13 @@ The portfolio is made by the following files:
 /img
 - /home : contains images for the home page
 - /experiences : contains images for the experiences page
-- /websites : contains images for the websites page
+- /personal : contains images for the personal projects page
 - /games : contains images for the games page
 - /art : contains images for the art page
-- /school : contains images for the school page
+- /academic : contains images for the school page
 - /education: contains images for education section
-  - /certificates : contains the certificates
 
-/games
+/archives
 - Contains the compressed game files to download
 
 /video
