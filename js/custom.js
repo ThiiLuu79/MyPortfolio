@@ -59,7 +59,7 @@ const workExp = new Page("Work experiences","Work experiences", relativeViewsFol
 const personalPro = new Page("Personal projects","Personal Projects", relativeViewsFolder + "personal.html");
 const drawPro = new Page("Drawing projects","Art Gallery", relativeViewsFolder + "art.html");
 const photoPro = new Page("Photography projects","Photo Gallery", relativeViewsFolder + "photo.html");
-const schoolPro = new Page("School Projects","School Projects", relativeViewsFolder + "school.html");
+const academicPro = new Page("Academic Projects","Academic Projects", relativeViewsFolder + "academic.html");
 
 
 //Education

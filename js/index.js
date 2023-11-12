@@ -36,10 +36,10 @@ $( document ).ready(function() {
   $('.photoPro_type').append(photoPro.type);
   $('a.photoPro_link').attr("href",photoPro.url);
 
-  $('.schoolPro_').append(schoolPro.name);
-  $('.schoolPro_name').append(schoolPro.name);
-  $('.schoolPro_type').append(schoolPro.type);
-  $('a.schoolPro_link').attr("href",schoolPro.url);
+  $('.academicPro_').append(academicPro.name);
+  $('.academicPro_name').append(academicPro.name);
+  $('.academicPro_type').append(academicPro.type);
+  $('a.academicPro_link').attr("href",academicPro.url);
 
   $('a.workExp_link').attr("href",workExp.url);
 
