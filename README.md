@@ -39,7 +39,7 @@ The portfolio is made by the following files:
 - /education: contains images for education section
 
 /archives
-- Contains the compressed game files to download
+- Contains compressed files to download
 
 /video
 - Contains demo of the games
