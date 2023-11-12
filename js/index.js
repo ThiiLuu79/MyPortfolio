@@ -21,15 +21,10 @@ $( document ).ready(function() {
   $('.user_about_p2').append(about.p2);
   $('.user_about_p3').append(about.p3);
   //Projects
-  $('.webPro_').append(webPro.name);
-  $('.webPro_name').append(webPro.name);
-  $('.webPro_type').append(webPro.type);
-  $('a.webPro_link').attr("href",webPro.url);
-
-  $('.gamePro_').append(gamePro.name);
-  $('.gamePro_name').append(gamePro.name);
-  $('.gamePro_type').append(gamePro.type);
-  $('a.gamePro_link').attr("href",gamePro.url);
+  $('.personal_').append(personalPro.name);
+  $('.personal_name').append(personalPro.name);
+  $('.personal_type').append(personalPro.type);
+  $('a.personal_link').attr("href",personalPro.url);
 
   $('.drawPro_').append(drawPro.name);
   $('.drawPro_name').append(drawPro.name);

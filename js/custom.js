@@ -56,8 +56,7 @@ class Page {
 }
 const relativeViewsFolder = "views/"
 const workExp = new Page("Work experiences","Work experiences", relativeViewsFolder + "experiences.html");
-const webPro = new Page("Websites projects","Websites", relativeViewsFolder + "websites.html");
-const gamePro = new Page("Games projects","Games", relativeViewsFolder + "games.html");
+const personalPro = new Page("Personal projects","Personal Projects", relativeViewsFolder + "personal.html");
 const drawPro = new Page("Drawing projects","Art Gallery", relativeViewsFolder + "art.html");
 const photoPro = new Page("Photography projects","Photo Gallery", relativeViewsFolder + "photo.html");
 const schoolPro = new Page("School Projects","School Projects", relativeViewsFolder + "school.html");

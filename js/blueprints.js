@@ -56,8 +56,7 @@ class MyNavbar extends HTMLElement {
             </div>
             <div id = "myDropdown" class="dropdown-content">
               <a href="${schoolPro.url}">${schoolPro.name}</a>
-              <a href="${webPro.url}">${webPro.name}</a>
-              <a href="${gamePro.url}">${gamePro.name}</a>
+              <a href="${personalPro.url}">${personalPro.name}</a>
               <hr>
               <a href="${drawPro.url}">${drawPro.name}</a>
               <a href="${photoPro.url}">${photoPro.name}</a>
