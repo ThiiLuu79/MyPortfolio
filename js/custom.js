@@ -11,7 +11,7 @@ const user = {
     initials:"tm",
     title:"Software Engineering Student",
     country:"Montreal, Canada",
-    email:"the-minh.luong.1@ens.etsmtl.ca"
+    email:"theminh.luong9@gmail.com"
 }
 
 //Head informations
