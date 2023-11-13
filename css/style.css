@@ -1,5 +1,6 @@
 @import "custom.css";
 @import "general.css";
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 *,
 *::before,
 *::after{
@@ -794,7 +795,6 @@ header{
     Auther: Abdelrhman Said
 */
 
-@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 
 * {
   margin: 0;
