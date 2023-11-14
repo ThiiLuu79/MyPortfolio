@@ -39,10 +39,9 @@ The portfolio is made by the following files:
 - /education: contains images for education section
 
 /archives
-- Contains compressed files to download
+- /zip : Contains compressed files to download
+- /video : Contains videos
 
-/video
-- Contains videos
 
 
 This site was built using this [portfolio course](https://youtu.be/_xkSvufmjEs?si=sTo628TZXGkxunje) as a template.
