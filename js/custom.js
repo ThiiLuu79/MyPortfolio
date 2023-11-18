@@ -63,6 +63,48 @@ const photoPro = new Page("Photography projects","Photo Gallery", "photo.html");
 const academicPro = new Page("Academic Projects","Academic Projects", "academic.html");
 
 
+var indexRed="";
+var aboutRed="";
+var csRed="";
+var educationRed="";
+var contactRed="";
+
+var workRed="";
+var academicRed="";
+var personalRed="";
+var drawingRed="";
+var photoRed="";
+
+
+if(document.URL.includes("index.html")){
+  indexRed = "index.html#home";
+  aboutRed = "index.html#about";
+  csRed = "index.html#cs_projects";
+  educationRed = "index.html#education";
+  contactRed = "#contact";
+
+  workRed = relativeViewsFolder + workExp.url;
+  academicRed = relativeViewsFolder + academicPro.url;
+  personalRed = relativeViewsFolder + personalPro.url;
+  drawingRed = relativeViewsFolder + drawPro.url;
+  photoRed = relativeViewsFolder + photoPro.url;
+
+}else {
+  indexRed = "../index.html#home";
+  aboutRed = "../index.html#about";
+  csRed = "../index.html#cs_projects";
+  educationRed = "../index.html#education";
+  contactRed = "..#contact";
+
+  workRed = workExp.url;
+  academicRed = academicPro.url;
+  personalRed = personalPro.url;
+  drawingRed = drawPro.url;
+  photoRed = photoPro.url;
+
+}
+
+
 //Education
 /*Define schools for education*/
 class School {
