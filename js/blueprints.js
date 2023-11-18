@@ -24,6 +24,48 @@ class MyHeader extends HTMLElement {
 }
 customElements.define('my-header',MyHeader);
 
+
+var indexRed="";
+var aboutRed="";
+var csRed="";
+var educationRed="";
+var contactRed="";
+
+var workRed="";
+var academicRed="";
+var personalRed="";
+var drawingRed="";
+var photoRed="";
+
+
+if(document.URL.includes("index.html")){
+  indexRed = "index.html#home";
+  aboutRed = "index.html#about";
+  csRed = "index.html#cs_projects";
+  educationRed = "index.html#education";
+  contactRed = "#contact";
+
+  workRed = relativeViewsFolder + workExp.url;
+  academicRed = relativeViewsFolder + academicPro.url;
+  personalRed = relativeViewsFolder + personalPro.url;
+  drawingRed = relativeViewsFolder + drawPro.url;
+  photoRed = relativeViewsFolder + photoPro.url;
+
+}else {
+  indexRed = "../index.html#home";
+  aboutRed = "../index.html#about";
+  csRed = "../index.html#cs_projects";
+  educationRed = "../index.html#education";
+  contactRed = "..#contact";
+
+  workRed = workExp.url;
+  academicRed = academicPro.url;
+  personalRed = personalPro.url;
+  drawingRed = drawPro.url;
+  photoRed = photoPro.url;
+
+}
+
 //NAVBAR
 class MyNavbar extends HTMLElement {
     connectedCallback() {
@@ -34,9 +76,9 @@ class MyNavbar extends HTMLElement {
         </button>
         <nav class = "nav">
           <ul class = "nav__list">
-            <li class = "nav__item" ><a href = "index.html#home" class="nav__link">Home</a></li>
+            <li class = "nav__item" ><a href = "${indexRed}" class="nav__link">Home</a></li>
             <div class="drop_about">
-              <li class = "nav__item" ><a href = "index.html#about" class="nav__link">About me</a></li>
+              <li class = "nav__item" ><a href = "${aboutRed}" class="nav__link">About me</a></li>
               <!-- Down arrow button -->
               <button class="button">
                 <!-- Arrow -->
@@ -44,10 +86,10 @@ class MyNavbar extends HTMLElement {
               </button>
             </div>
             <div id = "myDropdownExp" class="dropdown-content drop_exp">
-              <a href="views/experiences.html">Working experiences</a>
+              <a href="${workRed}">Working experiences</a>
             </div>
             <div class="drop_projects">
-              <li class = "nav__item" ><a href = "index.html#cs_projects" class="nav__link">Projects</a></li>
+              <li class = "nav__item" ><a href = "${csRed}" class="nav__link">Projects</a></li>
               <!-- Down arrow button -->
               <button class="button">
                   <!-- Arrow -->
@@ -55,14 +97,14 @@ class MyNavbar extends HTMLElement {
               </button>
             </div>
             <div id = "myDropdown" class="dropdown-content">
-              <a href="${academicPro.url}">${academicPro.name}</a>
-              <a href="${personalPro.url}">${personalPro.name}</a>
+              <a href="${academicRed}">${academicPro.name}</a>
+              <a href="${personalRed}">${personalPro.name}</a>
               <hr>
-              <a href="${drawPro.url}">${drawPro.name}</a>
-              <a href="${photoPro.url}">${photoPro.name}</a>
+              <a href="${drawingRed}">${drawPro.name}</a>
+              <a href="${photoRed}">${photoPro.name}</a>
             </div>
-            <li class = "nav__item" ><a href = "index.html#education" class="nav__link">Education</a></li>
-            <li class = "nav__item" ><a href = "#contact" class="nav__link">Contact</a></li>
+            <li class = "nav__item" ><a href = "${educationRed}" class="nav__link">Education</a></li>
+            <li class = "nav__item" ><a href = "${contactRed}" class="nav__link">Contact</a></li>
           </ul>
         </nav>
         `

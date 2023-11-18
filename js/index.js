@@ -24,24 +24,24 @@ $( document ).ready(function() {
   $('.personal_').append(personalPro.name);
   $('.personal_name').append(personalPro.name);
   $('.personal_type').append(personalPro.type);
-  $('a.personal_link').attr("href",personalPro.url);
+  $('a.personal_link').attr("href",relativeViewsFolder + personalPro.url);
 
   $('.drawPro_').append(drawPro.name);
   $('.drawPro_name').append(drawPro.name);
   $('.drawPro_type').append(drawPro.type);
-  $('a.drawPro_link').attr("href",drawPro.url);
+  $('a.drawPro_link').attr("href",relativeViewsFolder + drawPro.url);
 
   $('.photoPro_').append(photoPro.name);
   $('.photoPro_name').append(photoPro.name);
   $('.photoPro_type').append(photoPro.type);
-  $('a.photoPro_link').attr("href",photoPro.url);
+  $('a.photoPro_link').attr("href",relativeViewsFolder + photoPro.url);
 
   $('.academicPro_').append(academicPro.name);
   $('.academicPro_name').append(academicPro.name);
   $('.academicPro_type').append(academicPro.type);
-  $('a.academicPro_link').attr("href",academicPro.url);
+  $('a.academicPro_link').attr("href",relativeViewsFolder + academicPro.url);
 
-  $('a.workExp_link').attr("href",workExp.url);
+  $('a.workExp_link').attr("href",relativeViewsFolder + workExp.url);
 
   //Education
   $('.ets_').prepend(ets.name);

@@ -54,12 +54,13 @@ class Page {
         this.url = url;
     }
 }
+
 const relativeViewsFolder = "views/"
-const workExp = new Page("Work experiences","Work experiences", relativeViewsFolder + "experiences.html");
-const personalPro = new Page("Personal projects","Personal Projects", relativeViewsFolder + "personal.html");
-const drawPro = new Page("Drawing projects","Art Gallery", relativeViewsFolder + "art.html");
-const photoPro = new Page("Photography projects","Photo Gallery", relativeViewsFolder + "photo.html");
-const academicPro = new Page("Academic Projects","Academic Projects", relativeViewsFolder + "academic.html");
+const workExp = new Page("Work experiences","Work experiences", "experiences.html");
+const personalPro = new Page("Personal projects","Personal Projects", "personal.html");
+const drawPro = new Page("Drawing projects","Art Gallery", "art.html");
+const photoPro = new Page("Photography projects","Photo Gallery", "photo.html");
+const academicPro = new Page("Academic Projects","Academic Projects", "academic.html");
 
 
 //Education
