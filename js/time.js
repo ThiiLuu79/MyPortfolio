@@ -24,8 +24,9 @@
           timePeriod = "";
         }else if(monthDiff < 12){
           timePeriod = " • " + monthDiff + " month(s)";
-        }else if(monthDiff % 12 == 1){
-          timePeriod = " • " + yearDiff + " year(s)";
+        }else if(monthDiff%12 == 0){
+          let years = monthDiff/12;
+          timePeriod = " • " + years + " year(s)";
         }else if(monthDiff % 12 >= 1){
           let months = monthDiff % 12;
           timePeriod = " • " + yearDiff + " year(s) " + months + " month(s)";
@@ -36,13 +37,7 @@
           endYear = "";
         }
   
-        if(monthDiff < 12){
-            return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + timePeriod;
-        }else if (monthDiff % 12 == 1){
-            return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + timePeriod;
-        }else if (monthDiff % 12 >= 1){
-            return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + timePeriod;
-        } 
+        return startMonth + " " +   startYear + " - " + endMonth + " " + endYear + timePeriod;
       }
 
     
