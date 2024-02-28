@@ -543,6 +543,17 @@ header{
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+.video{
+  min-width: 100%;
+}
+
+@media (min-width: 300px){
+  .video{
+    width: 300px;
+  }
+}
+
 /*PROJECT SECTION*/
 
 /*PROJECT ITEM*/
@@ -553,18 +564,6 @@ header{
   border-bottom: none;
 }
 /*PROJECT ITEM*/
-
-/*GAME PAGE*/
-.video{
-  min-width: 100%;
-}
-
-@media (min-width: 300px){
-  .video{
-    width: 300px;
-  }
-}
-/*GAME PAGE*/
 
 /*ART PAGE*/
 .art__container,.certificates_container, .photo_container{
@@ -676,78 +675,6 @@ header{
 
 .content_wrap {
   display: flex;
-}
-
-/*CSS for bouncing graduation hat (uncomment if needed)*/
-/*
-.grad__hat1, .grad__hat2{
-  width:300px;
-  z-index: -1;
-  transition: ease-out 3s;
-}
-
-.grad__hat1{
-  animation: bounce 5s linear infinite;
-  animation-direction: alternate;
-}
-
-.grad__hat2{
-  animation: bounce 7s linear infinite;
-  transform: translateY(410px) scale(0.3);
-  animation-direction: alternate;
-}
-
-@keyframes bounce {
-  0% {
-    transform: translateY(450px);
-  }
-  100%{
-    transform: translateY(-350px) rotate(1080deg);
-  }
-}
-
-@media (max-width: 1000px){
-  .grad__hat1{
-    display: none;
-  }
-}
-
-@media (max-width: 1300px){
-  .grad__hat2{
-    display: none;
-  }
-}
-*/
-.linkedin_learning_header {
-  display: flex;
-}
-
-.linkedin_learning_header .button__arrow {
-  border-right: 2px solid var(--clr-accent);
-  border-top: 2px solid var(--clr-accent);
-}
-
-.linkedin__learning__list{
-  list-style: none;
-}
-
-.linkedin_course{
-  color: var(--clr-accent);
-  cursor: pointer;
-}
-
-.course_item{
-  color: var(--clr-accent);
-}
-
-.course_item:hover {
-  text-decoration: underline;
-}
-
-.show_courses {
-  display: flex;
-  flex-direction: column;
-  position:absolute;
 }
 
 /*EDUCATION*/
