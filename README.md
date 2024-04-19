@@ -2,6 +2,8 @@
 
 Welcome to my portfolio, a showcase of my personal works and achievements.
 
+This portfolio version is outdated. For the most recent update, please check out the [current portfolio repository](https://github.com/ThiiLuu79/tm_portfolio).
+
 ## Project Structure
 
 The portfolio is organized into the following directories:
